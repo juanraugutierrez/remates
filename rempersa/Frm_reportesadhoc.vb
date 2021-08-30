@@ -104,9 +104,9 @@
         If ChkNominas.Checked Then
             Dim l1 As New List(Of nominaview)
             l1 = (From fa In contex.facturas Join cud In contex.Cuadratura_detalle On fa.id_factura Equals cud.id_factura
-                 Join cu In contex.Cuadratura On cud.id_cuadra Equals cu.id_cuadra
-                 Where fa.id_remate = r
-                 Order By CInt(cu.id_cuadra) Ascending Select New nominaview With {.nronomina = cu.id_cuadra, .fecha = cu.fecha_cuadra, .Monto = cu.total_nomina}).Distinct().ToList()
+                  Join cu In contex.Cuadratura On cud.id_cuadra Equals cu.id_cuadra
+                  Where fa.id_remate = r
+                  Order By CInt(cu.id_cuadra) Ascending Select New nominaview With {.nronomina = cu.id_cuadra, .fecha = cu.fecha_cuadra, .Monto = cu.total_nomina}).Distinct().ToList()
             re.detalleLibrVtaNominas(l1)
         End If
 

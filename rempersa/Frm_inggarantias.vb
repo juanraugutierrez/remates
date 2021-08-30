@@ -287,13 +287,13 @@ Public Class Frm_inggarantias
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
         Try
 
-       
-        Dim t As Integer
-        t = CInt(InputBox("Ingrese numero de rendicion", "Rendiciones"))
 
-        Dim rendicion As New rgarantia
+            Dim t As Integer
+            t = CInt(InputBox("Ingrese numero de rendicion", "Rendiciones"))
+
+            Dim rendicion As New rgarantia
             rendicion = (From c In contex.rgarantia Where c.id_rgarantia = t Select c).First
-        Dim rgarantiasr As New List(Of rgarantia)
+            Dim rgarantiasr As New List(Of rgarantia)
             rgarantiasr.Add(rendicion)
 
             'If rendicion.paridad = "par" Then
@@ -305,11 +305,11 @@ Public Class Frm_inggarantias
 
 
             Frm_muestrareportes.ReportViewer1.LocalReport.ReportEmbeddedResource = "rempersa.rgarantia.rdlc"
-        Frm_muestrareportes.ReportViewer1.SetDisplayMode(DisplayMode.PrintLayout)
-        Frm_muestrareportes.ReportViewer1.LocalReport.DataSources.Clear()
-        Frm_muestrareportes.ReportViewer1.LocalReport.DataSources.Add(New ReportDataSource("rgarantia", rgarantiasr))
-        Frm_muestrareportes.ReportViewer1.RefreshReport()
-        Frm_muestrareportes.Show()
+            Frm_muestrareportes.ReportViewer1.SetDisplayMode(DisplayMode.PrintLayout)
+            Frm_muestrareportes.ReportViewer1.LocalReport.DataSources.Clear()
+            Frm_muestrareportes.ReportViewer1.LocalReport.DataSources.Add(New ReportDataSource("rgarantia", rgarantiasr))
+            Frm_muestrareportes.ReportViewer1.RefreshReport()
+            Frm_muestrareportes.Show()
 
         Catch ex As Exception
 

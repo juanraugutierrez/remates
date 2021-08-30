@@ -1,5 +1,4 @@
-﻿Imports factura_electronica
-Public Class Ccalculafctura
+﻿Public Class Ccalculafctura
     Public idremate As Integer
     Public mandante As String
     Public sucursal As String

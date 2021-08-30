@@ -1,14 +1,5 @@
-﻿Imports Microsoft.Reporting.WinForms
-Imports System.Text
-Imports System.IO
-Imports iTextSharp.text
-Imports iTextSharp.text.pdf
-Imports iTextSharp.text.html
-Imports iTextSharp.text.html.simpleparser
-Imports System.Data
-Imports System.Reflection
-Imports Microsoft.Reporting
-Imports Microsoft.Reporting.WinForms.Warning
+﻿Imports System.IO
+Imports Microsoft.Reporting.WinForms
 
 
 
@@ -530,7 +521,7 @@ Public Class Frm_remates
 
         Dim va = From p In pp Group By p.Facturado, p.Mandante
                     Into Precio = Sum(p.Precio_Final), nro_lote = Count(p.Lote), comision = Sum(p.Comision), iva = Sum(p.IVA), garantia = Sum(p.Garantia), nro_unidades = Sum(p.NFinales), total = Sum(p.Total)
-                    Order By Facturado Ascending, Precio Descending, Mandante Descending
+                 Order By Facturado Ascending, Precio Descending, Mandante Descending
 
 
 

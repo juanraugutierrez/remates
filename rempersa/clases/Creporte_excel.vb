@@ -1,6 +1,6 @@
 ﻿
-Imports Microsoft.Office.Interop.Excel
 Imports Microsoft.Office.Interop
+Imports Microsoft.Office.Interop.Excel
 
 Public Class Creporte_excel
     ''Dim objLibroExcel As New m_Excel.Workbooks.Add
@@ -298,7 +298,7 @@ Public Class Creporte_excel
         objHojaExcel.Range("L5").Value = "Liquido"
         objHojaExcel.Range("M5").Value = "Estado"
 
-       
+
 
         objHojaExcel.Range("A6").Activate()
         Dim i As Integer = 6
@@ -323,58 +323,58 @@ Public Class Creporte_excel
         objHojaExcel.Range("A1").Select()
         Try
 
-        
+
             objHojaExcel.Pictures.Insert(My.Settings.ruta_logo)
 
-        objHojaExcel.Rows("2:2").Select()
-        excel.Selection.RowHeight = 43.5
+            objHojaExcel.Rows("2:2").Select()
+            excel.Selection.RowHeight = 43.5
 
 
-    
 
-          
 
-        objHojaExcel.Range("A5:N5").Select()
-        With excel.Selection.Interior
-            .Pattern = 1
-            .PatternColorIndex = -4105
-            .ThemeColor = 2
-            .TintAndShade = 0
-            .PatternTintAndShade = 0
-        End With
-        With excel.Selection.Font
-            .ThemeColor = 2
-            .TintAndShade = 0
-        End With
 
-        With excel.Selection.Font
-            .ThemeColor = 1
-            .TintAndShade = 0
-        End With
-        excel.Selection.Font.Bold = True
 
-        With excel.Selection
-            .HorizontalAlignment = 1
-            .VerticalAlignment = -4107
-            .WrapText = True
-            .Orientation = 0
-            .AddIndent = False
-            .IndentLevel = 0
-            .ShrinkToFit = False
-            .ReadingOrder = -5002
-            .MergeCells = False
-        End With
-        With excel.Selection
-            .HorizontalAlignment = 1
-            .VerticalAlignment = -4160
-            .WrapText = True
-            .Orientation = 0
-            .AddIndent = False
-            .IndentLevel = 0
-            .ShrinkToFit = False
-            .ReadingOrder = -5002
-            .MergeCells = False
-        End With
+            objHojaExcel.Range("A5:N5").Select()
+            With excel.Selection.Interior
+                .Pattern = 1
+                .PatternColorIndex = -4105
+                .ThemeColor = 2
+                .TintAndShade = 0
+                .PatternTintAndShade = 0
+            End With
+            With excel.Selection.Font
+                .ThemeColor = 2
+                .TintAndShade = 0
+            End With
+
+            With excel.Selection.Font
+                .ThemeColor = 1
+                .TintAndShade = 0
+            End With
+            excel.Selection.Font.Bold = True
+
+            With excel.Selection
+                .HorizontalAlignment = 1
+                .VerticalAlignment = -4107
+                .WrapText = True
+                .Orientation = 0
+                .AddIndent = False
+                .IndentLevel = 0
+                .ShrinkToFit = False
+                .ReadingOrder = -5002
+                .MergeCells = False
+            End With
+            With excel.Selection
+                .HorizontalAlignment = 1
+                .VerticalAlignment = -4160
+                .WrapText = True
+                .Orientation = 0
+                .AddIndent = False
+                .IndentLevel = 0
+                .ShrinkToFit = False
+                .ReadingOrder = -5002
+                .MergeCells = False
+            End With
 
 
             'objHojaExcel.Columns("A:A").Select()

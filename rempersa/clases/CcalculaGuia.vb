@@ -1,5 +1,4 @@
-﻿Imports factura_electronica
-Public Class CcalculaGuia
+﻿Public Class CcalculaGuia
     Public idremate As Integer
     Public mandante As String
     Public sucursal As String
@@ -9,7 +8,7 @@ Public Class CcalculaGuia
     Dim para As New parametro
     Dim glob As New Cglobales
 
-    
+
 
 
     Sub guiaTransporte(cli As clientes, detalle As List(Of DetalleGuiaView), nro As Integer, trans As CTrasnportista)

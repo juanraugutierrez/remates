@@ -1,5 +1,4 @@
-﻿Imports factura_electronica
-Public Class Ccalculaliquidacion
+﻿Public Class Ccalculaliquidacion
     Public idremate As Integer
     Public mandante As String
     Public sucursal As String

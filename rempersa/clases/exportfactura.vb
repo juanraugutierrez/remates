@@ -1,5 +1,4 @@
-﻿Imports System.Collections.Generic
-Imports System.IO
+﻿Imports System.IO
 
 Public Class exportfactura
     Public contex As New persaEntities11
@@ -41,11 +40,11 @@ Public Class exportfactura
         Dim mydocpath As String = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
         Try
             Dim mmm As Double = 0
-       
+
             Using outputFile As New StreamWriter(mydocpath & Convert.ToString("\" + archivo + ".csv"))
 
                 listado = (From f In contex.facturas Where f.fecha >= fechaini And f.fecha <= fechafinal
-                          Select f).ToList()
+                           Select f).ToList()
                 Dim i As Integer = 1
                 For Each l In listado
                     Dim r As New registro
@@ -94,7 +93,7 @@ Public Class exportfactura
                     i += 1
                 Next
             End Using
-        MsgBox("Archivo Generado", MsgBoxStyle.Critical, "Archivo Generado")
+            MsgBox("Archivo Generado", MsgBoxStyle.Critical, "Archivo Generado")
         Catch ex As Exception
             MsgBox("Archivo no generado con el error" + vbCrLf + ex.Message + vbCrLf + ex.InnerException.Message, MsgBoxStyle.Critical, "Archivo Generado")
         End Try

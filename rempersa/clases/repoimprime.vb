@@ -1,12 +1,7 @@
-﻿Imports System
-Imports System.IO
-Imports System.Data
-Imports System.Text
-Imports System.Drawing
-Imports System.Drawing.Imaging
+﻿Imports System.Drawing.Imaging
 Imports System.Drawing.Printing
-Imports System.Collections.Generic
-Imports System.Windows.Forms
+Imports System.IO
+Imports System.Text
 Imports Microsoft.Reporting.WinForms
 
 Public Class repoimprime

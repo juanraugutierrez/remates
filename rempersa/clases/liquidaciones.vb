@@ -19,7 +19,7 @@
 
         Try
             contex.AddTodetalle_liquidacion(mm)
-          
+
 
             contex.ExecuteStoreCommand("update lotes set liquidado=1 where id_lote={0}", mm.id_lote)
 

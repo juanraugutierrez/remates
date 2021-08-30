@@ -13,10 +13,10 @@
 
     Public Function muestraliquidacion(numero As Integer) As Object
         Dim v As New LiquidacionView
-       
+
         v = (From f In contex.liquidacion Join c In contex.mandantes On f.id_mandante Equals c.id_mandante _
              Join co In contex.comunas On c.id_comuna Equals co.id_comuna _
-                     Where CInt(f.nro_liquidacion) = numero And f.mto_neto > 0 And f.fecha >= "01-02-2017" _
+             Where CInt(f.nro_liquidacion) = numero And f.mto_neto > 0 And f.fecha >= "01-02-2017" _
              Select New LiquidacionView With {.id_liquidacion = f.id_liquidacion, .comuna = co.comuna, .razon_social = c.razonsocial_mandante, .giro = c.giro, .direccion = c.direccion_mandante, .fecha = f.fecha, .nro_liquidacion = f.nro_liquidacion, .monto_neto = f.mto_neto, _
                                           .monto_impuestoreca = f.mto_impreacudado, .monto_iva = f.iva, .monto_ila = f.mto_ila, .liquido_apagar = f.liquido, .mto_comision = f.comision,
                                            .monto_flete = f.flete, .nro_lotes = 0, .rut = c.rut_mandante}).SingleOrDefault
@@ -28,7 +28,7 @@
 
         v = (From f In contex.liquidacion Join c In contex.mandantes On f.id_mandante Equals c.id_mandante _
              Join co In contex.comunas On c.id_comuna Equals co.id_comuna _
-                     Where CInt(f.nro_liquidacion) = numero And f.mto_neto > 0 And f.fecha < "01-02-2017" _
+             Where CInt(f.nro_liquidacion) = numero And f.mto_neto > 0 And f.fecha < "01-02-2017" _
              Select New LiquidacionView With {.id_liquidacion = f.id_liquidacion, .comuna = co.comuna, .razon_social = c.razonsocial_mandante, .giro = c.giro, .direccion = c.direccion_mandante, .fecha = f.fecha, .nro_liquidacion = f.nro_liquidacion, .monto_neto = f.mto_neto, _
                                           .monto_impuestoreca = f.mto_impreacudado, .monto_iva = f.iva, .monto_ila = f.mto_ila, .liquido_apagar = f.liquido, .mto_comision = f.comision,
                                            .monto_flete = f.flete, .nro_lotes = 0, .rut = c.rut_mandante}).SingleOrDefault
@@ -37,7 +37,7 @@
 
     Public Function vdetalleliquidacion(id As Integer)
         quer = (From d In contex.detalle_liquidacion Where d.id_liquidacion = id
-             Select d)
+                Select d)
         Return quer
     End Function
 

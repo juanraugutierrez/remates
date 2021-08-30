@@ -1,6 +1,4 @@
-﻿Imports factura_electronica
-
-Public Class Frm_anula
+﻿Public Class Frm_anula
     Dim reso As New resolucion
     Dim fac = New facturas
     Dim lisfac As New lfacturas
@@ -53,7 +51,7 @@ Public Class Frm_anula
             MsgBox("error al tratar de anular factura", MsgBoxStyle.Critical, "Anulacion de facturas")
             Exit Sub
         End Try
-        
+
 
 
         MsgBox(lisfac.anula(Dtg_facturas.Rows(0).Cells(0).Value), MsgBoxStyle.Critical, "Anulacion de facturas")

@@ -78,7 +78,7 @@
     Public Function listaremates(id As Integer) As remates_mercaderia
         Try
             Dim rema As Object
-        rema = (From c In contex.remates_mercaderia Where c.id_remate = id Select c).Single()
+            rema = (From c In contex.remates_mercaderia Where c.id_remate = id Select c).Single()
 
             Return rema
         Catch ex As Exception

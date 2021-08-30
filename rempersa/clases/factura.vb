@@ -180,7 +180,7 @@
             var = 0
             Return var
         End Try
-      
+
     End Function
     Public Function lotfacturTotald(codre As Integer, cliente As String, afe As Boolean) As Long
         Dim var As Long = 0

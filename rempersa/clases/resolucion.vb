@@ -5,7 +5,7 @@
         Dim ancho As String = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Size.Width.ToString()
         Dim alto As String = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Size.Height.ToString()
         Dim tamaño As String = ancho + "x" + alto
-  Select tamaño
+        Select tamaño
             Case Is = "800x600"
                 cambiarResolucion(formulario, 110.0, 110.0)
             Case Is = "1024x600"

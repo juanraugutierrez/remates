@@ -260,31 +260,31 @@ Public Class loteo
         contex.AcceptAllChanges()
 
         Dim refreshableObjects = (From entry In contex.ObjectStateManager.GetObjectStateEntries(EntityState.Modified)
-                                            Where (entry.EntityKey <>  Nothing)
-                                     Select entry.Entity)
+                                  Where (entry.EntityKey <> Nothing)
+                                  Select entry.Entity)
 
         contex.Refresh(RefreshMode.StoreWins, refreshableObjects)
 
         refreshableObjects = Nothing
 
         refreshableObjects = (From entry In contex.ObjectStateManager.GetObjectStateEntries(EntityState.Unchanged)
-                                           Where (entry.EntityKey <> Nothing)
-                                    Select entry.Entity)
+                              Where (entry.EntityKey <> Nothing)
+                              Select entry.Entity)
 
         contex.Refresh(RefreshMode.StoreWins, refreshableObjects)
         refreshableObjects = Nothing
 
         refreshableObjects = (From entry In contex.ObjectStateManager.GetObjectStateEntries(EntityState.Added)
-                                           Where (entry.EntityKey <> Nothing)
-                                    Select entry.Entity)
+                              Where (entry.EntityKey <> Nothing)
+                              Select entry.Entity)
 
         contex.Refresh(RefreshMode.StoreWins, refreshableObjects)
 
         refreshableObjects = Nothing
 
         refreshableObjects = (From entry In contex.ObjectStateManager.GetObjectStateEntries(EntityState.Deleted)
-                                           Where (entry.EntityKey <> Nothing)
-                                    Select entry.Entity)
+                              Where (entry.EntityKey <> Nothing)
+                              Select entry.Entity)
 
         contex.Refresh(RefreshMode.StoreWins, refreshableObjects)
 

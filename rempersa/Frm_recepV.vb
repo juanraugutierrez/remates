@@ -1,12 +1,6 @@
-﻿Imports System.IO
-Imports System
-Imports System.Data
-Imports System.Data.OleDb
-
-Imports System.Drawing
+﻿Imports System.Data.OleDb
 Imports System.Drawing.Printing
-Imports System.Collections
-Imports System.ComponentModel
+Imports System.IO
 
 
 Public Class frm_recepV
@@ -155,12 +149,12 @@ Public Class frm_recepV
             End If
         Next
 
-     
+
         Me.CmB_tipo.ValueMember = dts.Tables(0).Columns(0).ToString()
         Me.CmB_tipo.DisplayMember = dts.Tables(0).Columns(0).ToString()
 
 
-      
+
         Me.CmB_mandante.DataSource = dts.Tables("mandante")
         Me.CmB_mandante.ValueMember = dts.Tables("mandante").Columns(3).ToString
         Me.CmB_mandante.DisplayMember = dts.Tables("mandante").Columns(3).ToString

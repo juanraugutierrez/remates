@@ -1,8 +1,4 @@
-﻿Imports Microsoft.Reporting.WinForms
-Imports System.IO
-Imports factura_electronica
-
-Class Frm_facturaelect
+﻿Class Frm_facturaelect
     ''' <summary>
     ''' Imprime facturas
     ''' </summary>
@@ -380,7 +376,7 @@ Class Frm_facturaelect
 
 
 
-      
+
             Dim nlotes As Integer
 
             nlotes = llotes.nlotes
@@ -389,7 +385,7 @@ Class Frm_facturaelect
 
             ffe.recibe_datos(Txt_razonsocial.Text.ToUpper, factur, llot, Txt_nrofactura.Text, Txt_nrodefacturas.Text, 0, My.Settings.comision, Chk_afecto.Checked, Now, id_clien, remate, ChkIla.Checked)
 
-     
+
             glob.valoresini()
             Me.Txt_nrofactura.Text = My.Settings.nfactura.ToString()
             Me.Lst_clientes.DataSource = Nothing

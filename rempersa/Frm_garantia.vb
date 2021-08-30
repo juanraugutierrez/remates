@@ -75,8 +75,8 @@ Public Class Frm_garantia
 
     Sub mostrar(indice As Integer)
         Try
-        Lbl_lotem.Text = activo(indice).nro_lote & " " & activo(indice).sub_lote
-        Lbl_descripcion.Text = activo(indice).descripcion
+            Lbl_lotem.Text = activo(indice).nro_lote & " " & activo(indice).sub_lote
+            Lbl_descripcion.Text = activo(indice).descripcion
             Txt_garantia.Text = Format(activo(indice).garantia, "$ #,##0")
         Catch ex As Exception
 
@@ -119,7 +119,7 @@ Public Class Frm_garantia
             activo = Nothing
             activo = New List(Of lotes)
             activo = llote.loteForID(remaelegido.id_remate)
-        
+
             'lotess = llote.loteFornumlote(CInt(Txt_buscar.Text), remaelegido.id_remate)
 
             'Lbl_lotem.Text = lotess.nro_lote
@@ -362,7 +362,7 @@ Public Class Frm_garantia
             mostrar(indice)
 
         End If
-        
+
     End Sub
 
     Private Sub CheckBox2_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles CheckBox2.CheckedChanged
@@ -376,7 +376,7 @@ Public Class Frm_garantia
             Catch ex As Exception
 
             End Try
-          
+
         End If
     End Sub
 End Class

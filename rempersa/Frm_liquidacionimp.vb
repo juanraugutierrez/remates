@@ -1,7 +1,4 @@
 ﻿Imports Microsoft.Reporting.WinForms
-Imports System.IO
-Imports Microsoft.Reporting
-Imports Microsoft.Reporting.WinForms.Warning
 
 
 
@@ -354,7 +351,7 @@ Public Class Frm_liquidacionimp
 
         Dim pp As New detalle_liquidacion
 
-       
+
 
         For Each t In lottes
             pp = Nothing
@@ -595,33 +592,33 @@ Public Class Frm_liquidacionimp
         End If
 
         If e.KeyChar = ChrW(Keys.Return) Then
-                Try
-                    Dim ccc As New Object
-                    Dim rt As New rut
-                    If Not (rt.validarRut(Txt_rut.Text)) Then
+            Try
+                Dim ccc As New Object
+                Dim rt As New rut
+                If Not (rt.validarRut(Txt_rut.Text)) Then
                     MsgBox("El rut ingresado no es valido", MsgBoxStyle.Critical, "Validacion de Rut")
-                        Txt_rut.Text = String.Empty
-                        Me.Txt_rut.Focus()
-                        Exit Sub
-                    End If
+                    Txt_rut.Text = String.Empty
+                    Me.Txt_rut.Focus()
+                    Exit Sub
+                End If
 
 
                 mandant = manda.buscarmandanterut(rt.formato1(Txt_rut.Text))
 
 
-                    Me.Txt_razonsocial.Text = mandant.razonsocial_mandante.ToUpper
-                    Me.Txt_Comuna.Text = comuna.listacomunatext(mandant.id_comuna)
-                    Me.Txt_giro.Text = mandant.giro.ToUpper
+                Me.Txt_razonsocial.Text = mandant.razonsocial_mandante.ToUpper
+                Me.Txt_Comuna.Text = comuna.listacomunatext(mandant.id_comuna)
+                Me.Txt_giro.Text = mandant.giro.ToUpper
                 Me.Txt_direccion.Text = mandant.direccion_mandante.ToUpper
                 Me.Txt_rut.Text = rt.formato(Txt_rut.Text)
-                Catch ex As Exception
-                    'MsgBox(ex.Message, MsgBoxStyle.Critical, "Cliente")
-                    'Frm_clientes.Btn_asignar.Enabled = True
-                    'Frm_clientes.Btn_asignar.Visible = True
-                    'Frm_clientes.formulario = Me
-                    'Frm_clientes.ShowDialog()
+            Catch ex As Exception
+                'MsgBox(ex.Message, MsgBoxStyle.Critical, "Cliente")
+                'Frm_clientes.Btn_asignar.Enabled = True
+                'Frm_clientes.Btn_asignar.Visible = True
+                'Frm_clientes.formulario = Me
+                'Frm_clientes.ShowDialog()
 
-                End Try
+            End Try
         End If
 
 
@@ -632,8 +629,8 @@ Public Class Frm_liquidacionimp
         Throw New NotImplementedException
     End Function
 
- 
- 
+
+
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
         If Chk_detalle.Checked Then
 
@@ -750,7 +747,7 @@ Public Class Frm_liquidacionimp
         Txt_porcentaje.Focus()
     End Sub
 
-  
+
     Private Sub DataGridView1_CellContentClick(sender As System.Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
         Try

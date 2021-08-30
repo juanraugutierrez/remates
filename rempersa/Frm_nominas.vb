@@ -211,9 +211,9 @@ Public Class Frm_nominas
         Catch ex As Exception
             MsgBox("Nominas", MsgBoxStyle.Critical, "Error al ingresar valor")
         End Try
-        
 
-           
+
+
 
 
     End Sub
@@ -350,7 +350,7 @@ Public Class Frm_nominas
         Next
 
 
-    
+
 
 
 
@@ -493,7 +493,7 @@ Public Class Frm_nominas
         Dim parameters1 As ReportParameter
 
         parameters1 = New ReportParameter("tt_garan", tgaran)
-       
+
 
         Frm_muestrareportes.ReportViewer1.LocalReport.ReportEmbeddedResource = "rempersa.nomina.rdlc"
         Frm_muestrareportes.ReportViewer1.SetDisplayMode(DisplayMode.PrintLayout)
@@ -583,7 +583,7 @@ Public Class Frm_nominas
 
         AddHandler Frm_muestrareportes.ReportViewer1.LocalReport.SubreportProcessing, AddressOf infoParametros2
 
-      
+
         Frm_muestrareportes.Show()
 
     End Sub

@@ -1,6 +1,4 @@
-﻿Imports System.Configuration
-Imports System.Collections.Specialized
-Imports Conexiones
+﻿Imports Conexiones
 
 Public Class LoginForm1
     Dim reso As New resolucion

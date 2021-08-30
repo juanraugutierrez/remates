@@ -36,7 +36,7 @@
         Me.Cmb_remates.DisplayMember = "codigo_remate"
         Me.Cmb_remates.ValueMember = "fecha_remate"
     End Sub
-    
+
 
     Private Sub Cmb_remates_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) Handles Cmb_remates.SelectedIndexChanged
         Try
@@ -60,7 +60,7 @@
             Try
                 paso()
 
-            
+
 
                 indice = 0
             Catch ex As Exception
@@ -81,7 +81,7 @@
         Catch ex As Exception
 
         End Try
-        
+
     End Sub
     Sub paso()
         Try
@@ -90,8 +90,8 @@
 
             Dim lista2 As Object =
                 (From l In lista Group By l.adjudicatario Into g = Group
-                  Order By g.Sum(Function(i) i.precio_final) Descending
-                  Select New With {.Adjudicatario = adjudicatario, .Cuenta = g.Count(), .Total = g.Sum(Function(i) i.precio_final)}).Distinct.ToList
+                 Order By g.Sum(Function(i) i.precio_final) Descending
+                 Select New With {.Adjudicatario = adjudicatario, .Cuenta = g.Count(), .Total = g.Sum(Function(i) i.precio_final)}).Distinct.ToList
 
 
             Dtgadjudicatarios.DataSource = lista2
@@ -152,7 +152,7 @@
 
 
         End Try
-        
+
     End Sub
 
     Private Sub Btn_grabar_Click(sender As System.Object, e As System.EventArgs) Handles Btn_grabar.Click
@@ -206,7 +206,7 @@
 
         Me.Lst_adjudicatarios.DataSource = Nothing
         Me.Lst_adjudicatarios.Refresh()
-       
+
     End Sub
 
     Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles Btn_buscar.Click
@@ -229,7 +229,7 @@
         Catch ex As Exception
 
         End Try
-        
+
     End Sub
 
     Private Sub Txt_punitario_GotFocus(sender As Object, e As System.EventArgs) Handles Txt_punitario.GotFocus
@@ -402,9 +402,9 @@
     End Sub
 
 
-  
 
- 
+
+
 
 
 
@@ -434,7 +434,7 @@
 
         mostrar(indice)
 
-       
+
     End Sub
 
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
@@ -453,7 +453,7 @@
         If indice < 0 Then indice = activo.Count - 1
         mostrar(indice)
 
-      
+
 
         Me.Lst_adjudicatarios.DataSource = Nothing
         Me.Lst_adjudicatarios.Refresh()
@@ -467,8 +467,8 @@
         Dtgadjudicatarios.DataSource = Nothing
         Dtgadjudicatarios.DataSource = (From l In contex.lotes Where l.id_remate = remaelegido.id_remate Group By l.adjudicatario
                   Into g = Group
-                  Order By g.Count Descending
-                  Select New With {.adjudicatario = adjudicatario, .cuenta = g.Count(Function(i) i.adjudicatario), .total = g.Sum(Function(i) i.precio_final)}).Distinct.ToList()
+                                        Order By g.Count Descending
+                                        Select New With {.adjudicatario = adjudicatario, .cuenta = g.Count(Function(i) i.adjudicatario), .total = g.Sum(Function(i) i.precio_final)}).Distinct.ToList()
         Dtgadjudicatarios.RowHeadersVisible = False
 
         Dtgadjudicatarios.Columns(1).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
@@ -478,8 +478,8 @@
 
     End Sub
 
-  
-  
+
+
     Private Sub Txt_unidadesfinales_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles Txt_unidadesfinales.KeyPress
 
         If Not IsNumeric(e.KeyChar) And Not (AscW(e.KeyChar) = 8) Then

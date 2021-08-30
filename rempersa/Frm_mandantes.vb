@@ -154,7 +154,7 @@
     End Sub
 
     Private Sub Txt_buscar_KeyPress(sender As Object, e As System.Windows.Forms.KeyPressEventArgs) Handles Txt_buscar.KeyPress
-       
+
         '*********************************
 
         Me.dtg_clientes.DataSource = Nothing
@@ -206,7 +206,7 @@
         Me.dtg_clientes.Refresh()
     End Sub
 
- 
+
     Private Sub Txt_rut_KeyPress(sender As System.Object, e As System.Windows.Forms.KeyPressEventArgs) Handles Txt_rut.KeyPress
         If Not IsNumeric(e.KeyChar) And Not (AscW(e.KeyChar) = 8) And Not (AscW(e.KeyChar) = 45) And Not (AscW(e.KeyChar) = 75) And Not (AscW(e.KeyChar) = 107) Then
             e.Handled = True
@@ -215,10 +215,10 @@
         If e.KeyChar = ChrW(Keys.Return) Then
             Try
                 Dim rt As New rut
-            If Not (rt.validarRut(Txt_rut.Text)) Then
-                MsgBox("El rut ingresado no es valido", MsgBoxStyle.Critical, "Valiacion de Rut")
-                Txt_rut.Text = String.Empty
-                Me.Txt_rut.Focus()
+                If Not (rt.validarRut(Txt_rut.Text)) Then
+                    MsgBox("El rut ingresado no es valido", MsgBoxStyle.Critical, "Valiacion de Rut")
+                    Txt_rut.Text = String.Empty
+                    Me.Txt_rut.Focus()
                     Exit Sub
                 Else
                     Txt_rut.Text = rt.formato(Txt_rut.Text)

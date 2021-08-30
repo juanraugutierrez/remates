@@ -1,6 +1,4 @@
-﻿Imports System.Text
-
-Public Class Frm_boletasgen
+﻿Public Class Frm_boletasgen
     Dim rema As New Remate
     Dim factu As New factura
     Dim para As New parametro
@@ -30,7 +28,7 @@ Public Class Frm_boletasgen
 
     Private Sub btn_generar_Click(sender As System.Object, e As System.EventArgs) Handles btn_generar.Click
         'sacavalores()
-        
+
 
     End Sub
     'Sub sacavalores()

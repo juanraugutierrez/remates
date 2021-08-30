@@ -1,5 +1,4 @@
-﻿Imports System.Collections.Generic
-Public Class EFactura_repo
+﻿Public Class EFactura_repo
     Public Property id_factura() As Integer
 
     Public Property NumeroFactura() As Integer

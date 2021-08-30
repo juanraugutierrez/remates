@@ -143,37 +143,37 @@
 
         Try
 
-        
-        If RdbClientes.Checked Then
-            i += 1
-            detalle = Nothing
-            detalle = New DetalleGuiaView
-            detalle.Id = i
-            detalle.descripcion = Txt_descripcion.Text.ToUpper()
+
+            If RdbClientes.Checked Then
+                i += 1
+                detalle = Nothing
+                detalle = New DetalleGuiaView
+                detalle.Id = i
+                detalle.descripcion = Txt_descripcion.Text.ToUpper()
 
                 detalle.cantidad = Txt_unidades.Text
                 detalle.precioU = CDbl(Txt_vunitario.Text)
                 detalle.afecto = ChkAfecto.Checked
 
-            For Each c As Control In Me.GroupBox4.Controls
-                If TypeOf (c) Is TextBox Then
-                    c.Text = String.Empty
+                For Each c As Control In Me.GroupBox4.Controls
+                    If TypeOf (c) Is TextBox Then
+                        c.Text = String.Empty
+                    End If
+                Next
+                If RdbSinVta.Checked Then
+                    Txt_vunitario.Text = 0
                 End If
-            Next
-            If RdbSinVta.Checked Then
-                Txt_vunitario.Text = 0
+
+
+
+                detalle.precio = detalle.precioU * detalle.cantidad
+                detalle.idMandante = CmbMandante.SelectedValue
+                Ldetalle.Add(detalle)
+                detalle = Nothing
+                DtgArticulos.DataSource = Nothing
+                DtgArticulos.DataSource = Ldetalle
+                DtgArticulos.Refresh()
             End If
-
-
-
-            detalle.precio = detalle.precioU * detalle.cantidad
-            detalle.idMandante = CmbMandante.SelectedValue
-            Ldetalle.Add(detalle)
-            detalle = Nothing
-            DtgArticulos.DataSource = Nothing
-            DtgArticulos.DataSource = Ldetalle
-            DtgArticulos.Refresh()
-        End If
         Catch ex As Exception
 
         End Try
@@ -201,7 +201,7 @@
                     Txt_vunitario.Text = 0
                 End If
 
-             
+
                 detalle.precio = detalle.precioU * detalle.cantidad
                 detalle.afecto = ChkAfecto.Checked
                 detalle.idMandante = (From m In contex.mandantes Where m.rut_mandante = Txt_rut.Text Select m.id_mandante).FirstOrDefault()

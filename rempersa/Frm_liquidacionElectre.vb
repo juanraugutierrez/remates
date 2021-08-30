@@ -1,8 +1,5 @@
-﻿Imports Microsoft.Reporting.WinForms
-Imports System.IO
-Imports Microsoft.Reporting
-Imports Microsoft.Reporting.WinForms.Warning
-Imports Factura_electronica
+﻿Imports factura_electronica
+Imports Microsoft.Reporting.WinForms
 
 
 Public Class Frm_liquidacionElectre
@@ -145,7 +142,7 @@ Public Class Frm_liquidacionElectre
 
             Next
 
-      
+
             nros = (nros \ 20) + 1
 
             Txt_nrliqui.Text = nros
@@ -423,7 +420,7 @@ Public Class Frm_liquidacionElectre
 
 
 
-        
+
 
 
 

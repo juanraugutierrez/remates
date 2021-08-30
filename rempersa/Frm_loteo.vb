@@ -1,11 +1,4 @@
-﻿
-Imports System.Text
-Imports System.IO
-Imports iTextSharp.text
-Imports iTextSharp.text.pdf
-Imports iTextSharp.text.html
-Imports iTextSharp.text.html.simpleparser
-Imports Microsoft.Reporting.WinForms
+﻿Imports Microsoft.Reporting.WinForms
 
 Public Class Frm_loteo
     Dim rema As New Remate
@@ -51,7 +44,7 @@ Public Class Frm_loteo
         End Try
     End Sub
 
-    
+
     Sub carga()
         Me.Cmb_remate.DataSource = rema.listaremates
         Me.Cmb_remate.DisplayMember = "codigo_remate"
@@ -196,7 +189,7 @@ Public Class Frm_loteo
 
 
                 lotee.id_remate = remele.id_remate
-               
+
                 lotee.mandante = CmbMandantes.SelectedValue
                 lotee.sucursal = Txt_sucursal.Text.ToUpper
                 lotee.pasillo = Npasillo.Value
@@ -271,19 +264,19 @@ Public Class Frm_loteo
                 End If
             End If
             lotee.pasillo = Npasillo.Value
-                llote.carga(lotee)
-                For Each c As Control In Me.GroupBox1.Controls
-                    If TypeOf (c) Is TextBox Then
-                        c.Text = String.Empty
-                    End If
-                Next
-                cargalote(remele.id_remate)
-                Txt_preciom.Text = 0
-                Txt_unidades.Text = 1
-                Lbl_nlote.Text = llote.numlote(remele.id_remate)
+            llote.carga(lotee)
+            For Each c As Control In Me.GroupBox1.Controls
+                If TypeOf (c) Is TextBox Then
+                    c.Text = String.Empty
+                End If
+            Next
+            cargalote(remele.id_remate)
+            Txt_preciom.Text = 0
+            Txt_unidades.Text = 1
+            Lbl_nlote.Text = llote.numlote(remele.id_remate)
             remele.numero_lotes = llote.numlote(remele.id_remate)
 
-                rema.Updaterematenrolote(remele.id_remate, remele)
+            rema.Updaterematenrolote(remele.id_remate, remele)
 
         Catch ex As Exception
 
@@ -587,10 +580,10 @@ Public Class Frm_loteo
             Me.CmbMandantes.ValueMember = "razonsocial_mandante"
             Me.CmbMandantes.Refresh()
         End If
-    
+
     End Sub
     Private Sub Txtbmandante_TextChanged(sender As System.Object, e As System.EventArgs) Handles Txtbmandante.TextChanged
-   
+
     End Sub
 
 End Class

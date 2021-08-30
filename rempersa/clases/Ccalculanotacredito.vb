@@ -1,5 +1,4 @@
-﻿Imports factura_electronica
-Public Class Ccalculanotacredito
+﻿Public Class Ccalculanotacredito
     Public idremate As Integer
     Public mandante As String
     Public sucursal As String
@@ -173,7 +172,7 @@ Public Class Ccalculanotacredito
             factuele.docudetalle(i.ToString, "COMISION", 1, "Unid", comision.ToString(), comision.ToString(), "interno", "Otros")
             i += 1
         End If
-       
+
         factuele.docureferencia("1", "33", factu.nro_factura.ToString(), hoy1, "3", "DEVOLUCION DE MERCADERIA")
         Dim ff As String = String.Concat("SON: ", Num2Text(total).ToUpper(), " PESOS.-", vbCrLf, "Garantia: ", garantia, vbCrLf, "Liquido a pagar: ", liquido)
         factuele.docuadjuntos(ff, My.Settings.impresorafac, "3")

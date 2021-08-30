@@ -81,7 +81,7 @@ Public Class Frm_verliquidacion
             Else
                 pp = rliquidacion.muestraliquidacion(Me.txt_nrof.Text)
             End If
-            
+
 
 
             Lbl_comuna.Text = pp.comuna
@@ -380,16 +380,16 @@ Public Class Frm_verliquidacion
         '********
 
 
-      
 
-            If aafe And Not (disc) Then
+
+        If aafe And Not (disc) Then
 
             Detail = CargalArticulos(lottes, Lbl_razonsocial.Text.ToUpper(), False, aafe, True)
-                disc = True
-            Else
+            disc = True
+        Else
             Detail = CargalArticulos(lottes, Lbl_razonsocial.Text.ToUpper(), aafe)
-                disc = True
-            End If
+            disc = True
+        End If
 
 
 

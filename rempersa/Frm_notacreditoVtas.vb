@@ -1,7 +1,4 @@
-﻿Imports Microsoft.Reporting.WinForms
-Imports System.IO
-
-Public Class Frm_notacreditoVtas
+﻿Public Class Frm_notacreditoVtas
 
     Dim rema As New Remate
     Dim factu As New factura
@@ -43,14 +40,14 @@ Public Class Frm_notacreditoVtas
 
     Sub carga()
 
-     
+
     End Sub
 
 
 
 
 
-   
+
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Btn_imprimir.Click
 
@@ -145,7 +142,7 @@ Public Class Frm_notacreditoVtas
                 Dim unidades As Integer = 0
                 Dim precio_unitario As Double = 0
 
-               
+
 
 
 
@@ -169,7 +166,7 @@ Public Class Frm_notacreditoVtas
         carga()
         rtotales()
 
-    
+
     End Sub
 
     Sub rtotales()
@@ -182,7 +179,7 @@ Public Class Frm_notacreditoVtas
             neto += t.Cells(3).value
         Next
         iva = 0
-      
+
 
         total = neto + iva
 
@@ -215,66 +212,66 @@ Public Class Frm_notacreditoVtas
             Dim ncomuna As String = (From co In contex.comunas Where co.id_comuna = var.id_comuna Select co.comuna).FirstOrDefault().ToString()
             Me.Txt_Comuna.Text = ncomuna.ToUpper()
 
-        
-        fa = Nothing
-      
-      
+
+            fa = Nothing
 
 
 
 
-        detalle = (From de In contex.detalle_factura Where de.id_factura = var.id_factura Select New DetalleNotaView With {.Id = de.id_detalle, .nro_lote = de.nro_lote, .sublote = de.sub_lote, .descripcion = de.descripcion, .cantidad = de.cantidad, .precioU = de.precio_unitario, .precio = de.precio_total, .NC = False}).ToList()
-        Dtg_item.DataSource = detalle
-        Dtg_item.RowHeadersVisible = False
-
-        Dim ancho = Me.Dtg_item.Width
-
-        With Me.Dtg_item
-
-            .Columns(1).HeaderText = "N° Lote"
-            .Columns(2).HeaderText = "Sub Lote"
-            .Columns(3).HeaderText = "Descipcion"
-            .Columns(4).HeaderText = "Unidades"
-            .Columns(5).HeaderText = "V. Unitario"
-            .Columns(6).HeaderText = "V. Total"
-            .Columns(7).HeaderText = "N°C°"
-            .Columns(7).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
-
-            'Public Property Id As Integer
-            'Public Property nro_lote As Integer
-            'Public Property sublote As String
-            'Public Property descripcion As String
-            'Public Property cantidad As String
-            'Public Property precioU As Double
-            'Public Property precio As Double
-            'Public Property NC As Boolean
-            .Columns(0).Visible = False
-
-            .Columns(4).DefaultCellStyle.Format = " #,##0"
-            .Columns(5).DefaultCellStyle.Format = "$ #,##0"
-            .Columns(6).DefaultCellStyle.Format = "$ #,##0"
 
 
-            .Columns(1).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
-            .Columns(2).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
-            .Columns(3).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
-            .Columns(4).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
-            .Columns(5).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
-            .Columns(6).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
-            .Columns(7).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+            detalle = (From de In contex.detalle_factura Where de.id_factura = var.id_factura Select New DetalleNotaView With {.Id = de.id_detalle, .nro_lote = de.nro_lote, .sublote = de.sub_lote, .descripcion = de.descripcion, .cantidad = de.cantidad, .precioU = de.precio_unitario, .precio = de.precio_total, .NC = False}).ToList()
+            Dtg_item.DataSource = detalle
+            Dtg_item.RowHeadersVisible = False
 
-            .Columns(1).Width = ancho * 0.07
-            .Columns(2).Width = ancho * 0.07
-            .Columns(3).Width = ancho * 0.4
-            .Columns(4).Width = ancho * 0.08
-            .Columns(5).Width = ancho * 0.11
-            .Columns(6).Width = ancho * 0.11
-            .Columns(7).Width = ancho * 0.09
+            Dim ancho = Me.Dtg_item.Width
+
+            With Me.Dtg_item
+
+                .Columns(1).HeaderText = "N° Lote"
+                .Columns(2).HeaderText = "Sub Lote"
+                .Columns(3).HeaderText = "Descipcion"
+                .Columns(4).HeaderText = "Unidades"
+                .Columns(5).HeaderText = "V. Unitario"
+                .Columns(6).HeaderText = "V. Total"
+                .Columns(7).HeaderText = "N°C°"
+                .Columns(7).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+
+                'Public Property Id As Integer
+                'Public Property nro_lote As Integer
+                'Public Property sublote As String
+                'Public Property descripcion As String
+                'Public Property cantidad As String
+                'Public Property precioU As Double
+                'Public Property precio As Double
+                'Public Property NC As Boolean
+                .Columns(0).Visible = False
+
+                .Columns(4).DefaultCellStyle.Format = " #,##0"
+                .Columns(5).DefaultCellStyle.Format = "$ #,##0"
+                .Columns(6).DefaultCellStyle.Format = "$ #,##0"
+
+
+                .Columns(1).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+                .Columns(2).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+                .Columns(3).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
+                .Columns(4).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+                .Columns(5).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
+                .Columns(6).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
+                .Columns(7).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+
+                .Columns(1).Width = ancho * 0.07
+                .Columns(2).Width = ancho * 0.07
+                .Columns(3).Width = ancho * 0.4
+                .Columns(4).Width = ancho * 0.08
+                .Columns(5).Width = ancho * 0.11
+                .Columns(6).Width = ancho * 0.11
+                .Columns(7).Width = ancho * 0.09
 
 
 
 
-        End With
+            End With
 
         Catch ex As Exception
             Exit Sub
@@ -309,8 +306,8 @@ Public Class Frm_notacreditoVtas
         Me.Txt_iva.Text = iva.ToString("$ #,##0")
         Me.Txt_total.Text = total.ToString("$ #,##0")
 
-     
+
     End Sub
 
-    
+
 End Class

@@ -1,6 +1,4 @@
-﻿Imports System.Windows.Forms
-
-Public Class remates
+﻿Public Class remates
     Dim reso As New resolucion
     Private Sub ShowNewForm(ByVal sender As Object, ByVal e As EventArgs)
         ' Cree una nueva instancia del formulario secundario.
@@ -93,7 +91,7 @@ Public Class remates
         LoginForm1.MdiParent = Me
         LoginForm1.Show()
 
-      
+
 
 
     End Sub
@@ -129,7 +127,7 @@ Public Class remates
         frmHijo.MdiParent = Me
         frmHijo.Show()
 
-     
+
     End Sub
 
 
@@ -210,7 +208,7 @@ Public Class remates
         Frm_lanula.Show()
     End Sub
 
- 
+
     Private Sub ProgramacionCamionesToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ProgramacionCamionesToolStripMenuItem.Click
         verifica()
         'Frm_programacion.MdiParent = Me

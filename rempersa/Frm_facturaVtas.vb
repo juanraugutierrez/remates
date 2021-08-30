@@ -1,7 +1,4 @@
-﻿Imports Microsoft.Reporting.WinForms
-Imports System.IO
-
-Public Class Frm_facturaVtas
+﻿Public Class Frm_facturaVtas
     Dim reso As New resolucion
     Dim rema As New Remate
     Dim factu As New factura
@@ -269,8 +266,8 @@ Public Class Frm_facturaVtas
 
 
     Private Sub Btn_actualizar_Click(sender As System.Object, e As System.EventArgs)
-       
-        
+
+
 
     End Sub
 
@@ -441,7 +438,7 @@ Public Class Frm_facturaVtas
         MsgBox(ffecha, MsgBoxStyle.Critical, "fecha")
     End Sub
 
- 
+
     Private Sub Chk_mandante_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles Chk_mandante.CheckedChanged
 
         If Chk_mandante.Checked Then
@@ -467,7 +464,7 @@ Public Class Frm_facturaVtas
         fa.docucabecera("33", "1", hoy)
         fa.docuemisor("76520318-K", "Remates Persa Spa", "Remates", "726000", "Camino Lo Boza 8410, Galpon 5", "Renca", "Santiago")
 
-       
+
 
 
 

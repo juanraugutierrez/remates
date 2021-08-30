@@ -1,5 +1,4 @@
-﻿Imports System.Collections.Generic
-Public Class EFactura
+﻿Public Class EFactura
     Public Property NumeroFactura() As Integer
     Public Property Razonsocial() As String
     Public Property Rut() As String

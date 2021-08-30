@@ -51,7 +51,7 @@
 
     Public Function vdetallefactura(id As Integer)
         quer = (From d In contex.detalle_factura Where d.id_factura = id
-             Select d)
+                Select d)
         Return quer
     End Function
     Public Function vdetallefactura(id As Integer, t As String)

@@ -171,12 +171,12 @@
         Catch ex As Exception
 
         End Try
-       
+
 
         Me.dtg_clientes.Refresh()
     End Sub
 
-    
+
 
     Private Sub Btn_buscar_Click(sender As System.Object, e As System.EventArgs) Handles Btn_buscar.Click
         If RdbRut.Checked Then
@@ -340,5 +340,5 @@
         Me.dtg_clientes.Refresh()
     End Sub
 
- 
+
 End Class

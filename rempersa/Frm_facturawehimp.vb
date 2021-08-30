@@ -1,5 +1,4 @@
 ﻿Imports Microsoft.Reporting.WinForms
-Imports System.IO
 
 Public Class Frm_facturawehimp
     Dim reso As New resolucion
