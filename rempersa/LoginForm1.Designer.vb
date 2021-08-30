@@ -15,7 +15,6 @@ Partial Class LoginForm1
         End Try
     End Sub
     Friend WithEvents UsernameLabel As System.Windows.Forms.Label
-    Friend WithEvents PasswordLabel As System.Windows.Forms.Label
     Friend WithEvents UsernameTextBox As System.Windows.Forms.TextBox
     Friend WithEvents PasswordTextBox As System.Windows.Forms.TextBox
     Friend WithEvents OK As System.Windows.Forms.Button
@@ -27,24 +26,16 @@ Partial Class LoginForm1
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LoginForm1))
-        Me.PasswordLabel = New System.Windows.Forms.Label()
         Me.UsernameTextBox = New System.Windows.Forms.TextBox()
         Me.PasswordTextBox = New System.Windows.Forms.TextBox()
         Me.OK = New System.Windows.Forms.Button()
         Me.Cancel = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
-        '
-        'PasswordLabel
-        '
-        Me.PasswordLabel.Location = New System.Drawing.Point(18, 81)
-        Me.PasswordLabel.Name = "PasswordLabel"
-        Me.PasswordLabel.Size = New System.Drawing.Size(220, 23)
-        Me.PasswordLabel.TabIndex = 2
-        Me.PasswordLabel.Text = "&Contraseña"
-        Me.PasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'UsernameTextBox
         '
@@ -78,6 +69,30 @@ Partial Class LoginForm1
         Me.Cancel.TabIndex = 5
         Me.Cancel.Text = "&Cancelar"
         '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label1.Location = New System.Drawing.Point(18, 23)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(220, 23)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "&Usuario"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label2
+        '
+        Me.Label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label2.Location = New System.Drawing.Point(15, 85)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(220, 23)
+        Me.Label2.TabIndex = 7
+        Me.Label2.Text = "&Contraseña"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
         'LoginForm1
         '
         Me.AcceptButton = Me.OK
@@ -86,21 +101,26 @@ Partial Class LoginForm1
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.CancelButton = Me.Cancel
         Me.ClientSize = New System.Drawing.Size(250, 192)
+        Me.ControlBox = False
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Cancel)
         Me.Controls.Add(Me.OK)
         Me.Controls.Add(Me.PasswordTextBox)
         Me.Controls.Add(Me.UsernameTextBox)
-        Me.Controls.Add(Me.PasswordLabel)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "LoginForm1"
+        Me.Opacity = 0.4R
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "LoginForm1"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class
