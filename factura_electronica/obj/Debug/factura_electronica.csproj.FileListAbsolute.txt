@@ -1,0 +1,17 @@
+C:\syspacifico\rempacifico\factura_electronica\bin\Debug\factura_electronica.dll
+C:\syspacifico\rempacifico\factura_electronica\bin\Debug\factura_electronica.pdb
+C:\syspacifico\rempacifico\factura_electronica\obj\Debug\factura_electronica.dll
+C:\syspacifico\rempacifico\factura_electronica\obj\Debug\factura_electronica.pdb
+H:\rempacifico\factura_electronica\bin\Debug\factura_electronica.dll
+H:\rempacifico\factura_electronica\bin\Debug\factura_electronica.pdb
+H:\rempacifico\factura_electronica\obj\Debug\factura_electronica.dll
+H:\rempacifico\factura_electronica\obj\Debug\factura_electronica.pdb
+D:\rempacifico\factura_electronica\bin\Debug\factura_electronica.dll
+D:\rempacifico\factura_electronica\bin\Debug\factura_electronica.pdb
+D:\rempacifico\factura_electronica\obj\Debug\factura_electronica.csprojResolveAssemblyReference.cache
+D:\rempacifico\factura_electronica\obj\Debug\factura_electronica.dll
+D:\rempacifico\factura_electronica\obj\Debug\factura_electronica.pdb
+G:\persa\factura_electronica\bin\Debug\factura_electronica.dll
+G:\persa\factura_electronica\bin\Debug\factura_electronica.pdb
+G:\persa\factura_electronica\obj\Debug\factura_electronica.dll
+G:\persa\factura_electronica\obj\Debug\factura_electronica.pdb

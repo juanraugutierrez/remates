@@ -1,0 +1,75 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="horariofacturacion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10:00 a 17:00 hrs.</Value>
+    </Setting>
+    <Setting Name="vers" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2.5.0.0</Value>
+    </Setting>
+    <Setting Name="cuentabanco" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00-543345-00-39</Value>
+    </Setting>
+    <Setting Name="correo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ventas@rematespersa.cl</Value>
+    </Setting>
+    <Setting Name="ruta_logo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\xampp\htdocs\persa\images\logo_icono.png</Value>
+    </Setting>
+    <Setting Name="iva" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0.19</Value>
+    </Setting>
+    <Setting Name="comision" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0.135</Value>
+    </Setting>
+    <Setting Name="ila1" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ila2" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ila3" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="rut" Type="System.String" Scope="User">
+      <Value Profile="(Default)">76520318-K</Value>
+    </Setting>
+    <Setting Name="empresa" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Remates Persa Spa</Value>
+    </Setting>
+    <Setting Name="acteco" Type="System.String" Scope="User">
+      <Value Profile="(Default)">726000</Value>
+    </Setting>
+    <Setting Name="direccion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Camino Lo Boza 8410, Galpon 5</Value>
+    </Setting>
+    <Setting Name="comuna" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Renca</Value>
+    </Setting>
+    <Setting Name="ciudad" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Santiago</Value>
+    </Setting>
+    <Setting Name="nntcredito" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="nfactura" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="nguia" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="nliquidacion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="impresorafac" Type="System.String" Scope="User">
+      <Value Profile="(Default)">TOSHIBA e-STUDIO451c PS3</Value>
+    </Setting>
+    <Setting Name="rutafac" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\xml_factura\</Value>
+    </Setting>
+    <Setting Name="leyenda" Type="System.String" Scope="User">
+      <Value Profile="(Default)">LOS PRODUCTOS SE REMATAN A LA VISTA EN EL ESTADO QUE SE ENCUENTRAN SIN RECLAMO POSTERIOR NI DEVOLUCION.</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

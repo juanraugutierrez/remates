@@ -1,0 +1,1418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="persaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="persaModelStoreContainer">
+    <EntitySet Name="articulo" EntityType="persaModel.Store.articulo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="bancos" EntityType="persaModel.Store.bancos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="bodega" EntityType="persaModel.Store.bodega" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="bodegaje" EntityType="persaModel.Store.bodegaje" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cargos" EntityType="persaModel.Store.cargos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="clasificacionmerca" EntityType="persaModel.Store.clasificacionmerca" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="clientes" EntityType="persaModel.Store.clientes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="comunas" EntityType="persaModel.Store.comunas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="condicionespago" EntityType="persaModel.Store.condicionespago" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="contratos" EntityType="persaModel.Store.contratos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Cuadratura" EntityType="persaModel.Store.Cuadratura" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Cuadratura_detalle" EntityType="persaModel.Store.Cuadratura_detalle" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Cuadratura_resp" EntityType="persaModel.Store.Cuadratura_resp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cuentas" EntityType="persaModel.Store.cuentas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="detalle_articulo" EntityType="persaModel.Store.detalle_articulo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="detalle_factura" EntityType="persaModel.Store.detalle_factura" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="detalle_liquidacion" EntityType="persaModel.Store.detalle_liquidacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="detalle_lotes" EntityType="persaModel.Store.detalle_lotes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="detalleingresocam" EntityType="persaModel.Store.detalleingresocam" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="detalleOC" EntityType="persaModel.Store.detalleOC" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="egresos" EntityType="persaModel.Store.egresos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="empresa" EntityType="persaModel.Store.empresa" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="estado_remates" EntityType="persaModel.Store.estado_remates" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="estados_clientes" EntityType="persaModel.Store.estados_clientes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="facturas" EntityType="persaModel.Store.facturas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="garantias_boletas" EntityType="persaModel.Store.garantias_boletas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="guias" EntityType="persaModel.Store.guias" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ingresocam" EntityType="persaModel.Store.ingresocam" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="liquidacion" EntityType="persaModel.Store.liquidacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="lotes" EntityType="persaModel.Store.lotes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mandantes" EntityType="persaModel.Store.mandantes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="mercaderia" EntityType="persaModel.Store.mercaderia" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="modulos" EntityType="persaModel.Store.modulos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ordenescompra" EntityType="persaModel.Store.ordenescompra" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="parametros" EntityType="persaModel.Store.parametros" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="paso_remates_semanal" EntityType="persaModel.Store.paso_remates_semanal" store:Type="Tables" store:Schema="dbo" store:Name="paso_remates_semanal">
+      <DefiningQuery>SELECT 
+      [paso_remates_semanal].[id_remate] AS [id_remate], 
+      [paso_remates_semanal].[precio_final] AS [precio_final], 
+      [paso_remates_semanal].[garantia] AS [garantia], 
+      [paso_remates_semanal].[comision] AS [comision], 
+      [paso_remates_semanal].[iva] AS [iva], 
+      [paso_remates_semanal].[total] AS [total], 
+      [paso_remates_semanal].[cargos] AS [cargos], 
+      [paso_remates_semanal].[Facturado] AS [Facturado], 
+      [paso_remates_semanal].[Afecto] AS [Afecto]
+      FROM [dbo].[paso_remates_semanal] AS [paso_remates_semanal]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="perfiles" EntityType="persaModel.Store.perfiles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="proveedor" EntityType="persaModel.Store.proveedor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="regiones" EntityType="persaModel.Store.regiones" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="remates_mercaderia" EntityType="persaModel.Store.remates_mercaderia" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="rgarantia" EntityType="persaModel.Store.rgarantia" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sub_modulos" EntityType="persaModel.Store.sub_modulos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sucursalesman" EntityType="persaModel.Store.sucursalesman" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="persaModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tarifas" EntityType="persaModel.Store.tarifas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tipo_documento" EntityType="persaModel.Store.tipo_documento" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tipo_pago" EntityType="persaModel.Store.tipo_pago" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tipo_remates" EntityType="persaModel.Store.tipo_remates" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tipocontratosp" EntityType="persaModel.Store.tipocontratosp" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tipos_factura" EntityType="persaModel.Store.tipos_factura" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="usuario_perfil" EntityType="persaModel.Store.usuario_perfil" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="usuarios" EntityType="persaModel.Store.usuarios" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="fk_articulo" Association="persaModel.Store.fk_articulo">
+      <End Role="articulo" EntitySet="articulo" />
+      <End Role="detalle_lotes" EntitySet="detalle_lotes" />
+    </AssociationSet>
+    <AssociationSet Name="fk_cliente" Association="persaModel.Store.fk_cliente">
+      <End Role="clientes" EntitySet="clientes" />
+      <End Role="facturas" EntitySet="facturas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_comunas_regiones" Association="persaModel.Store.FK_comunas_regiones">
+      <End Role="regiones" EntitySet="regiones" />
+      <End Role="comunas" EntitySet="comunas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_cuentas_bancos" Association="persaModel.Store.FK_cuentas_bancos">
+      <End Role="bancos" EntitySet="bancos" />
+      <End Role="cuentas" EntitySet="cuentas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_detalle_articulo_articulo" Association="persaModel.Store.FK_detalle_articulo_articulo">
+      <End Role="articulo" EntitySet="articulo" />
+      <End Role="detalle_articulo" EntitySet="detalle_articulo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_detalle_liquidacion_liquidacion" Association="persaModel.Store.FK_detalle_liquidacion_liquidacion">
+      <End Role="liquidacion" EntitySet="liquidacion" />
+      <End Role="detalle_liquidacion" EntitySet="detalle_liquidacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_detalle_liquidacion_lotes" Association="persaModel.Store.FK_detalle_liquidacion_lotes">
+      <End Role="lotes" EntitySet="lotes" />
+      <End Role="detalle_liquidacion" EntitySet="detalle_liquidacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_egresos_bancos" Association="persaModel.Store.FK_egresos_bancos">
+      <End Role="bancos" EntitySet="bancos" />
+      <End Role="egresos" EntitySet="egresos" />
+    </AssociationSet>
+    <AssociationSet Name="fk_estado_remate" Association="persaModel.Store.fk_estado_remate">
+      <End Role="estado_remates" EntitySet="estado_remates" />
+      <End Role="remates_mercaderia" EntitySet="remates_mercaderia" />
+    </AssociationSet>
+    <AssociationSet Name="fk_factura" Association="persaModel.Store.fk_factura">
+      <End Role="facturas" EntitySet="facturas" />
+      <End Role="detalle_factura" EntitySet="detalle_factura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lotes" Association="persaModel.Store.FK_lotes">
+      <End Role="lotes" EntitySet="lotes" />
+      <End Role="detalle_lotes" EntitySet="detalle_lotes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_lotes_remates_mercaderia" Association="persaModel.Store.FK_lotes_remates_mercaderia">
+      <End Role="remates_mercaderia" EntitySet="remates_mercaderia" />
+      <End Role="lotes" EntitySet="lotes" />
+    </AssociationSet>
+    <AssociationSet Name="fk_oc" Association="persaModel.Store.fk_oc">
+      <End Role="ordenescompra" EntitySet="ordenescompra" />
+      <End Role="detalleOC" EntitySet="detalleOC" />
+    </AssociationSet>
+    <AssociationSet Name="fk_perfil" Association="persaModel.Store.fk_perfil">
+      <End Role="perfiles" EntitySet="perfiles" />
+      <End Role="usuario_perfil" EntitySet="usuario_perfil" />
+    </AssociationSet>
+    <AssociationSet Name="fk_proveedor" Association="persaModel.Store.fk_proveedor">
+      <End Role="proveedor" EntitySet="proveedor" />
+      <End Role="ordenescompra" EntitySet="ordenescompra" />
+    </AssociationSet>
+    <AssociationSet Name="fk_submodulos" Association="persaModel.Store.fk_submodulos">
+      <End Role="sub_modulos" EntitySet="sub_modulos" />
+      <End Role="parametros" EntitySet="parametros" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tarifas_bodegaje" Association="persaModel.Store.FK_tarifas_bodegaje">
+      <End Role="bodegaje" EntitySet="bodegaje" />
+      <End Role="tarifas" EntitySet="tarifas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tarifas_contratos" Association="persaModel.Store.FK_tarifas_contratos">
+      <End Role="contratos" EntitySet="contratos" />
+      <End Role="tarifas" EntitySet="tarifas" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tipo_factura" Association="persaModel.Store.fk_tipo_factura">
+      <End Role="tipos_factura" EntitySet="tipos_factura" />
+      <End Role="facturas" EntitySet="facturas" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tipo_pago" Association="persaModel.Store.fk_tipo_pago">
+      <End Role="tipo_pago" EntitySet="tipo_pago" />
+      <End Role="facturas" EntitySet="facturas" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tipo_remate" Association="persaModel.Store.fk_tipo_remate">
+      <End Role="tipo_remates" EntitySet="tipo_remates" />
+      <End Role="remates_mercaderia" EntitySet="remates_mercaderia" />
+    </AssociationSet>
+    <AssociationSet Name="fk_user" Association="persaModel.Store.fk_user">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="usuario_perfil" EntitySet="usuario_perfil" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="articulo">
+    <Key>
+      <PropertyRef Name="id_articulo" />
+    </Key>
+    <Property Name="id_articulo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="articulo_codigo" Type="varchar" MaxLength="15" />
+    <Property Name="articulo_compuesto" Type="bit" Nullable="false" />
+    <Property Name="articulo_descripcion" Type="varchar" MaxLength="100" />
+    <Property Name="articulo_unidades" Type="int" />
+    <Property Name="articulo_precio" Type="float" />
+    <Property Name="articulo_archorigen" Type="varchar" MaxLength="150" />
+    <Property Name="articulo_fechaproceso" Type="datetime" />
+    <Property Name="articulo_operador" Type="int" />
+    <Property Name="articulo_estado" Type="int" />
+    <Property Name="articulo_observacion" Type="varchar" MaxLength="200" />
+    <Property Name="articulo_bodega_destino" Type="int" />
+  </EntityType>
+  <EntityType Name="bancos">
+    <Key>
+      <PropertyRef Name="id_banco" />
+    </Key>
+    <Property Name="id_banco" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="banco" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="bodega">
+    <Key>
+      <PropertyRef Name="id_bodega" />
+    </Key>
+    <Property Name="id_bodega" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="bode_descripcion" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="bodegaje">
+    <Key>
+      <PropertyRef Name="id_bodegaje" />
+    </Key>
+    <Property Name="id_bodegaje" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="tipo_bodegaje" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="cargos">
+    <Key>
+      <PropertyRef Name="id_cargos" />
+    </Key>
+    <Property Name="id_cargos" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_nombre" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="clasificacionmerca">
+    <Key>
+      <PropertyRef Name="id_clasificacion" />
+    </Key>
+    <Property Name="id_clasificacion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="clasi_id_mandante" Type="int" />
+    <Property Name="clasi_is_tarifa" Type="int" />
+    <Property Name="clasi_clasificacion" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="clientes">
+    <Key>
+      <PropertyRef Name="id_cliente" />
+    </Key>
+    <Property Name="id_cliente" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="razon_social" Type="varchar" MaxLength="150" />
+    <Property Name="direccion" Type="varchar" MaxLength="150" />
+    <Property Name="id_comuna" Type="int" />
+    <Property Name="giro" Type="varchar" MaxLength="100" />
+    <Property Name="telefono" Type="varchar" MaxLength="50" />
+    <Property Name="Movil" Type="varchar" MaxLength="50" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="nombre_replegal" Type="varchar" MaxLength="100" />
+    <Property Name="estado_cliente" Type="int" />
+    <Property Name="cta_cte" Type="varchar" MaxLength="100" />
+    <Property Name="rut" Type="varchar" MaxLength="25" />
+    <Property Name="rep_legal" Type="varchar" MaxLength="75" />
+  </EntityType>
+  <EntityType Name="comunas">
+    <Key>
+      <PropertyRef Name="id_comuna" />
+    </Key>
+    <Property Name="id_comuna" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_region" Type="int" />
+    <Property Name="comuna" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="condicionespago">
+    <Key>
+      <PropertyRef Name="id_condicion" />
+    </Key>
+    <Property Name="id_condicion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion" Type="varchar" MaxLength="75" />
+  </EntityType>
+  <EntityType Name="contratos">
+    <Key>
+      <PropertyRef Name="id_contrato" />
+    </Key>
+    <Property Name="id_contrato" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_mandante" Type="int" Nullable="false" />
+    <Property Name="fecha_inicio" Type="date" />
+    <Property Name="fecha_termino" Type="date" />
+    <Property Name="estado_contrato" Type="bit" />
+    <Property Name="observacion" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Cuadratura">
+    <Key>
+      <PropertyRef Name="id_cuadra" />
+    </Key>
+    <Property Name="id_cuadra" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="estado_cuadra" Type="int" />
+    <Property Name="fecha_cuadra" Type="datetime" />
+    <Property Name="Ejecutivo" Type="nvarchar" MaxLength="255" />
+    <Property Name="id_remate" Type="int" />
+    <Property Name="obs_cuadra" Type="ntext" />
+    <Property Name="cuadrado_total" Type="bit" />
+    <Property Name="cuadrado_efectivo" Type="bit" />
+    <Property Name="cuadrado_deposito" Type="bit" />
+    <Property Name="cuadrado_transbank" Type="bit" />
+    <Property Name="cuadrado_tranferencia" Type="bit" />
+    <Property Name="preaprobacion" Type="bit" />
+    <Property Name="total_nomina" Type="int" />
+    <Property Name="efectivo" Type="int" />
+    <Property Name="depositos" Type="int" />
+    <Property Name="tranferencias" Type="int" />
+    <Property Name="notas_credito" Type="int" />
+    <Property Name="efectivo_facturas" Type="int" />
+    <Property Name="deposito_facturas" Type="int" />
+    <Property Name="transbank_facturas" Type="int" />
+    <Property Name="transferencia_facturas" Type="int" />
+    <Property Name="bill_20000" Type="int" />
+    <Property Name="bill_10000" Type="int" />
+    <Property Name="bill_5000" Type="int" />
+    <Property Name="bill_2000" Type="int" />
+    <Property Name="bill_1000" Type="int" />
+    <Property Name="bill_500" Type="int" />
+    <Property Name="bill_100" Type="int" />
+    <Property Name="bill_50" Type="int" />
+    <Property Name="bill_10" Type="int" />
+    <Property Name="bill_5" Type="int" />
+    <Property Name="bill_1" Type="int" />
+    <Property Name="depo_b1" Type="nvarchar" MaxLength="255" />
+    <Property Name="depo_b2" Type="nvarchar" MaxLength="255" />
+    <Property Name="depo_b3" Type="nvarchar" MaxLength="255" />
+    <Property Name="depo_b4" Type="nvarchar" MaxLength="255" />
+    <Property Name="depo_b5" Type="nvarchar" MaxLength="255" />
+    <Property Name="depo_b6" Type="nvarchar" MaxLength="255" />
+    <Property Name="depo_b7" Type="nvarchar" MaxLength="255" />
+    <Property Name="depo_b8" Type="nvarchar" MaxLength="255" />
+    <Property Name="depo_b9" Type="nvarchar" MaxLength="255" />
+    <Property Name="depo_b10" Type="nvarchar" MaxLength="255" />
+    <Property Name="depo_m1" Type="int" />
+    <Property Name="depo_m2" Type="int" />
+    <Property Name="depo_m3" Type="int" />
+    <Property Name="depo_m4" Type="int" />
+    <Property Name="depo_m5" Type="int" />
+    <Property Name="depo_m6" Type="int" />
+    <Property Name="depo_m7" Type="int" />
+    <Property Name="depo_m8" Type="int" />
+    <Property Name="depo_m9" Type="int" />
+    <Property Name="depo_m10" Type="int" />
+    <Property Name="transfer_b1" Type="nvarchar" MaxLength="255" />
+    <Property Name="transfer_b2" Type="nvarchar" MaxLength="255" />
+    <Property Name="transfer_b3" Type="nvarchar" MaxLength="255" />
+    <Property Name="transfer_b4" Type="nvarchar" MaxLength="255" />
+    <Property Name="transfer_b5" Type="nvarchar" MaxLength="255" />
+    <Property Name="transfer_b6" Type="nvarchar" MaxLength="255" />
+    <Property Name="transfer_b7" Type="nvarchar" MaxLength="255" />
+    <Property Name="transfer_b8" Type="nvarchar" MaxLength="255" />
+    <Property Name="transfer_b9" Type="nvarchar" MaxLength="255" />
+    <Property Name="transfer_b10" Type="nvarchar" MaxLength="255" />
+    <Property Name="transfer_b11" Type="nvarchar" MaxLength="255" />
+    <Property Name="transfer_m1" Type="int" />
+    <Property Name="transfer_m2" Type="int" />
+    <Property Name="transfer_m3" Type="int" />
+    <Property Name="transfer_m4" Type="int" />
+    <Property Name="transfer_m5" Type="int" />
+    <Property Name="transfer_m6" Type="int" />
+    <Property Name="transfer_m7" Type="int" />
+    <Property Name="transfer_m8" Type="int" />
+    <Property Name="transfer_m9" Type="int" />
+    <Property Name="transfer_m10" Type="int" />
+    <Property Name="transbank_b1" Type="nvarchar" MaxLength="255" />
+    <Property Name="transbank_b2" Type="nvarchar" MaxLength="255" />
+    <Property Name="transbank_b3" Type="nvarchar" MaxLength="255" />
+    <Property Name="transbank_b4" Type="nvarchar" MaxLength="255" />
+    <Property Name="transbank_b5" Type="nvarchar" MaxLength="255" />
+    <Property Name="transbank_b6" Type="nvarchar" MaxLength="255" />
+    <Property Name="transbank_b7" Type="nvarchar" MaxLength="255" />
+    <Property Name="transbank_b8" Type="nvarchar" MaxLength="255" />
+    <Property Name="transbank_b9" Type="nvarchar" MaxLength="255" />
+    <Property Name="transbank_b10" Type="nvarchar" MaxLength="255" />
+    <Property Name="transbank_m1" Type="int" />
+    <Property Name="transbank_m2" Type="int" />
+    <Property Name="transbank_m3" Type="int" />
+    <Property Name="transbank_m4" Type="int" />
+    <Property Name="transbank_m5" Type="int" />
+    <Property Name="transbank_m6" Type="int" />
+    <Property Name="transbank_m7" Type="int" />
+    <Property Name="transbank_m8" Type="int" />
+    <Property Name="transbank_m9" Type="int" />
+    <Property Name="transbank_m10" Type="int" />
+    <Property Name="transbank_m11" Type="int" />
+    <Property Name="nc_1" Type="int" />
+    <Property Name="nc_2" Type="int" />
+    <Property Name="nc_3" Type="int" />
+    <Property Name="nc_4" Type="int" />
+    <Property Name="nc_5" Type="int" />
+    <Property Name="nc_6" Type="int" />
+    <Property Name="nc_7" Type="int" />
+    <Property Name="nc_8" Type="int" />
+    <Property Name="nc_9" Type="int" />
+    <Property Name="nc_10" Type="int" />
+  </EntityType>
+  <EntityType Name="Cuadratura_detalle">
+    <Key>
+      <PropertyRef Name="id_cuadra_detalle" />
+    </Key>
+    <Property Name="id_cuadra_detalle" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_cuadra" Type="int" />
+    <Property Name="id_factura" Type="int" />
+    <Property Name="tipo_pago" Type="int" />
+    <Property Name="nro_factura" Type="int" />
+    <Property Name="liquido_factura" Type="int" />
+    <Property Name="VER" Type="bit" />
+    <Property Name="garantia" Type="float" />
+  </EntityType>
+  <EntityType Name="Cuadratura_resp">
+    <Key>
+      <PropertyRef Name="id_cuadra" />
+    </Key>
+    <Property Name="id_cuadra" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="estado_cuadra" Type="int" />
+    <Property Name="fecha_cuadra" Type="datetime" />
+    <Property Name="Ejecutivo" Type="nvarchar" MaxLength="255" />
+    <Property Name="id_remate" Type="int" />
+    <Property Name="obs_cuadra" Type="ntext" />
+    <Property Name="cuadrado_total" Type="bit" />
+    <Property Name="cuadrado_efectivo" Type="bit" />
+    <Property Name="cuadrado_deposito" Type="bit" />
+    <Property Name="cuadrado_transbank" Type="bit" />
+    <Property Name="cuadrado_tranferencia" Type="bit" />
+    <Property Name="preaprobacion" Type="bit" />
+    <Property Name="total_nomina" Type="int" />
+    <Property Name="efectivo" Type="int" />
+    <Property Name="depositos" Type="int" />
+    <Property Name="tranferencias" Type="int" />
+    <Property Name="notas_credito" Type="int" />
+    <Property Name="efectivo_facturas" Type="int" />
+    <Property Name="deposito_facturas" Type="int" />
+    <Property Name="transbank_facturas" Type="int" />
+    <Property Name="transferencia_facturas" Type="int" />
+    <Property Name="bill_20000" Type="int" />
+    <Property Name="bill_10000" Type="int" />
+    <Property Name="bill_5000" Type="int" />
+    <Property Name="bill_2000" Type="int" />
+    <Property Name="bill_1000" Type="int" />
+    <Property Name="bill_500" Type="int" />
+    <Property Name="bill_100" Type="int" />
+    <Property Name="bill_50" Type="int" />
+    <Property Name="bill_10" Type="int" />
+    <Property Name="bill_5" Type="int" />
+    <Property Name="bill_1" Type="int" />
+    <Property Name="depo_b1" Type="nvarchar" MaxLength="255" />
+    <Property Name="depo_b2" Type="nvarchar" MaxLength="255" />
+    <Property Name="depo_b3" Type="nvarchar" MaxLength="255" />
+    <Property Name="depo_b4" Type="nvarchar" MaxLength="255" />
+    <Property Name="depo_b5" Type="nvarchar" MaxLength="255" />
+    <Property Name="depo_b6" Type="nvarchar" MaxLength="255" />
+    <Property Name="depo_b7" Type="nvarchar" MaxLength="255" />
+    <Property Name="depo_b8" Type="nvarchar" MaxLength="255" />
+    <Property Name="depo_b9" Type="nvarchar" MaxLength="255" />
+    <Property Name="depo_b10" Type="nvarchar" MaxLength="255" />
+    <Property Name="depo_m1" Type="int" />
+    <Property Name="depo_m2" Type="int" />
+    <Property Name="depo_m3" Type="int" />
+    <Property Name="depo_m4" Type="int" />
+    <Property Name="depo_m5" Type="int" />
+    <Property Name="depo_m6" Type="int" />
+    <Property Name="depo_m7" Type="int" />
+    <Property Name="depo_m8" Type="int" />
+    <Property Name="depo_m9" Type="int" />
+    <Property Name="depo_m10" Type="int" />
+    <Property Name="transfer_b1" Type="nvarchar" MaxLength="255" />
+    <Property Name="transfer_b2" Type="nvarchar" MaxLength="255" />
+    <Property Name="transfer_b3" Type="nvarchar" MaxLength="255" />
+    <Property Name="transfer_b4" Type="nvarchar" MaxLength="255" />
+    <Property Name="transfer_b5" Type="nvarchar" MaxLength="255" />
+    <Property Name="transfer_b6" Type="nvarchar" MaxLength="255" />
+    <Property Name="transfer_b7" Type="nvarchar" MaxLength="255" />
+    <Property Name="transfer_b8" Type="nvarchar" MaxLength="255" />
+    <Property Name="transfer_b9" Type="nvarchar" MaxLength="255" />
+    <Property Name="transfer_b10" Type="nvarchar" MaxLength="255" />
+    <Property Name="transfer_b11" Type="nvarchar" MaxLength="255" />
+    <Property Name="transfer_m1" Type="int" />
+    <Property Name="transfer_m2" Type="int" />
+    <Property Name="transfer_m3" Type="int" />
+    <Property Name="transfer_m4" Type="int" />
+    <Property Name="transfer_m5" Type="int" />
+    <Property Name="transfer_m6" Type="int" />
+    <Property Name="transfer_m7" Type="int" />
+    <Property Name="transfer_m8" Type="int" />
+    <Property Name="transfer_m9" Type="int" />
+    <Property Name="transfer_m10" Type="int" />
+    <Property Name="transbank_b1" Type="nvarchar" MaxLength="255" />
+    <Property Name="transbank_b2" Type="nvarchar" MaxLength="255" />
+    <Property Name="transbank_b3" Type="nvarchar" MaxLength="255" />
+    <Property Name="transbank_b4" Type="nvarchar" MaxLength="255" />
+    <Property Name="transbank_b5" Type="nvarchar" MaxLength="255" />
+    <Property Name="transbank_b6" Type="nvarchar" MaxLength="255" />
+    <Property Name="transbank_b7" Type="nvarchar" MaxLength="255" />
+    <Property Name="transbank_b8" Type="nvarchar" MaxLength="255" />
+    <Property Name="transbank_b9" Type="nvarchar" MaxLength="255" />
+    <Property Name="transbank_b10" Type="nvarchar" MaxLength="255" />
+    <Property Name="transbank_m1" Type="int" />
+    <Property Name="transbank_m2" Type="int" />
+    <Property Name="transbank_m3" Type="int" />
+    <Property Name="transbank_m4" Type="int" />
+    <Property Name="transbank_m5" Type="int" />
+    <Property Name="transbank_m6" Type="int" />
+    <Property Name="transbank_m7" Type="int" />
+    <Property Name="transbank_m8" Type="int" />
+    <Property Name="transbank_m9" Type="int" />
+    <Property Name="transbank_m10" Type="int" />
+    <Property Name="transbank_m11" Type="int" />
+    <Property Name="nc_1" Type="int" />
+    <Property Name="nc_2" Type="int" />
+    <Property Name="nc_3" Type="int" />
+    <Property Name="nc_4" Type="int" />
+    <Property Name="nc_5" Type="int" />
+    <Property Name="nc_6" Type="int" />
+    <Property Name="nc_7" Type="int" />
+    <Property Name="nc_8" Type="int" />
+    <Property Name="nc_9" Type="int" />
+    <Property Name="nc_10" Type="int" />
+  </EntityType>
+  <EntityType Name="cuentas">
+    <Key>
+      <PropertyRef Name="id_cuenta" />
+    </Key>
+    <Property Name="id_cuenta" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_banco" Type="int" Nullable="false" />
+    <Property Name="nro_cuenta" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="detalle_articulo">
+    <Key>
+      <PropertyRef Name="id_detalle_articulo" />
+    </Key>
+    <Property Name="id_detalle_articulo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_articulo" Type="int" />
+    <Property Name="detalle_sku" Type="varchar" Nullable="false" MaxLength="14" />
+    <Property Name="detalle_descripcion" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="detalle_precio" Type="float" Nullable="false" />
+    <Property Name="detalle_estado" Type="int" Nullable="false" />
+    <Property Name="detalle_unidades" Type="int" Nullable="false" />
+    <Property Name="detalle_observaciones" Type="varchar" MaxLength="200" />
+    <Property Name="detalle_sobrante" Type="bit" Nullable="false" />
+    <Property Name="detalle_homologado" Type="bit" Nullable="false" />
+    <Property Name="detalle_original" Type="varchar" MaxLength="14" />
+    <Property Name="detalle_id_guia" Type="int" />
+  </EntityType>
+  <EntityType Name="detalle_factura">
+    <Key>
+      <PropertyRef Name="id_detalle" />
+    </Key>
+    <Property Name="id_detalle" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_factura" Type="int" />
+    <Property Name="cantidad" Type="int" />
+    <Property Name="descripcion" Type="varchar(max)" />
+    <Property Name="nro_lote" Type="varchar" MaxLength="25" />
+    <Property Name="precio_unitario" Type="float" />
+    <Property Name="precio_total" Type="float" />
+    <Property Name="garantia" Type="float" />
+    <Property Name="comision" Type="float" />
+    <Property Name="entregado" Type="bit" />
+    <Property Name="rendido" Type="bit" />
+    <Property Name="bodegaje" Type="float" />
+    <Property Name="desistido" Type="bit" />
+    <Property Name="afecto" Type="bit" />
+    <Property Name="ila" Type="bit" />
+    <Property Name="tipo_ila" Type="int" />
+    <Property Name="id_lote" Type="int" />
+    <Property Name="sub_lote" Type="varchar" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="detalle_liquidacion">
+    <Key>
+      <PropertyRef Name="id_detalle" />
+    </Key>
+    <Property Name="id_detalle" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_liquidacion" Type="int" />
+    <Property Name="id_lote" Type="int" />
+    <Property Name="nro_lote" Type="int" />
+    <Property Name="sub_lote" Type="varchar" MaxLength="5" />
+    <Property Name="descripcion" Type="varchar(max)" />
+    <Property Name="unidades" Type="int" />
+    <Property Name="precio_unitario" Type="float" />
+    <Property Name="precio_final" Type="float" />
+    <Property Name="afecto" Type="bit" />
+    <Property Name="mandante" Type="varchar" MaxLength="250" />
+    <Property Name="sucursal" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="detalle_lotes">
+    <Key>
+      <PropertyRef Name="id_detlote" />
+    </Key>
+    <Property Name="id_detlote" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_lote" Type="int" />
+    <Property Name="id_articulo" Type="int" />
+    <Property Name="descripcion" Type="varchar" MaxLength="10" />
+    <Property Name="codigo_articulo" Type="varchar" MaxLength="15" />
+    <Property Name="fecha" Type="datetime" />
+    <Property Name="precio" Type="float" />
+    <Property Name="unidades_original" Type="int" />
+    <Property Name="unidades_modificado" Type="int" />
+    <Property Name="id_mandate" Type="int" />
+    <Property Name="tipo_mercaderia" Type="int" />
+  </EntityType>
+  <EntityType Name="detalleingresocam">
+    <Key>
+      <PropertyRef Name="id_ingrdetalle" />
+    </Key>
+    <Property Name="id_ingrdetalle" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_ingreso" Type="int" />
+    <Property Name="id_tipovehiculo" Type="int" />
+    <Property Name="detalle_patente" Type="varchar" MaxLength="10" />
+    <Property Name="detalle_observacion" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="detalleOC">
+    <Key>
+      <PropertyRef Name="id_detalleoc" />
+    </Key>
+    <Property Name="id_detalleoc" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_oc" Type="int" />
+    <Property Name="nro_item" Type="int" />
+    <Property Name="detalle_item" Type="varchar" MaxLength="150" />
+    <Property Name="unidades" Type="int" />
+    <Property Name="valor_unitario" Type="float" />
+    <Property Name="iva" Type="float" />
+    <Property Name="total" Type="float" />
+  </EntityType>
+  <EntityType Name="egresos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="datetime" />
+    <Property Name="concepto" Type="varchar(max)" />
+    <Property Name="responsable" Type="varchar" MaxLength="150" />
+    <Property Name="id_cuenta" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="aprobado" Type="bit" />
+    <Property Name="fecha_aprobacion" Type="datetime" />
+    <Property Name="monto" Type="float" Nullable="false" />
+    <Property Name="id_tipo_documento" Type="int" Nullable="false" />
+    <Property Name="nro_documento" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="id_cliente" Type="int" />
+    <Property Name="rzon_social" Type="varchar" MaxLength="200" />
+    <Property Name="rut" Type="varchar" MaxLength="25" />
+    <Property Name="nro_cheque" Type="varchar" MaxLength="100" />
+    <Property Name="id_banco" Type="int" />
+    <Property Name="pagado" Type="bit" />
+    <Property Name="estado" Type="bit" />
+  </EntityType>
+  <EntityType Name="empresa">
+    <Key>
+      <PropertyRef Name="id_empresa" />
+    </Key>
+    <Property Name="id_empresa" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="empresa" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="rut" Type="varchar" Nullable="false" MaxLength="25" />
+    <Property Name="direccion" Type="varchar" Nullable="false" MaxLength="75" />
+    <Property Name="telefono" Type="varchar" Nullable="false" MaxLength="75" />
+  </EntityType>
+  <EntityType Name="estado_remates">
+    <Key>
+      <PropertyRef Name="id_estadoremate" />
+    </Key>
+    <Property Name="id_estadoremate" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="estado_remate" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="estados_clientes">
+    <Key>
+      <PropertyRef Name="id_estado" />
+    </Key>
+    <Property Name="id_estado" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="estado" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="facturas">
+    <Key>
+      <PropertyRef Name="id_factura" />
+    </Key>
+    <Property Name="id_factura" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nro_factura" Type="int" />
+    <Property Name="id_cliente" Type="int" />
+    <Property Name="id_comuna" Type="int" />
+    <Property Name="id_condicion_pago" Type="int" />
+    <Property Name="id_remate" Type="int" />
+    <Property Name="nro_lotes" Type="int" />
+    <Property Name="garantia" Type="float" />
+    <Property Name="monto_neto" Type="float" />
+    <Property Name="monto_iva" Type="float" />
+    <Property Name="monto_ila" Type="float" />
+    <Property Name="monto_flete" Type="float" />
+    <Property Name="monto_bodegaje" Type="float" />
+    <Property Name="monto_comision" Type="float" />
+    <Property Name="monto_total" Type="float" />
+    <Property Name="id_nomina" Type="int" />
+    <Property Name="id_ejecutivo" Type="int" />
+    <Property Name="id_estado" Type="int" />
+    <Property Name="ingreso_liquido" Type="float" />
+    <Property Name="id_tipofactura" Type="int" />
+    <Property Name="fecha" Type="date" />
+    <Property Name="mto_cargos" Type="int" />
+  </EntityType>
+  <EntityType Name="garantias_boletas">
+    <Key>
+      <PropertyRef Name="id_boleta" />
+    </Key>
+    <Property Name="id_boleta" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_remate" Type="int" />
+    <Property Name="id_ejecutivo" Type="int" />
+    <Property Name="nro_boleta" Type="int" />
+    <Property Name="id_lote" Type="int" />
+    <Property Name="Monto" Type="float" />
+    <Property Name="rendida" Type="bit" />
+    <Property Name="aplicada" Type="bit" />
+  </EntityType>
+  <EntityType Name="guias">
+    <Key>
+      <PropertyRef Name="id_guia" />
+    </Key>
+    <Property Name="id_guia" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="guia_fecha" Type="datetime" />
+    <Property Name="id_mandante" Type="int" />
+    <Property Name="id_sucursal" Type="int" />
+    <Property Name="guia_qinformado" Type="int" />
+    <Property Name="guia_qrecibido" Type="int" />
+    <Property Name="guia_qfaltantes" Type="int" />
+    <Property Name="guia_qsobrantes" Type="int" />
+    <Property Name="guia_qrematados" Type="int" />
+    <Property Name="guia_qliquidados" Type="int" />
+    <Property Name="guia_pinformado" Type="int" />
+    <Property Name="guia_precibido" Type="int" />
+    <Property Name="guia_pfaltantes" Type="int" />
+    <Property Name="guia_psobrantes" Type="int" />
+    <Property Name="guia_prematados" Type="int" />
+    <Property Name="guia_pliquidados" Type="int" />
+    <Property Name="guia_aprobacion" Type="datetime" />
+    <Property Name="guia_fechacierre" Type="datetime" />
+    <Property Name="guia_useraprob" Type="int" />
+    <Property Name="guia_nguias" Type="int" />
+    <Property Name="id_ingresocam" Type="int" />
+  </EntityType>
+  <EntityType Name="ingresocam">
+    <Key>
+      <PropertyRef Name="id_ingreso" />
+    </Key>
+    <Property Name="id_ingreso" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ingreso_fecha" Type="datetime" />
+    <Property Name="ingreso_idDetalle" Type="int" />
+    <Property Name="ingreso_rutchofer" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="liquidacion">
+    <Key>
+      <PropertyRef Name="id_liquidacion" />
+    </Key>
+    <Property Name="id_liquidacion" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nro_liquidacion" Type="int" />
+    <Property Name="id_mandante" Type="int" />
+    <Property Name="fecha" Type="datetime" />
+    <Property Name="mto_neto" Type="float" />
+    <Property Name="mto_impreacudado" Type="float" />
+    <Property Name="comision" Type="float" />
+    <Property Name="iva" Type="float" />
+    <Property Name="flete" Type="float" />
+    <Property Name="publicidad" Type="float" />
+    <Property Name="liquido" Type="float" />
+    <Property Name="nro_lotes" Type="int" />
+    <Property Name="tasa_comision" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="mto_ila" Type="float" />
+  </EntityType>
+  <EntityType Name="lotes">
+    <Key>
+      <PropertyRef Name="id_lote" />
+    </Key>
+    <Property Name="id_lote" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_remate" Type="int" />
+    <Property Name="nro_lote" Type="varchar" Nullable="false" MaxLength="25" />
+    <Property Name="sub_lote" Type="varchar" MaxLength="5" />
+    <Property Name="descripcion" Type="varchar(max)" />
+    <Property Name="nro_unidades" Type="int" />
+    <Property Name="adjudicatario" Type="varchar" MaxLength="75" />
+    <Property Name="observaciones" Type="varchar" MaxLength="250" />
+    <Property Name="papel" Type="bit" />
+    <Property Name="precio_minimo" Type="float" />
+    <Property Name="facturado" Type="bit" />
+    <Property Name="desistido" Type="bit" />
+    <Property Name="liquidado" Type="bit" />
+    <Property Name="id_ejecutivo" Type="int" />
+    <Property Name="nro_unidades_final" Type="int" />
+    <Property Name="precio_unitario_final" Type="float" />
+    <Property Name="precio_final" Type="float" />
+    <Property Name="afecto" Type="bit" />
+    <Property Name="ila" Type="bit" />
+    <Property Name="valor_comercial" Type="float" />
+    <Property Name="mandante" Type="varchar" MaxLength="250" />
+    <Property Name="garantia" Type="float" />
+    <Property Name="sucursal" Type="varchar" MaxLength="150" />
+    <Property Name="pasillo" Type="int" />
+    <Property Name="fecha_factura" Type="date" />
+    <Property Name="fecha_liquidacion" Type="date" />
+    <Property Name="nrofactura" Type="int" />
+    <Property Name="nro_liquidacion" Type="int" />
+  </EntityType>
+  <EntityType Name="mandantes">
+    <Key>
+      <PropertyRef Name="id_mandante" />
+    </Key>
+    <Property Name="id_mandante" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="razonsocial_mandante" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="rut_mandante" Type="varchar" Nullable="false" MaxLength="25" />
+    <Property Name="direccion_mandante" Type="varchar" Nullable="false" MaxLength="75" />
+    <Property Name="id_comuna" Type="int" Nullable="false" />
+    <Property Name="telefono_mandante" Type="varchar" Nullable="false" MaxLength="25" />
+    <Property Name="giro" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="email" Type="varchar" MaxLength="150" />
+    <Property Name="nrocontratos_mandante" Type="int" Nullable="false" />
+    <Property Name="nroliquidaciones_mandante" Type="int" />
+    <Property Name="monto_liquidado" Type="int" />
+    <Property Name="Replegal_mandante" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="repDireccion_mandante" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="mandato" Type="bit" />
+    <Property Name="vigente" Type="bit" />
+  </EntityType>
+  <EntityType Name="mercaderia">
+    <Key>
+      <PropertyRef Name="id_merca" />
+    </Key>
+    <Property Name="id_merca" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="merca_sku" Type="varchar" MaxLength="15" />
+    <Property Name="merca_descripcion" Type="varchar" MaxLength="100" />
+    <Property Name="merca_unidades" Type="int" />
+    <Property Name="merca_precio" Type="float" />
+    <Property Name="merca_archorigen" Type="varchar" MaxLength="150" />
+    <Property Name="merca_fechaproceso" Type="datetime" />
+    <Property Name="merca_operador" Type="int" />
+    <Property Name="merca_estado" Type="int" />
+    <Property Name="merca_claisficacion" Type="int" />
+    <Property Name="merca_observacion" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="modulos">
+    <Key>
+      <PropertyRef Name="id_modulo" />
+    </Key>
+    <Property Name="id_modulo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="modulo_nombre" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ordenescompra">
+    <Key>
+      <PropertyRef Name="id_orden" />
+    </Key>
+    <Property Name="id_orden" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_proveedor" Type="int" />
+    <Property Name="fecha" Type="datetime" />
+    <Property Name="id_condicion" Type="int" />
+    <Property Name="aprobada" Type="bit" />
+    <Property Name="id_usuario_aprueba" Type="int" />
+    <Property Name="fecha_aprobacion" Type="date" />
+    <Property Name="enviada" Type="bit" />
+    <Property Name="fecha_envio" Type="date" />
+    <Property Name="pagada" Type="bit" />
+    <Property Name="Afecta" Type="bit" />
+    <Property Name="neto" Type="float" />
+    <Property Name="iva" Type="float" />
+    <Property Name="Total" Type="float" />
+    <Property Name="observaciones" Type="varchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="parametros">
+    <Key>
+      <PropertyRef Name="id_parametro" />
+    </Key>
+    <Property Name="id_parametro" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="param_nombre" Type="varchar" MaxLength="50" />
+    <Property Name="param_valor" Type="int" />
+    <Property Name="id_submodulo" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'persa.dbo.paso_remates_semanal' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+  <EntityType Name="paso_remates_semanal">
+    <Key>
+      <PropertyRef Name="precio_final" />
+      <PropertyRef Name="garantia" />
+      <PropertyRef Name="comision" />
+      <PropertyRef Name="iva" />
+      <PropertyRef Name="total" />
+      <PropertyRef Name="cargos" />
+      <PropertyRef Name="Facturado" />
+      <PropertyRef Name="Afecto" />
+    </Key>
+    <Property Name="id_remate" Type="int" />
+    <Property Name="precio_final" Type="float" Nullable="false" />
+    <Property Name="garantia" Type="float" Nullable="false" />
+    <Property Name="comision" Type="int" Nullable="false" />
+    <Property Name="iva" Type="int" Nullable="false" />
+    <Property Name="total" Type="int" Nullable="false" />
+    <Property Name="cargos" Type="int" Nullable="false" />
+    <Property Name="Facturado" Type="varchar" Nullable="false" MaxLength="12" />
+    <Property Name="Afecto" Type="varchar" Nullable="false" MaxLength="7" />
+  </EntityType>
+  <EntityType Name="perfiles">
+    <Key>
+      <PropertyRef Name="id_perfil" />
+    </Key>
+    <Property Name="id_perfil" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="per_nombre" Type="varchar" MaxLength="30" />
+    <Property Name="per_estado" Type="int" />
+  </EntityType>
+  <EntityType Name="proveedor">
+    <Key>
+      <PropertyRef Name="id_proveedor" />
+    </Key>
+    <Property Name="id_proveedor" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="razon_social" Type="varchar" MaxLength="250" />
+    <Property Name="Direccion" Type="varchar" MaxLength="150" />
+    <Property Name="id_comuna" Type="int" />
+    <Property Name="Telefono" Type="varchar" MaxLength="45" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="contacto" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="regiones">
+    <Key>
+      <PropertyRef Name="id_region" />
+    </Key>
+    <Property Name="id_region" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="region" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="remates_mercaderia">
+    <Key>
+      <PropertyRef Name="id_remate" />
+    </Key>
+    <Property Name="id_remate" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fecha_remate" Type="date" Nullable="false" />
+    <Property Name="direccion" Type="varchar" MaxLength="50" />
+    <Property Name="tipo_remate" Type="int" />
+    <Property Name="numero_lotes" Type="int" />
+    <Property Name="total_remate" Type="float" />
+    <Property Name="garantias_registradas" Type="float" />
+    <Property Name="garantias_recibidas" Type="float" />
+    <Property Name="lotes_desistidos" Type="int" />
+    <Property Name="estado_remate" Type="int" />
+    <Property Name="garantia_imputada" Type="float" />
+    <Property Name="codigo_remate" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="id_ejecutivo1" Type="int" />
+    <Property Name="id_ejecutivo2" Type="int" />
+    <Property Name="lotes_sinpostor" Type="int" />
+    <Property Name="monto_facturado" Type="float" />
+    <Property Name="monto_desistido" Type="float" />
+    <Property Name="lotes_adjudicados" Type="int" />
+    <Property Name="monto_Adjudicado" Type="float" />
+  </EntityType>
+  <EntityType Name="rgarantia">
+    <Key>
+      <PropertyRef Name="id_rgarantia" />
+    </Key>
+    <Property Name="id_rgarantia" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="estado_rgarantia" Type="int" />
+    <Property Name="fecha_rgarantia" Type="datetime" Nullable="false" />
+    <Property Name="Ejecutivo" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="paridad" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="nro_lotes" Type="int" Nullable="false" />
+    <Property Name="id_remate" Type="int" />
+    <Property Name="obs_rgarantia" Type="ntext" />
+    <Property Name="preaprobacion" Type="bit" Nullable="false" />
+    <Property Name="total_rgarantia" Type="int" Nullable="false" />
+    <Property Name="efectivo" Type="int" />
+    <Property Name="efectivo_lotes" Type="int" />
+    <Property Name="bill_20000" Type="int" />
+    <Property Name="bill_10000" Type="int" />
+    <Property Name="bill_5000" Type="int" />
+    <Property Name="bill_2000" Type="int" />
+    <Property Name="bill_1000" Type="int" />
+    <Property Name="bill_500" Type="int" />
+    <Property Name="bill_100" Type="int" />
+    <Property Name="bill_50" Type="int" />
+    <Property Name="bill_10" Type="int" />
+    <Property Name="bill_5" Type="int" />
+    <Property Name="bill_1" Type="int" />
+  </EntityType>
+  <EntityType Name="sub_modulos">
+    <Key>
+      <PropertyRef Name="id_submodulo" />
+    </Key>
+    <Property Name="id_submodulo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_modulo" Type="int" />
+    <Property Name="modulo_nombre" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sucursalesman">
+    <Key>
+      <PropertyRef Name="id_sucursal" />
+    </Key>
+    <Property Name="id_sucursal" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_mandante" Type="int" />
+    <Property Name="sucu_direccion" Type="varchar" MaxLength="75" />
+    <Property Name="sucu_comuna" Type="int" />
+    <Property Name="sucu_regiones" Type="int" />
+    <Property Name="sucu_telefono" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tarifas">
+    <Key>
+      <PropertyRef Name="id_tarifa" />
+    </Key>
+    <Property Name="id_tarifa" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_contrato" Type="int" />
+    <Property Name="comision" Type="int" />
+    <Property Name="costo_fijo" Type="int" />
+    <Property Name="bodegaje" Type="int" />
+    <Property Name="id_bodeja" Type="int" />
+    <Property Name="publicidad" Type="int" />
+    <Property Name="gastos_operacionales" Type="int" />
+  </EntityType>
+  <EntityType Name="tipo_documento">
+    <Key>
+      <PropertyRef Name="id_tipo" />
+    </Key>
+    <Property Name="id_tipo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="decripcion" Type="varchar" MaxLength="100" />
+    <Property Name="estado" Type="bit" />
+  </EntityType>
+  <EntityType Name="tipo_pago">
+    <Key>
+      <PropertyRef Name="id_tipopago" />
+    </Key>
+    <Property Name="id_tipopago" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion_pago" Type="varchar" MaxLength="70" />
+  </EntityType>
+  <EntityType Name="tipo_remates">
+    <Key>
+      <PropertyRef Name="id_tiporemate" />
+    </Key>
+    <Property Name="id_tiporemate" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tipocontratosp">
+    <Key>
+      <PropertyRef Name="id_tipocontratop" />
+    </Key>
+    <Property Name="id_tipocontratop" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="tipos_factura">
+    <Key>
+      <PropertyRef Name="id_tipo" />
+    </Key>
+    <Property Name="id_tipo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion" Type="varchar" MaxLength="75" />
+  </EntityType>
+  <EntityType Name="usuario_perfil">
+    <Key>
+      <PropertyRef Name="id_uusario_perfil" />
+    </Key>
+    <Property Name="id_uusario_perfil" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_usuario" Type="int" />
+    <Property Name="id_perfil" Type="int" />
+    <Property Name="estado" Type="bit" />
+    <Property Name="fecha_estado" Type="date" />
+  </EntityType>
+  <EntityType Name="usuarios">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+    </Key>
+    <Property Name="id_usuario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="use_nombre" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="use_apellido" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="use_fechana" Type="datetime" />
+    <Property Name="use_fechaingreso" Type="datetime" Nullable="false" />
+    <Property Name="use_cargo" Type="int" />
+    <Property Name="use_estado" Type="int" />
+    <Property Name="use_tipocontrato" Type="int" />
+    <Property Name="use_password" Type="varchar" Nullable="false" MaxLength="25" />
+    <Property Name="use_user" Type="varchar" Nullable="false" MaxLength="25" />
+  </EntityType>
+  <Association Name="fk_articulo">
+    <End Role="articulo" Type="persaModel.Store.articulo" Multiplicity="0..1" />
+    <End Role="detalle_lotes" Type="persaModel.Store.detalle_lotes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="articulo">
+        <PropertyRef Name="id_articulo" />
+      </Principal>
+      <Dependent Role="detalle_lotes">
+        <PropertyRef Name="id_articulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_cliente">
+    <End Role="clientes" Type="persaModel.Store.clientes" Multiplicity="0..1" />
+    <End Role="facturas" Type="persaModel.Store.facturas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="clientes">
+        <PropertyRef Name="id_cliente" />
+      </Principal>
+      <Dependent Role="facturas">
+        <PropertyRef Name="id_cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_comunas_regiones">
+    <End Role="regiones" Type="persaModel.Store.regiones" Multiplicity="0..1" />
+    <End Role="comunas" Type="persaModel.Store.comunas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="regiones">
+        <PropertyRef Name="id_region" />
+      </Principal>
+      <Dependent Role="comunas">
+        <PropertyRef Name="id_region" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_cuentas_bancos">
+    <End Role="bancos" Type="persaModel.Store.bancos" Multiplicity="1" />
+    <End Role="cuentas" Type="persaModel.Store.cuentas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="bancos">
+        <PropertyRef Name="id_banco" />
+      </Principal>
+      <Dependent Role="cuentas">
+        <PropertyRef Name="id_banco" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_detalle_articulo_articulo">
+    <End Role="articulo" Type="persaModel.Store.articulo" Multiplicity="0..1" />
+    <End Role="detalle_articulo" Type="persaModel.Store.detalle_articulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="articulo">
+        <PropertyRef Name="id_articulo" />
+      </Principal>
+      <Dependent Role="detalle_articulo">
+        <PropertyRef Name="id_articulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_detalle_liquidacion_liquidacion">
+    <End Role="liquidacion" Type="persaModel.Store.liquidacion" Multiplicity="0..1" />
+    <End Role="detalle_liquidacion" Type="persaModel.Store.detalle_liquidacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="liquidacion">
+        <PropertyRef Name="id_liquidacion" />
+      </Principal>
+      <Dependent Role="detalle_liquidacion">
+        <PropertyRef Name="id_liquidacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_detalle_liquidacion_lotes">
+    <End Role="lotes" Type="persaModel.Store.lotes" Multiplicity="0..1" />
+    <End Role="detalle_liquidacion" Type="persaModel.Store.detalle_liquidacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lotes">
+        <PropertyRef Name="id_lote" />
+      </Principal>
+      <Dependent Role="detalle_liquidacion">
+        <PropertyRef Name="id_lote" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_egresos_bancos">
+    <End Role="bancos" Type="persaModel.Store.bancos" Multiplicity="0..1" />
+    <End Role="egresos" Type="persaModel.Store.egresos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="bancos">
+        <PropertyRef Name="id_banco" />
+      </Principal>
+      <Dependent Role="egresos">
+        <PropertyRef Name="id_banco" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_estado_remate">
+    <End Role="estado_remates" Type="persaModel.Store.estado_remates" Multiplicity="0..1" />
+    <End Role="remates_mercaderia" Type="persaModel.Store.remates_mercaderia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estado_remates">
+        <PropertyRef Name="id_estadoremate" />
+      </Principal>
+      <Dependent Role="remates_mercaderia">
+        <PropertyRef Name="estado_remate" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_factura">
+    <End Role="facturas" Type="persaModel.Store.facturas" Multiplicity="0..1" />
+    <End Role="detalle_factura" Type="persaModel.Store.detalle_factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="facturas">
+        <PropertyRef Name="id_factura" />
+      </Principal>
+      <Dependent Role="detalle_factura">
+        <PropertyRef Name="id_factura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lotes">
+    <End Role="lotes" Type="persaModel.Store.lotes" Multiplicity="0..1" />
+    <End Role="detalle_lotes" Type="persaModel.Store.detalle_lotes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lotes">
+        <PropertyRef Name="id_lote" />
+      </Principal>
+      <Dependent Role="detalle_lotes">
+        <PropertyRef Name="id_lote" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_lotes_remates_mercaderia">
+    <End Role="remates_mercaderia" Type="persaModel.Store.remates_mercaderia" Multiplicity="0..1" />
+    <End Role="lotes" Type="persaModel.Store.lotes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="remates_mercaderia">
+        <PropertyRef Name="id_remate" />
+      </Principal>
+      <Dependent Role="lotes">
+        <PropertyRef Name="id_remate" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_oc">
+    <End Role="ordenescompra" Type="persaModel.Store.ordenescompra" Multiplicity="0..1" />
+    <End Role="detalleOC" Type="persaModel.Store.detalleOC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ordenescompra">
+        <PropertyRef Name="id_orden" />
+      </Principal>
+      <Dependent Role="detalleOC">
+        <PropertyRef Name="id_oc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_perfil">
+    <End Role="perfiles" Type="persaModel.Store.perfiles" Multiplicity="0..1" />
+    <End Role="usuario_perfil" Type="persaModel.Store.usuario_perfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="perfiles">
+        <PropertyRef Name="id_perfil" />
+      </Principal>
+      <Dependent Role="usuario_perfil">
+        <PropertyRef Name="id_perfil" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_proveedor">
+    <End Role="proveedor" Type="persaModel.Store.proveedor" Multiplicity="0..1" />
+    <End Role="ordenescompra" Type="persaModel.Store.ordenescompra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="proveedor">
+        <PropertyRef Name="id_proveedor" />
+      </Principal>
+      <Dependent Role="ordenescompra">
+        <PropertyRef Name="id_proveedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_submodulos">
+    <End Role="sub_modulos" Type="persaModel.Store.sub_modulos" Multiplicity="1" />
+    <End Role="parametros" Type="persaModel.Store.parametros" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sub_modulos">
+        <PropertyRef Name="id_submodulo" />
+      </Principal>
+      <Dependent Role="parametros">
+        <PropertyRef Name="id_submodulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tarifas_bodegaje">
+    <End Role="bodegaje" Type="persaModel.Store.bodegaje" Multiplicity="0..1" />
+    <End Role="tarifas" Type="persaModel.Store.tarifas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="bodegaje">
+        <PropertyRef Name="id_bodegaje" />
+      </Principal>
+      <Dependent Role="tarifas">
+        <PropertyRef Name="id_bodeja" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tarifas_contratos">
+    <End Role="contratos" Type="persaModel.Store.contratos" Multiplicity="0..1" />
+    <End Role="tarifas" Type="persaModel.Store.tarifas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="contratos">
+        <PropertyRef Name="id_contrato" />
+      </Principal>
+      <Dependent Role="tarifas">
+        <PropertyRef Name="id_contrato" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tipo_factura">
+    <End Role="tipos_factura" Type="persaModel.Store.tipos_factura" Multiplicity="0..1" />
+    <End Role="facturas" Type="persaModel.Store.facturas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipos_factura">
+        <PropertyRef Name="id_tipo" />
+      </Principal>
+      <Dependent Role="facturas">
+        <PropertyRef Name="id_tipofactura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tipo_pago">
+    <End Role="tipo_pago" Type="persaModel.Store.tipo_pago" Multiplicity="0..1" />
+    <End Role="facturas" Type="persaModel.Store.facturas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipo_pago">
+        <PropertyRef Name="id_tipopago" />
+      </Principal>
+      <Dependent Role="facturas">
+        <PropertyRef Name="id_condicion_pago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tipo_remate">
+    <End Role="tipo_remates" Type="persaModel.Store.tipo_remates" Multiplicity="0..1" />
+    <End Role="remates_mercaderia" Type="persaModel.Store.remates_mercaderia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipo_remates">
+        <PropertyRef Name="id_tiporemate" />
+      </Principal>
+      <Dependent Role="remates_mercaderia">
+        <PropertyRef Name="tipo_remate" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_user">
+    <End Role="usuarios" Type="persaModel.Store.usuarios" Multiplicity="0..1" />
+    <End Role="usuario_perfil" Type="persaModel.Store.usuario_perfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id_usuario" />
+      </Principal>
+      <Dependent Role="usuario_perfil">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="actulizagaratiasingre" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_remate" Type="int" Mode="In" />
+  </Function>
+  <Function Name="anula_liquidacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="nro_liquidacion" Type="int" Mode="In" />
+  </Function>
+  <Function Name="anulafactura" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_factura" Type="int" Mode="In" />
+  </Function>
+  <Function Name="clientes_por_mandante" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fecha" Type="varchar" Mode="In" />
+    <Parameter Name="mandante" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="elimina_factura" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_factura" Type="int" Mode="In" />
+  </Function>
+  <Function Name="facturados_x_mandante" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="mandate" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="facturasdeservicios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fechaing" Type="datetime" Mode="In" />
+    <Parameter Name="fechafinal" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="fn_diagramobjects" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="lfacturas_servicios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="inicio" Type="datetime" Mode="In" />
+    <Parameter Name="final" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="lis_detalle_liquidacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="nro_liquidacion" Type="int" Mode="In" />
+  </Function>
+  <Function Name="listado_remate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idremate" Type="int" Mode="In" />
+  </Function>
+  <Function Name="listado_remate_adjudicatarios" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idremate" Type="int" Mode="In" />
+  </Function>
+  <Function Name="listado_remate_adjudicatarios_liquidados" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idremate" Type="int" Mode="In" />
+  </Function>
+  <Function Name="listado_remate_comisiones" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idremate" Type="int" Mode="In" />
+  </Function>
+  <Function Name="listado_remate_liquidados" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idremate" Type="int" Mode="In" />
+  </Function>
+  <Function Name="listado_rematepormandante" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idremate" Type="int" Mode="In" />
+    <Parameter Name="manda" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="listadofacturas" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="inicio" Type="datetime" Mode="In" />
+    <Parameter Name="final" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="listadofacturasxremate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="remate" Type="int" Mode="In" />
+  </Function>
+  <Function Name="listadoliquidaciones" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="inicio" Type="datetime" Mode="In" />
+    <Parameter Name="final" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="lotes_sinpostor_x_mandante" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idremate" Type="int" Mode="In" />
+    <Parameter Name="manda" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="lotesliquidadosxmandante" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="mandante" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="lotesnofacturados" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_remate" Type="int" Mode="In" />
+    <Parameter Name="Mandante" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="repaldo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="databaseName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="resultadomes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="inicio" Type="datetime" Mode="In" />
+    <Parameter Name="final" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="total_semanal_remates" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="totales_remates" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idremate" Type="int" Mode="In" />
+  </Function>
+</Schema>

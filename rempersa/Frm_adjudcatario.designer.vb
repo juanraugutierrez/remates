@@ -1,0 +1,480 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class Frm_adjudcatario
+    Inherits System.Windows.Forms.Form
+
+    'Form reemplaza a Dispose para limpiar la lista de componentes.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Requerido por el Diseñador de Windows Forms
+    Private components As System.ComponentModel.IContainer
+
+    'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
+    'Se puede modificar usando el Diseñador de Windows Forms.  
+    'No lo modifique con el editor de código.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Btn_buscar = New System.Windows.Forms.Button()
+        Me.Txt_buscar = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Lbl_nrolotes = New System.Windows.Forms.Label()
+        Me.Lbl_tiporema = New System.Windows.Forms.Label()
+        Me.Lbl_fecharema = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Cmb_remates = New System.Windows.Forms.ComboBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.Dtgadjudicatarios = New System.Windows.Forms.DataGridView()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Txt_unidadesfinales = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Btn_sinpostor = New System.Windows.Forms.Button()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Btn_grabar = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Lst_adjudicatarios = New System.Windows.Forms.ListBox()
+        Me.Txt_adjudicatario = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Txt_total = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Txt_punitario = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Txt_unidades = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Lbl_descripcion = New System.Windows.Forms.Label()
+        Me.Lbl_lotem = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.chKVerTotales = New System.Windows.Forms.CheckBox()
+        Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
+        CType(Me.Dtgadjudicatarios, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.chKVerTotales)
+        Me.GroupBox1.Controls.Add(Me.Btn_buscar)
+        Me.GroupBox1.Controls.Add(Me.Txt_buscar)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.Lbl_nrolotes)
+        Me.GroupBox1.Controls.Add(Me.Lbl_tiporema)
+        Me.GroupBox1.Controls.Add(Me.Lbl_fecharema)
+        Me.GroupBox1.Controls.Add(Me.Label10)
+        Me.GroupBox1.Controls.Add(Me.Cmb_remates)
+        Me.GroupBox1.Location = New System.Drawing.Point(4, 3)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(204, 456)
+        Me.GroupBox1.TabIndex = 0
+        Me.GroupBox1.TabStop = False
+        '
+        'Btn_buscar
+        '
+        Me.Btn_buscar.Font = New System.Drawing.Font("Arial Rounded MT Bold", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_buscar.Location = New System.Drawing.Point(69, 265)
+        Me.Btn_buscar.Name = "Btn_buscar"
+        Me.Btn_buscar.Size = New System.Drawing.Size(132, 34)
+        Me.Btn_buscar.TabIndex = 13
+        Me.Btn_buscar.Text = "Buscar"
+        Me.Btn_buscar.UseVisualStyleBackColor = True
+        '
+        'Txt_buscar
+        '
+        Me.Txt_buscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_buscar.Location = New System.Drawing.Point(8, 230)
+        Me.Txt_buscar.Name = "Txt_buscar"
+        Me.Txt_buscar.Size = New System.Drawing.Size(193, 29)
+        Me.Txt_buscar.TabIndex = 22
+        Me.Txt_buscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(6, 203)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(68, 24)
+        Me.Label2.TabIndex = 21
+        Me.Label2.Text = "Buscar"
+        '
+        'Lbl_nrolotes
+        '
+        Me.Lbl_nrolotes.AutoSize = True
+        Me.Lbl_nrolotes.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_nrolotes.Location = New System.Drawing.Point(5, 111)
+        Me.Lbl_nrolotes.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lbl_nrolotes.Name = "Lbl_nrolotes"
+        Me.Lbl_nrolotes.Size = New System.Drawing.Size(67, 16)
+        Me.Lbl_nrolotes.TabIndex = 20
+        Me.Lbl_nrolotes.Text = "Nro Lote"
+        Me.Lbl_nrolotes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Lbl_tiporema
+        '
+        Me.Lbl_tiporema.AutoSize = True
+        Me.Lbl_tiporema.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_tiporema.Location = New System.Drawing.Point(5, 91)
+        Me.Lbl_tiporema.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lbl_tiporema.Name = "Lbl_tiporema"
+        Me.Lbl_tiporema.Size = New System.Drawing.Size(98, 16)
+        Me.Lbl_tiporema.TabIndex = 19
+        Me.Lbl_tiporema.Text = "Tipo Remate"
+        '
+        'Lbl_fecharema
+        '
+        Me.Lbl_fecharema.AutoSize = True
+        Me.Lbl_fecharema.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_fecharema.Location = New System.Drawing.Point(5, 71)
+        Me.Lbl_fecharema.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lbl_fecharema.Name = "Lbl_fecharema"
+        Me.Lbl_fecharema.Size = New System.Drawing.Size(109, 16)
+        Me.Lbl_fecharema.TabIndex = 18
+        Me.Lbl_fecharema.Text = "Fecha Remate"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(18, 16)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(44, 13)
+        Me.Label10.TabIndex = 17
+        Me.Label10.Text = "Remate"
+        '
+        'Cmb_remates
+        '
+        Me.Cmb_remates.FormattingEnabled = True
+        Me.Cmb_remates.Location = New System.Drawing.Point(8, 32)
+        Me.Cmb_remates.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Me.Cmb_remates.Name = "Cmb_remates"
+        Me.Cmb_remates.Size = New System.Drawing.Size(186, 21)
+        Me.Cmb_remates.TabIndex = 16
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.GroupBox5)
+        Me.GroupBox2.Controls.Add(Me.GroupBox3)
+        Me.GroupBox2.Controls.Add(Me.Lbl_descripcion)
+        Me.GroupBox2.Controls.Add(Me.Lbl_lotem)
+        Me.GroupBox2.Controls.Add(Me.Label1)
+        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Location = New System.Drawing.Point(211, -2)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(871, 461)
+        Me.GroupBox2.TabIndex = 1
+        Me.GroupBox2.TabStop = False
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.Controls.Add(Me.Dtgadjudicatarios)
+        Me.GroupBox5.Location = New System.Drawing.Point(484, 158)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(380, 296)
+        Me.GroupBox5.TabIndex = 4
+        Me.GroupBox5.TabStop = False
+        '
+        'Dtgadjudicatarios
+        '
+        Me.Dtgadjudicatarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Dtgadjudicatarios.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Dtgadjudicatarios.Location = New System.Drawing.Point(3, 25)
+        Me.Dtgadjudicatarios.Name = "Dtgadjudicatarios"
+        Me.Dtgadjudicatarios.Size = New System.Drawing.Size(374, 268)
+        Me.Dtgadjudicatarios.TabIndex = 0
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.Txt_unidadesfinales)
+        Me.GroupBox3.Controls.Add(Me.Label3)
+        Me.GroupBox3.Controls.Add(Me.Btn_sinpostor)
+        Me.GroupBox3.Controls.Add(Me.GroupBox4)
+        Me.GroupBox3.Controls.Add(Me.Lst_adjudicatarios)
+        Me.GroupBox3.Controls.Add(Me.Txt_adjudicatario)
+        Me.GroupBox3.Controls.Add(Me.Label7)
+        Me.GroupBox3.Controls.Add(Me.Txt_total)
+        Me.GroupBox3.Controls.Add(Me.Label6)
+        Me.GroupBox3.Controls.Add(Me.Txt_punitario)
+        Me.GroupBox3.Controls.Add(Me.Label5)
+        Me.GroupBox3.Controls.Add(Me.Txt_unidades)
+        Me.GroupBox3.Controls.Add(Me.Label4)
+        Me.GroupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.GroupBox3.Location = New System.Drawing.Point(3, 157)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(475, 297)
+        Me.GroupBox3.TabIndex = 3
+        Me.GroupBox3.TabStop = False
+        '
+        'Txt_unidadesfinales
+        '
+        Me.Txt_unidadesfinales.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_unidadesfinales.Location = New System.Drawing.Point(148, 62)
+        Me.Txt_unidadesfinales.Name = "Txt_unidadesfinales"
+        Me.Txt_unidadesfinales.Size = New System.Drawing.Size(207, 29)
+        Me.Txt_unidadesfinales.TabIndex = 14
+        Me.Txt_unidadesfinales.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(9, 69)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(96, 24)
+        Me.Label3.TabIndex = 13
+        Me.Label3.Text = "Unid. Asig"
+        '
+        'Btn_sinpostor
+        '
+        Me.Btn_sinpostor.Font = New System.Drawing.Font("Arial Rounded MT Bold", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_sinpostor.Location = New System.Drawing.Point(382, 95)
+        Me.Btn_sinpostor.Name = "Btn_sinpostor"
+        Me.Btn_sinpostor.Size = New System.Drawing.Size(86, 76)
+        Me.Btn_sinpostor.TabIndex = 12
+        Me.Btn_sinpostor.Text = "Sin Postor"
+        Me.Btn_sinpostor.UseVisualStyleBackColor = True
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.Btn_grabar)
+        Me.GroupBox4.Controls.Add(Me.Button2)
+        Me.GroupBox4.Controls.Add(Me.Button1)
+        Me.GroupBox4.Location = New System.Drawing.Point(97, 231)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(290, 60)
+        Me.GroupBox4.TabIndex = 10
+        Me.GroupBox4.TabStop = False
+        '
+        'Btn_grabar
+        '
+        Me.Btn_grabar.Font = New System.Drawing.Font("Wide Latin", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+
+        Me.Btn_grabar.Location = New System.Drawing.Point(132, 16)
+        Me.Btn_grabar.Name = "Btn_grabar"
+        Me.Btn_grabar.Size = New System.Drawing.Size(37, 34)
+        Me.Btn_grabar.TabIndex = 12
+        Me.Btn_grabar.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Btn_grabar.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Font = New System.Drawing.Font("Wide Latin", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(209, 16)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 34)
+        Me.Button2.TabIndex = 11
+        Me.Button2.Text = ">>"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Wide Latin", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(15, 16)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 34)
+        Me.Button1.TabIndex = 10
+        Me.Button1.Text = "<<"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Lst_adjudicatarios
+        '
+        Me.Lst_adjudicatarios.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lst_adjudicatarios.FormattingEnabled = True
+        Me.Lst_adjudicatarios.ItemHeight = 16
+        Me.Lst_adjudicatarios.Location = New System.Drawing.Point(148, 191)
+        Me.Lst_adjudicatarios.Name = "Lst_adjudicatarios"
+        Me.Lst_adjudicatarios.Size = New System.Drawing.Size(207, 36)
+        Me.Lst_adjudicatarios.TabIndex = 8
+        '
+        'Txt_adjudicatario
+        '
+        Me.Txt_adjudicatario.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_adjudicatario.Location = New System.Drawing.Point(148, 158)
+        Me.Txt_adjudicatario.Name = "Txt_adjudicatario"
+        Me.Txt_adjudicatario.Size = New System.Drawing.Size(207, 29)
+        Me.Txt_adjudicatario.TabIndex = 7
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(9, 165)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(119, 24)
+        Me.Label7.TabIndex = 6
+        Me.Label7.Text = "Adjudicatario"
+        '
+        'Txt_total
+        '
+        Me.Txt_total.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_total.Location = New System.Drawing.Point(148, 126)
+        Me.Txt_total.Name = "Txt_total"
+        Me.Txt_total.Size = New System.Drawing.Size(207, 29)
+        Me.Txt_total.TabIndex = 5
+        Me.Txt_total.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(9, 133)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(110, 24)
+        Me.Label6.TabIndex = 4
+        Me.Label6.Text = "Precio Total"
+        '
+        'Txt_punitario
+        '
+        Me.Txt_punitario.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_punitario.Location = New System.Drawing.Point(148, 94)
+        Me.Txt_punitario.Name = "Txt_punitario"
+        Me.Txt_punitario.Size = New System.Drawing.Size(207, 29)
+        Me.Txt_punitario.TabIndex = 3
+        Me.Txt_punitario.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(9, 101)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(132, 24)
+        Me.Label5.TabIndex = 2
+        Me.Label5.Text = "Precio Unitario"
+        '
+        'Txt_unidades
+        '
+        Me.Txt_unidades.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txt_unidades.Location = New System.Drawing.Point(148, 30)
+        Me.Txt_unidades.Name = "Txt_unidades"
+        Me.Txt_unidades.Size = New System.Drawing.Size(207, 29)
+        Me.Txt_unidades.TabIndex = 1
+        Me.Txt_unidades.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(6, 35)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(140, 24)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "Unid. originales"
+        '
+        'Lbl_descripcion
+        '
+        Me.Lbl_descripcion.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Lbl_descripcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Lbl_descripcion.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_descripcion.Location = New System.Drawing.Point(19, 76)
+        Me.Lbl_descripcion.Name = "Lbl_descripcion"
+        Me.Lbl_descripcion.Size = New System.Drawing.Size(845, 79)
+        Me.Lbl_descripcion.TabIndex = 2
+        Me.Lbl_descripcion.Text = "Label3"
+        Me.Lbl_descripcion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Lbl_lotem
+        '
+        Me.Lbl_lotem.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Lbl_lotem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Lbl_lotem.Font = New System.Drawing.Font("Arial Rounded MT Bold", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_lotem.Location = New System.Drawing.Point(380, 25)
+        Me.Lbl_lotem.Name = "Lbl_lotem"
+        Me.Lbl_lotem.Size = New System.Drawing.Size(179, 50)
+        Me.Lbl_lotem.TabIndex = 1
+        Me.Lbl_lotem.Text = "Label2"
+        Me.Lbl_lotem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(235, 25)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(141, 50)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Lote"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Timer1
+        '
+        '
+        'chKVerTotales
+        '
+        Me.chKVerTotales.AutoSize = True
+        Me.chKVerTotales.Location = New System.Drawing.Point(21, 374)
+        Me.chKVerTotales.Name = "chKVerTotales"
+        Me.chKVerTotales.Size = New System.Drawing.Size(61, 17)
+        Me.chKVerTotales.TabIndex = 23
+        Me.chKVerTotales.Text = "Totales"
+        Me.chKVerTotales.UseVisualStyleBackColor = True
+        '
+        'Frm_adjudcatario
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(1087, 463)
+        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Name = "Frm_adjudcatario"
+        Me.Text = "Frm_adjudcatario"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox5.ResumeLayout(False)
+        CType(Me.Dtgadjudicatarios, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.ResumeLayout(False)
+
+    End Sub
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Cmb_remates As System.Windows.Forms.ComboBox
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
+    Friend WithEvents Btn_sinpostor As System.Windows.Forms.Button
+    Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
+    Friend WithEvents Btn_grabar As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Lst_adjudicatarios As System.Windows.Forms.ListBox
+    Friend WithEvents Txt_adjudicatario As System.Windows.Forms.TextBox
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Txt_total As System.Windows.Forms.TextBox
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Txt_punitario As System.Windows.Forms.TextBox
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Txt_unidades As System.Windows.Forms.TextBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Lbl_descripcion As System.Windows.Forms.Label
+    Friend WithEvents Lbl_lotem As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Lbl_nrolotes As System.Windows.Forms.Label
+    Friend WithEvents Lbl_tiporema As System.Windows.Forms.Label
+    Friend WithEvents Lbl_fecharema As System.Windows.Forms.Label
+    Friend WithEvents Btn_buscar As System.Windows.Forms.Button
+    Friend WithEvents Txt_buscar As System.Windows.Forms.TextBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Txt_unidadesfinales As System.Windows.Forms.TextBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents GroupBox5 As System.Windows.Forms.GroupBox
+    Friend WithEvents Dtgadjudicatarios As System.Windows.Forms.DataGridView
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents chKVerTotales As System.Windows.Forms.CheckBox
+End Class

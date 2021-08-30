@@ -1,0 +1,4 @@
+D:\rempersa\factura_electronica\bin\Release\factura_electronica.dll
+D:\rempersa\factura_electronica\bin\Release\factura_electronica.pdb
+D:\rempersa\factura_electronica\obj\Release\factura_electronica.dll
+D:\rempersa\factura_electronica\obj\Release\factura_electronica.pdb
