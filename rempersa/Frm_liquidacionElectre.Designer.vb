@@ -552,6 +552,7 @@ Partial Class Frm_liquidacionElectre
         Me.Cmb_remates.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Cmb_remates.Name = "Cmb_remates"
         Me.Cmb_remates.Size = New System.Drawing.Size(186, 23)
+        Me.Cmb_remates.Sorted = True
         Me.Cmb_remates.TabIndex = 14
         '
         'Lbl_tiporema

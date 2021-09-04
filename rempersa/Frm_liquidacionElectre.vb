@@ -47,11 +47,11 @@ Public Class Frm_liquidacionElectre
 
     Sub carga()
         Try
-            Me.Cmb_remates.DataSource = factu.lremates()
-            Me.Cmb_remates.DisplayMember = "id_remate"
-            Me.Cmb_remates.ValueMember = "Remate"
-            Me.Lst_clientes.DataSource = factu.listamandantes(remate, Chk_afecto.Checked)
-            Me.Lst_clientes.DisplayMember = "cod_mandante"
+            Cmb_remates.DataSource = factu.lremates()
+            Cmb_remates.DisplayMember = "codigo_remate"
+            Cmb_remates.ValueMember = "Remate"
+            Lst_clientes.DataSource = factu.listamandantes(remate, Chk_afecto.Checked)
+            Lst_clientes.DisplayMember = "cod_mandante"
         Catch ex As Exception
 
         End Try
@@ -66,19 +66,19 @@ Public Class Frm_liquidacionElectre
 
 
         Try
-            Me.Lbl_fecharema.Text = factu.fremates(Cmb_remates.SelectedValue.ToString)
-            Me.Lbl_tiporema.Text = factu.tremates1(Cmb_remates.SelectedValue.ToString)
+            Lbl_fecharema.Text = factu.fremates(Cmb_remates.SelectedValue.ToString)
+            Lbl_tiporema.Text = factu.tremates1(Cmb_remates.SelectedValue.ToString)
             remate = factu.lremate(Cmb_remates.SelectedValue)
 
 
 
-            Me.Lst_clientes.ClearSelected()
-            Me.Lst_clientes.DataSource = Nothing
-            Me.Lst_clientes.Refresh()
+            Lst_clientes.ClearSelected()
+            Lst_clientes.DataSource = Nothing
+            Lst_clientes.Refresh()
 
 
-            Me.Lst_clientes.DataSource = factu.listamandantes(remate, Chk_afecto.Checked)
-            Me.Lst_clientes.DisplayMember = "mandante"
+            Lst_clientes.DataSource = factu.listamandantes(remate, Chk_afecto.Checked)
+            Lst_clientes.DisplayMember = "mandante"
         Catch ex As Exception
 
         End Try
@@ -315,12 +315,7 @@ Public Class Frm_liquidacionElectre
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
 
         Txt_porcentaje.Enabled = False
-
         Dim nros As Integer = CInt(Txt_nrliqui.Text)
-
-
-
-
         Dim remtipo As New Remate
         Me.Cursor = Cursors.WaitCursor
         Dim Invoice As New List(Of EFactura)()
@@ -485,6 +480,8 @@ Public Class Frm_liquidacionElectre
 
         Txt_porcentaje.Enabled = True
         Me.Cursor = Cursors.Default
+
+        Me.Frm_facturaimp_Load(Me, e)
 
     End Sub
 
