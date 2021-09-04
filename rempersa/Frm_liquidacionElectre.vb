@@ -38,6 +38,7 @@ Public Class Frm_liquidacionElectre
             carga()
             cliente = String.Empty
             Me.Txt_porcentaje.Text = porcentaje
+            Chk_detalle.Checked = False
         Catch ex As Exception
 
         End Try
@@ -65,10 +66,14 @@ Public Class Frm_liquidacionElectre
     Private Sub Cmb_remates_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) Handles Cmb_remates.SelectedIndexChanged
 
 
+
         Try
             Lbl_fecharema.Text = factu.fremates(Cmb_remates.SelectedValue.ToString)
             Lbl_tiporema.Text = factu.tremates1(Cmb_remates.SelectedValue.ToString)
-            remate = factu.lremate(Cmb_remates.SelectedValue)
+            'remate = factu.lremate(Cmb_remates.SelectedValue)
+            Dim parametros() As String = Cmb_remates.SelectedValue.ToString.Split(",")
+            Dim valor() = parametros(0).Split("=")
+            remate = CInt(valor(1).ToString())
 
 
 
@@ -79,6 +84,8 @@ Public Class Frm_liquidacionElectre
 
             Lst_clientes.DataSource = factu.listamandantes(remate, Chk_afecto.Checked)
             Lst_clientes.DisplayMember = "mandante"
+            Chk_detalle.Checked = False
+            Chk_detalle_CheckedChanged(Me, e)
         Catch ex As Exception
 
         End Try

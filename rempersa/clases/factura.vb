@@ -35,7 +35,10 @@
 
     Public Function lremate(rema As String) As Integer
         Dim quer As Integer
-        quer = (From c In contex.remates_mercaderia Where c.codigo_remate = rema Order By CInt(c.codigo_remate) Descending Select c.id_remate).First
+        Dim parametros() As String = rema.Split(",")
+        Dim valor() = parametros(0).Split("=")
+        Dim valorr = valor(1).ToString()
+        quer = (From c In contex.remates_mercaderia Where c.codigo_remate = valorr Order By CInt(c.codigo_remate) Descending Select c.id_remate).First
         Return quer
     End Function
     Public Function lremates() As IQueryable
@@ -50,7 +53,10 @@
 
     Public Function fremates(codre As String) As String
         Dim fe As DateTime
-        fe = (From c In contex.remates_mercaderia Where c.codigo_remate = codre Select c.fecha_remate).First
+        Dim parametros() As String = codre.Split(",")
+        Dim valor() = parametros(0).Split("=")
+        Dim valorr = valor(1)
+        fe = (From c In contex.remates_mercaderia Where c.id_remate = valorr Select c.fecha_remate).First
         Return fe
     End Function
 
@@ -308,7 +314,11 @@
     End Function
     Public Function tremates1(codre As String) As String
         Dim cod As String
-        cod = (From c In contex.remates_mercaderia, t In contex.tipo_remates Where c.tipo_remate = t.id_tiporemate And c.codigo_remate = codre Select t.descripcion).First
+        Dim parametros() As String = codre.Split(",")
+        Dim valor() = parametros(0).Split("=")
+        Dim valorr = valor(1)
+        'Return valorr
+        cod = (From c In contex.remates_mercaderia Join t In contex.tipo_remates On c.tipo_remate Equals t.id_tiporemate Where c.id_remate = valorr Select t.descripcion).First
         Return cod.ToString
     End Function
 
