@@ -43,7 +43,8 @@
         Return quer
     End Function
     Public Function lremates() As IQueryable
-        quer = (From c In contex.remates_mercaderia Join l In contex.lotes On c.id_remate Equals l.id_remate Where l.liquidado = 0 And c.estado_remate <> 5 Select c.codigo_remate).Distinct()
+        quer = (From c In contex.remates_mercaderia Join l In contex.lotes On c.id_remate Equals l.id_remate Where l.liquidado = 0 And c.estado_remate <> 5 Order By c.codigo_remate Descending Select c.codigo_remate).Distinct()
+
         Return quer
     End Function
     Public Function lremates(id As Integer) As Integer

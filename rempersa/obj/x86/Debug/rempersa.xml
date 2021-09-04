@@ -84,11 +84,6 @@ rempersa
  Inicializar un nuevo objeto persaEntities11.
  </summary>
 </member>
-<member name="P:rempersa.persaEntities11.articulo">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
 <member name="P:rempersa.persaEntities11.bancos">
  <summary>
  No hay documentación de metadatos disponible.
@@ -154,11 +149,6 @@ rempersa
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="P:rempersa.persaEntities11.detalle_articulo">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
 <member name="P:rempersa.persaEntities11.detalle_factura">
  <summary>
  No hay documentación de metadatos disponible.
@@ -169,17 +159,7 @@ rempersa
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="P:rempersa.persaEntities11.detalle_lotes">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
 <member name="P:rempersa.persaEntities11.detalleingresocam">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.persaEntities11.detalleOC">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
@@ -249,27 +229,12 @@ rempersa
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="P:rempersa.persaEntities11.ordenescompra">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
 <member name="P:rempersa.persaEntities11.parametros">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
 </member>
 <member name="P:rempersa.persaEntities11.paso_remates_semanal">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.persaEntities11.perfiles">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.persaEntities11.proveedor">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
@@ -304,16 +269,6 @@ rempersa
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="P:rempersa.persaEntities11.tarifas">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.persaEntities11.tipo_documento">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
 <member name="P:rempersa.persaEntities11.tipo_pago">
  <summary>
  No hay documentación de metadatos disponible.
@@ -334,19 +289,29 @@ rempersa
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="P:rempersa.persaEntities11.usuario_perfil">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
 <member name="P:rempersa.persaEntities11.usuarios">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="M:rempersa.persaEntities11.AddToarticulo(rempersa.articulo)">
+<member name="P:rempersa.persaEntities11.detalleGuia">
  <summary>
- Método desusado para agregar un nuevo objeto al EntitySet articulo. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
+<member name="P:rempersa.persaEntities11.folios">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
+<member name="P:rempersa.persaEntities11.Guiasdespachos">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
+<member name="P:rempersa.persaEntities11.monitorrem">
+ <summary>
+ No hay documentación de metadatos disponible.
  </summary>
 </member>
 <member name="M:rempersa.persaEntities11.AddTobancos(rempersa.bancos)">
@@ -414,11 +379,6 @@ rempersa
  Método desusado para agregar un nuevo objeto al EntitySet cuentas. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
  </summary>
 </member>
-<member name="M:rempersa.persaEntities11.AddTodetalle_articulo(rempersa.detalle_articulo)">
- <summary>
- Método desusado para agregar un nuevo objeto al EntitySet detalle_articulo. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
- </summary>
-</member>
 <member name="M:rempersa.persaEntities11.AddTodetalle_factura(rempersa.detalle_factura)">
  <summary>
  Método desusado para agregar un nuevo objeto al EntitySet detalle_factura. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
@@ -429,19 +389,9 @@ rempersa
  Método desusado para agregar un nuevo objeto al EntitySet detalle_liquidacion. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
  </summary>
 </member>
-<member name="M:rempersa.persaEntities11.AddTodetalle_lotes(rempersa.detalle_lotes)">
- <summary>
- Método desusado para agregar un nuevo objeto al EntitySet detalle_lotes. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
- </summary>
-</member>
 <member name="M:rempersa.persaEntities11.AddTodetalleingresocam(rempersa.detalleingresocam)">
  <summary>
  Método desusado para agregar un nuevo objeto al EntitySet detalleingresocam. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
- </summary>
-</member>
-<member name="M:rempersa.persaEntities11.AddTodetalleOC(rempersa.detalleOC)">
- <summary>
- Método desusado para agregar un nuevo objeto al EntitySet detalleOC. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
  </summary>
 </member>
 <member name="M:rempersa.persaEntities11.AddToegresos(rempersa.egresos)">
@@ -509,11 +459,6 @@ rempersa
  Método desusado para agregar un nuevo objeto al EntitySet modulos. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
  </summary>
 </member>
-<member name="M:rempersa.persaEntities11.AddToordenescompra(rempersa.ordenescompra)">
- <summary>
- Método desusado para agregar un nuevo objeto al EntitySet ordenescompra. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
- </summary>
-</member>
 <member name="M:rempersa.persaEntities11.AddToparametros(rempersa.parametros)">
  <summary>
  Método desusado para agregar un nuevo objeto al EntitySet parametros. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
@@ -522,16 +467,6 @@ rempersa
 <member name="M:rempersa.persaEntities11.AddTopaso_remates_semanal(rempersa.paso_remates_semanal)">
  <summary>
  Método desusado para agregar un nuevo objeto al EntitySet paso_remates_semanal. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
- </summary>
-</member>
-<member name="M:rempersa.persaEntities11.AddToperfiles(rempersa.perfiles)">
- <summary>
- Método desusado para agregar un nuevo objeto al EntitySet perfiles. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
- </summary>
-</member>
-<member name="M:rempersa.persaEntities11.AddToproveedor(rempersa.proveedor)">
- <summary>
- Método desusado para agregar un nuevo objeto al EntitySet proveedor. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
  </summary>
 </member>
 <member name="M:rempersa.persaEntities11.AddToregiones(rempersa.regiones)">
@@ -564,16 +499,6 @@ rempersa
  Método desusado para agregar un nuevo objeto al EntitySet sysdiagrams. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
  </summary>
 </member>
-<member name="M:rempersa.persaEntities11.AddTotarifas(rempersa.tarifas)">
- <summary>
- Método desusado para agregar un nuevo objeto al EntitySet tarifas. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
- </summary>
-</member>
-<member name="M:rempersa.persaEntities11.AddTotipo_documento(rempersa.tipo_documento)">
- <summary>
- Método desusado para agregar un nuevo objeto al EntitySet tipo_documento. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
- </summary>
-</member>
 <member name="M:rempersa.persaEntities11.AddTotipo_pago(rempersa.tipo_pago)">
  <summary>
  Método desusado para agregar un nuevo objeto al EntitySet tipo_pago. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
@@ -594,14 +519,29 @@ rempersa
  Método desusado para agregar un nuevo objeto al EntitySet tipos_factura. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
  </summary>
 </member>
-<member name="M:rempersa.persaEntities11.AddTousuario_perfil(rempersa.usuario_perfil)">
- <summary>
- Método desusado para agregar un nuevo objeto al EntitySet usuario_perfil. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
- </summary>
-</member>
 <member name="M:rempersa.persaEntities11.AddTousuarios(rempersa.usuarios)">
  <summary>
  Método desusado para agregar un nuevo objeto al EntitySet usuarios. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
+ </summary>
+</member>
+<member name="M:rempersa.persaEntities11.AddTodetalleGuia(rempersa.detalleGuia)">
+ <summary>
+ Método desusado para agregar un nuevo objeto al EntitySet detalleGuia. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
+ </summary>
+</member>
+<member name="M:rempersa.persaEntities11.AddTofolios(rempersa.folios)">
+ <summary>
+ Método desusado para agregar un nuevo objeto al EntitySet folios. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
+ </summary>
+</member>
+<member name="M:rempersa.persaEntities11.AddToGuiasdespachos(rempersa.Guiasdespachos)">
+ <summary>
+ Método desusado para agregar un nuevo objeto al EntitySet Guiasdespachos. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
+ </summary>
+</member>
+<member name="M:rempersa.persaEntities11.AddTomonitorrem(rempersa.monitorrem)">
+ <summary>
+ Método desusado para agregar un nuevo objeto al EntitySet monitorrem. Considere la posibilidad de usar el método .Add de la propiedad ObjectSet(Of T) asociada.
  </summary>
 </member>
 <member name="M:rempersa.persaEntities11.getlistado_remate_adjudicatarios(System.Nullable{System.Int32})">
@@ -609,88 +549,6 @@ rempersa
  No hay documentación de metadatos disponible.
  </summary>
  <param name="idremate">No hay documentación de metadatos disponible.</param>
-</member>
-<member name="T:rempersa.articulo">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="M:rempersa.articulo.Createarticulo(System.Int32,System.Boolean)">
- <summary>
- Crear un nuevo objeto articulo.
- </summary>
- <param name="id_articulo">Valor inicial de la propiedad id_articulo.</param>
- <param name="articulo_compuesto">Valor inicial de la propiedad articulo_compuesto.</param>
-</member>
-<member name="P:rempersa.articulo.id_articulo">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.articulo.articulo_codigo">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.articulo.articulo_compuesto">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.articulo.articulo_descripcion">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.articulo.articulo_unidades">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.articulo.articulo_precio">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.articulo.articulo_archorigen">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.articulo.articulo_fechaproceso">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.articulo.articulo_operador">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.articulo.articulo_estado">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.articulo.articulo_observacion">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.articulo.articulo_bodega_destino">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.articulo.detalle_lotes">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.articulo.detalle_articulo">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
 </member>
 <member name="T:rempersa.bancos">
  <summary>
@@ -761,11 +619,6 @@ rempersa
  </summary>
 </member>
 <member name="P:rempersa.bodegaje.tipo_bodegaje">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.bodegaje.tarifas">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
@@ -1008,11 +861,6 @@ rempersa
  </summary>
 </member>
 <member name="P:rempersa.contratos.mandantesReference">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.contratos.tarifas">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
@@ -2167,94 +2015,6 @@ rempersa
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="T:rempersa.detalle_articulo">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="M:rempersa.detalle_articulo.Createdetalle_articulo(System.Int32,System.String,System.String,System.Double,System.Int32,System.Int32,System.Boolean,System.Boolean)">
- <summary>
- Crear un nuevo objeto detalle_articulo.
- </summary>
- <param name="id_detalle_articulo">Valor inicial de la propiedad id_detalle_articulo.</param>
- <param name="detalle_sku">Valor inicial de la propiedad detalle_sku.</param>
- <param name="detalle_descripcion">Valor inicial de la propiedad detalle_descripcion.</param>
- <param name="detalle_precio">Valor inicial de la propiedad detalle_precio.</param>
- <param name="detalle_estado">Valor inicial de la propiedad detalle_estado.</param>
- <param name="detalle_unidades">Valor inicial de la propiedad detalle_unidades.</param>
- <param name="detalle_sobrante">Valor inicial de la propiedad detalle_sobrante.</param>
- <param name="detalle_homologado">Valor inicial de la propiedad detalle_homologado.</param>
-</member>
-<member name="P:rempersa.detalle_articulo.id_detalle_articulo">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalle_articulo.id_articulo">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalle_articulo.detalle_sku">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalle_articulo.detalle_descripcion">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalle_articulo.detalle_precio">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalle_articulo.detalle_estado">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalle_articulo.detalle_unidades">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalle_articulo.detalle_observaciones">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalle_articulo.detalle_sobrante">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalle_articulo.detalle_homologado">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalle_articulo.detalle_original">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalle_articulo.detalle_id_guia">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalle_articulo.articulo">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalle_articulo.articuloReference">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
 <member name="T:rempersa.detalle_factura">
  <summary>
  No hay documentación de metadatos disponible.
@@ -2437,6 +2197,11 @@ rempersa
  No hay documentación de metadatos disponible.
  </summary>
 </member>
+<member name="P:rempersa.detalle_liquidacion.ila">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
 <member name="P:rempersa.detalle_liquidacion.liquidacion">
  <summary>
  No hay documentación de metadatos disponible.
@@ -2457,88 +2222,58 @@ rempersa
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="T:rempersa.detalle_lotes">
+<member name="T:rempersa.detalleGuia">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="M:rempersa.detalle_lotes.Createdetalle_lotes(System.Int32)">
+<member name="M:rempersa.detalleGuia.CreatedetalleGuia(System.Int32)">
  <summary>
- Crear un nuevo objeto detalle_lotes.
+ Crear un nuevo objeto detalleGuia.
  </summary>
- <param name="id_detlote">Valor inicial de la propiedad id_detlote.</param>
+ <param name="id">Valor inicial de la propiedad id.</param>
 </member>
-<member name="P:rempersa.detalle_lotes.id_detlote">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalle_lotes.id_lote">
+<member name="P:rempersa.detalleGuia.id">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="P:rempersa.detalle_lotes.id_articulo">
+<member name="P:rempersa.detalleGuia.idGuia">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="P:rempersa.detalle_lotes.descripcion">
+<member name="P:rempersa.detalleGuia.descripcion">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="P:rempersa.detalle_lotes.codigo_articulo">
+<member name="P:rempersa.detalleGuia.cantidad">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="P:rempersa.detalle_lotes.fecha">
+<member name="P:rempersa.detalleGuia.precioUnitario">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="P:rempersa.detalle_lotes.precio">
+<member name="P:rempersa.detalleGuia.precioFinal">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="P:rempersa.detalle_lotes.unidades_original">
+<member name="P:rempersa.detalleGuia.idDespacho">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="P:rempersa.detalle_lotes.unidades_modificado">
+<member name="P:rempersa.detalleGuia.Guiasdespachos">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="P:rempersa.detalle_lotes.id_mandate">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalle_lotes.tipo_mercaderia">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalle_lotes.articulo">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalle_lotes.articuloReference">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalle_lotes.lotes">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalle_lotes.lotesReference">
+<member name="P:rempersa.detalleGuia.GuiasdespachosReference">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
@@ -2575,67 +2310,6 @@ rempersa
  </summary>
 </member>
 <member name="P:rempersa.detalleingresocam.detalle_observacion">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="T:rempersa.detalleOC">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="M:rempersa.detalleOC.CreatedetalleOC(System.Int32)">
- <summary>
- Crear un nuevo objeto detalleOC.
- </summary>
- <param name="id_detalleoc">Valor inicial de la propiedad id_detalleoc.</param>
-</member>
-<member name="P:rempersa.detalleOC.id_detalleoc">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalleOC.id_oc">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalleOC.nro_item">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalleOC.detalle_item">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalleOC.unidades">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalleOC.valor_unitario">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalleOC.iva">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalleOC.total">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalleOC.ordenescompra">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.detalleOC.ordenescompraReference">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
@@ -2967,6 +2641,42 @@ rempersa
  No hay documentación de metadatos disponible.
  </summary>
 </member>
+<member name="T:rempersa.folios">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
+<member name="M:rempersa.folios.Createfolios(System.Int32)">
+ <summary>
+ Crear un nuevo objeto folios.
+ </summary>
+ <param name="id">Valor inicial de la propiedad id.</param>
+</member>
+<member name="P:rempersa.folios.id">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
+<member name="P:rempersa.folios.idTipoDocumento">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
+<member name="P:rempersa.folios.folioactivo">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
+<member name="P:rempersa.folios.maximo_autorizado">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
+<member name="P:rempersa.folios.fecha_actualizacion">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
 <member name="T:rempersa.garantias_boletas">
  <summary>
  No hay documentación de metadatos disponible.
@@ -3130,6 +2840,89 @@ rempersa
  </summary>
 </member>
 <member name="P:rempersa.guias.id_ingresocam">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
+<member name="T:rempersa.Guiasdespachos">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
+<member name="M:rempersa.Guiasdespachos.CreateGuiasdespachos(System.Int32,System.Int32,System.Int32,System.DateTime,System.String,System.String,System.Int32,System.String)">
+ <summary>
+ Crear un nuevo objeto Guiasdespachos.
+ </summary>
+ <param name="id">Valor inicial de la propiedad id.</param>
+ <param name="idCliente">Valor inicial de la propiedad idCliente.</param>
+ <param name="folio">Valor inicial de la propiedad folio.</param>
+ <param name="fecha">Valor inicial de la propiedad fecha.</param>
+ <param name="patente">Valor inicial de la propiedad patente.</param>
+ <param name="ruttranspote">Valor inicial de la propiedad Ruttranspote.</param>
+ <param name="idComuna">Valor inicial de la propiedad idComuna.</param>
+ <param name="ciudad">Valor inicial de la propiedad ciudad.</param>
+</member>
+<member name="P:rempersa.Guiasdespachos.id">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
+<member name="P:rempersa.Guiasdespachos.idCliente">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
+<member name="P:rempersa.Guiasdespachos.folio">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
+<member name="P:rempersa.Guiasdespachos.fecha">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
+<member name="P:rempersa.Guiasdespachos.patente">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
+<member name="P:rempersa.Guiasdespachos.Ruttranspote">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
+<member name="P:rempersa.Guiasdespachos.idComuna">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
+<member name="P:rempersa.Guiasdespachos.ciudad">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
+<member name="P:rempersa.Guiasdespachos.tasa">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
+<member name="P:rempersa.Guiasdespachos.montoTotal">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
+<member name="P:rempersa.Guiasdespachos.fechavencimiento">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
+<member name="P:rempersa.Guiasdespachos.id_mandante">
+ <summary>
+ No hay documentación de metadatos disponible.
+ </summary>
+</member>
+<member name="P:rempersa.Guiasdespachos.detalleGuia">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
@@ -3413,12 +3206,12 @@ rempersa
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="P:rempersa.lotes.detalle_liquidacion">
+<member name="P:rempersa.lotes.ot">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="P:rempersa.lotes.detalle_lotes">
+<member name="P:rempersa.lotes.detalle_liquidacion">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
@@ -3630,103 +3423,38 @@ rempersa
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="T:rempersa.ordenescompra">
+<member name="T:rempersa.monitorrem">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="M:rempersa.ordenescompra.Createordenescompra(System.Int32)">
+<member name="M:rempersa.monitorrem.Createmonitorrem(System.Int32)">
  <summary>
- Crear un nuevo objeto ordenescompra.
+ Crear un nuevo objeto monitorrem.
  </summary>
- <param name="id_orden">Valor inicial de la propiedad id_orden.</param>
+ <param name="id_monitor">Valor inicial de la propiedad id_monitor.</param>
 </member>
-<member name="P:rempersa.ordenescompra.id_orden">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.ordenescompra.id_proveedor">
+<member name="P:rempersa.monitorrem.id_monitor">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="P:rempersa.ordenescompra.fecha">
+<member name="P:rempersa.monitorrem.id_remate">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="P:rempersa.ordenescompra.id_condicion">
+<member name="P:rempersa.monitorrem.nroLotes">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="P:rempersa.ordenescompra.aprobada">
+<member name="P:rempersa.monitorrem.monto">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="P:rempersa.ordenescompra.id_usuario_aprueba">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.ordenescompra.fecha_aprobacion">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.ordenescompra.enviada">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.ordenescompra.fecha_envio">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.ordenescompra.pagada">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.ordenescompra.Afecta">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.ordenescompra.neto">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.ordenescompra.iva">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.ordenescompra.Total">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.ordenescompra.observaciones">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.ordenescompra.detalleOC">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.ordenescompra.proveedor">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.ordenescompra.proveedorReference">
+<member name="P:rempersa.monitorrem.fecha">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
@@ -3832,88 +3560,6 @@ rempersa
  </summary>
 </member>
 <member name="P:rempersa.paso_remates_semanal.Afecto">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="T:rempersa.perfiles">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="M:rempersa.perfiles.Createperfiles(System.Int32)">
- <summary>
- Crear un nuevo objeto perfiles.
- </summary>
- <param name="id_perfil">Valor inicial de la propiedad id_perfil.</param>
-</member>
-<member name="P:rempersa.perfiles.id_perfil">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.perfiles.per_nombre">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.perfiles.per_estado">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.perfiles.usuario_perfil">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="T:rempersa.proveedor">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="M:rempersa.proveedor.Createproveedor(System.Int32)">
- <summary>
- Crear un nuevo objeto proveedor.
- </summary>
- <param name="id_proveedor">Valor inicial de la propiedad id_proveedor.</param>
-</member>
-<member name="P:rempersa.proveedor.id_proveedor">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.proveedor.razon_social">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.proveedor.Direccion">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.proveedor.id_comuna">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.proveedor.Telefono">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.proveedor.email">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.proveedor.contacto">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.proveedor.ordenescompra">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>
@@ -4329,103 +3975,6 @@ rempersa
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="T:rempersa.tarifas">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="M:rempersa.tarifas.Createtarifas(System.Int32)">
- <summary>
- Crear un nuevo objeto tarifas.
- </summary>
- <param name="id_tarifa">Valor inicial de la propiedad id_tarifa.</param>
-</member>
-<member name="P:rempersa.tarifas.id_tarifa">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.tarifas.id_contrato">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.tarifas.comision">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.tarifas.costo_fijo">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.tarifas.bodegaje">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.tarifas.id_bodeja">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.tarifas.publicidad">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.tarifas.gastos_operacionales">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.tarifas.bodegaje1">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.tarifas.bodegaje1Reference">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.tarifas.contratos">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.tarifas.contratosReference">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="T:rempersa.tipo_documento">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="M:rempersa.tipo_documento.Createtipo_documento(System.Int32)">
- <summary>
- Crear un nuevo objeto tipo_documento.
- </summary>
- <param name="id_tipo">Valor inicial de la propiedad id_tipo.</param>
-</member>
-<member name="P:rempersa.tipo_documento.id_tipo">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.tipo_documento.decripcion">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.tipo_documento.estado">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
 <member name="T:rempersa.tipo_pago">
  <summary>
  No hay documentación de metadatos disponible.
@@ -4499,62 +4048,6 @@ rempersa
  No hay documentación de metadatos disponible.
  </summary>
 </member>
-<member name="T:rempersa.usuario_perfil">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="M:rempersa.usuario_perfil.Createusuario_perfil(System.Int32)">
- <summary>
- Crear un nuevo objeto usuario_perfil.
- </summary>
- <param name="id_uusario_perfil">Valor inicial de la propiedad id_uusario_perfil.</param>
-</member>
-<member name="P:rempersa.usuario_perfil.id_uusario_perfil">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.usuario_perfil.id_usuario">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.usuario_perfil.id_perfil">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.usuario_perfil.estado">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.usuario_perfil.fecha_estado">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.usuario_perfil.perfiles">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.usuario_perfil.perfilesReference">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.usuario_perfil.usuarios">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.usuario_perfil.usuariosReference">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
 <member name="T:rempersa.usuarios">
  <summary>
  No hay documentación de metadatos disponible.
@@ -4617,11 +4110,6 @@ rempersa
  </summary>
 </member>
 <member name="P:rempersa.usuarios.use_user">
- <summary>
- No hay documentación de metadatos disponible.
- </summary>
-</member>
-<member name="P:rempersa.usuarios.usuario_perfil">
  <summary>
  No hay documentación de metadatos disponible.
  </summary>

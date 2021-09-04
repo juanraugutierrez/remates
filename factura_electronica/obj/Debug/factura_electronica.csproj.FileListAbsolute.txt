@@ -17,7 +17,6 @@ G:\persa\factura_electronica\obj\Debug\factura_electronica.dll
 G:\persa\factura_electronica\obj\Debug\factura_electronica.pdb
 C:\paso\persa\factura_electronica\bin\Debug\factura_electronica.dll
 C:\paso\persa\factura_electronica\bin\Debug\factura_electronica.pdb
-C:\paso\persa\factura_electronica\obj\Debug\factura_electronica.csproj.AssemblyReference.cache
 C:\paso\persa\factura_electronica\obj\Debug\factura_electronica.csproj.CoreCompileInputs.cache
 C:\paso\persa\factura_electronica\obj\Debug\factura_electronica.dll
 C:\paso\persa\factura_electronica\obj\Debug\factura_electronica.pdb

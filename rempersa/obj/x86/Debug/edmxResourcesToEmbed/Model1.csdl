@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="persaModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
   <EntityContainer Name="persaEntities11" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="articulo" EntityType="persaModel.articulo" />
     <EntitySet Name="bancos" EntityType="persaModel.bancos" />
     <EntitySet Name="bodega" EntityType="persaModel.bodega" />
     <EntitySet Name="bodegaje" EntityType="persaModel.bodegaje" />
@@ -15,12 +14,9 @@
     <EntitySet Name="Cuadratura_detalle" EntityType="persaModel.Cuadratura_detalle" />
     <EntitySet Name="Cuadratura_resp" EntityType="persaModel.Cuadratura_resp" />
     <EntitySet Name="cuentas" EntityType="persaModel.cuentas" />
-    <EntitySet Name="detalle_articulo" EntityType="persaModel.detalle_articulo" />
     <EntitySet Name="detalle_factura" EntityType="persaModel.detalle_factura" />
     <EntitySet Name="detalle_liquidacion" EntityType="persaModel.detalle_liquidacion" />
-    <EntitySet Name="detalle_lotes" EntityType="persaModel.detalle_lotes" />
     <EntitySet Name="detalleingresocam" EntityType="persaModel.detalleingresocam" />
-    <EntitySet Name="detalleOC" EntityType="persaModel.detalleOC" />
     <EntitySet Name="egresos" EntityType="persaModel.egresos" />
     <EntitySet Name="empresa" EntityType="persaModel.empresa" />
     <EntitySet Name="estado_remates" EntityType="persaModel.estado_remates" />
@@ -34,33 +30,19 @@
     <EntitySet Name="mandantes" EntityType="persaModel.mandantes" />
     <EntitySet Name="mercaderia" EntityType="persaModel.mercaderia" />
     <EntitySet Name="modulos" EntityType="persaModel.modulos" />
-    <EntitySet Name="ordenescompra" EntityType="persaModel.ordenescompra" />
     <EntitySet Name="parametros" EntityType="persaModel.parametros" />
     <EntitySet Name="paso_remates_semanal" EntityType="persaModel.paso_remates_semanal" />
-    <EntitySet Name="perfiles" EntityType="persaModel.perfiles" />
-    <EntitySet Name="proveedor" EntityType="persaModel.proveedor" />
     <EntitySet Name="regiones" EntityType="persaModel.regiones" />
     <EntitySet Name="remates_mercaderia" EntityType="persaModel.remates_mercaderia" />
     <EntitySet Name="rgarantia" EntityType="persaModel.rgarantia" />
     <EntitySet Name="sub_modulos" EntityType="persaModel.sub_modulos" />
     <EntitySet Name="sucursalesman" EntityType="persaModel.sucursalesman" />
     <EntitySet Name="sysdiagrams" EntityType="persaModel.sysdiagrams" />
-    <EntitySet Name="tarifas" EntityType="persaModel.tarifas" />
-    <EntitySet Name="tipo_documento" EntityType="persaModel.tipo_documento" />
     <EntitySet Name="tipo_pago" EntityType="persaModel.tipo_pago" />
     <EntitySet Name="tipo_remates" EntityType="persaModel.tipo_remates" />
     <EntitySet Name="tipocontratosp" EntityType="persaModel.tipocontratosp" />
     <EntitySet Name="tipos_factura" EntityType="persaModel.tipos_factura" />
-    <EntitySet Name="usuario_perfil" EntityType="persaModel.usuario_perfil" />
     <EntitySet Name="usuarios" EntityType="persaModel.usuarios" />
-    <AssociationSet Name="fk_articulo" Association="persaModel.fk_articulo">
-      <End Role="articulo" EntitySet="articulo" />
-      <End Role="detalle_lotes" EntitySet="detalle_lotes" />
-    </AssociationSet>
-    <AssociationSet Name="FK_detalle_articulo_articulo" Association="persaModel.FK_detalle_articulo_articulo">
-      <End Role="articulo" EntitySet="articulo" />
-      <End Role="detalle_articulo" EntitySet="detalle_articulo" />
-    </AssociationSet>
     <AssociationSet Name="FK_cuentas_bancos" Association="persaModel.FK_cuentas_bancos">
       <End Role="bancos" EntitySet="bancos" />
       <End Role="cuentas" EntitySet="cuentas" />
@@ -68,10 +50,6 @@
     <AssociationSet Name="FK_egresos_bancos" Association="persaModel.FK_egresos_bancos">
       <End Role="bancos" EntitySet="bancos" />
       <End Role="egresos" EntitySet="egresos" />
-    </AssociationSet>
-    <AssociationSet Name="FK_tarifas_bodegaje" Association="persaModel.FK_tarifas_bodegaje">
-      <End Role="bodegaje" EntitySet="bodegaje" />
-      <End Role="tarifas" EntitySet="tarifas" />
     </AssociationSet>
     <AssociationSet Name="fk_cliente" Association="persaModel.fk_cliente">
       <End Role="clientes" EntitySet="clientes" />
@@ -85,10 +63,6 @@
       <End Role="mandantes" EntitySet="mandantes" />
       <End Role="contratos" EntitySet="contratos" />
     </AssociationSet>
-    <AssociationSet Name="FK_tarifas_contratos" Association="persaModel.FK_tarifas_contratos">
-      <End Role="contratos" EntitySet="contratos" />
-      <End Role="tarifas" EntitySet="tarifas" />
-    </AssociationSet>
     <AssociationSet Name="fk_factura" Association="persaModel.fk_factura">
       <End Role="facturas" EntitySet="facturas" />
       <End Role="detalle_factura" EntitySet="detalle_factura" />
@@ -100,14 +74,6 @@
     <AssociationSet Name="FK_detalle_liquidacion_lotes" Association="persaModel.FK_detalle_liquidacion_lotes">
       <End Role="lotes" EntitySet="lotes" />
       <End Role="detalle_liquidacion" EntitySet="detalle_liquidacion" />
-    </AssociationSet>
-    <AssociationSet Name="FK_lotes" Association="persaModel.FK_lotes">
-      <End Role="lotes" EntitySet="lotes" />
-      <End Role="detalle_lotes" EntitySet="detalle_lotes" />
-    </AssociationSet>
-    <AssociationSet Name="fk_oc" Association="persaModel.fk_oc">
-      <End Role="ordenescompra" EntitySet="ordenescompra" />
-      <End Role="detalleOC" EntitySet="detalleOC" />
     </AssociationSet>
     <AssociationSet Name="fk_estado_remate" Association="persaModel.fk_estado_remate">
       <End Role="estado_remates" EntitySet="estado_remates" />
@@ -133,49 +99,26 @@
       <End Role="mandantes" EntitySet="mandantes" />
       <End Role="sucursalesman" EntitySet="sucursalesman" />
     </AssociationSet>
-    <AssociationSet Name="fk_proveedor" Association="persaModel.fk_proveedor">
-      <End Role="proveedor" EntitySet="proveedor" />
-      <End Role="ordenescompra" EntitySet="ordenescompra" />
-    </AssociationSet>
     <AssociationSet Name="fk_submodulos" Association="persaModel.fk_submodulos">
       <End Role="sub_modulos" EntitySet="sub_modulos" />
       <End Role="parametros" EntitySet="parametros" />
-    </AssociationSet>
-    <AssociationSet Name="fk_perfil" Association="persaModel.fk_perfil">
-      <End Role="perfiles" EntitySet="perfiles" />
-      <End Role="usuario_perfil" EntitySet="usuario_perfil" />
     </AssociationSet>
     <AssociationSet Name="fk_tipo_remate" Association="persaModel.fk_tipo_remate">
       <End Role="tipo_remates" EntitySet="tipo_remates" />
       <End Role="remates_mercaderia" EntitySet="remates_mercaderia" />
     </AssociationSet>
-    <AssociationSet Name="fk_user" Association="persaModel.fk_user">
-      <End Role="usuarios" EntitySet="usuarios" />
-      <End Role="usuario_perfil" EntitySet="usuario_perfil" />
-    </AssociationSet>
     <FunctionImport Name="getlistado_remate_adjudicatarios" ReturnType="Collection(persaModel.getlistado_remate_adjudicatarios_Result)">
       <Parameter Name="idremate" Mode="In" Type="Int32" />
     </FunctionImport>
+    <EntitySet Name="detalleGuia" EntityType="persaModel.detalleGuia" />
+    <EntitySet Name="folios" EntityType="persaModel.folios" />
+    <EntitySet Name="Guiasdespachos" EntityType="persaModel.Guiasdespachos" />
+    <EntitySet Name="monitorrem" EntityType="persaModel.monitorrem" />
+    <AssociationSet Name="FK_Guia" Association="persaModel.FK_Guia">
+      <End Role="Guiasdespachos" EntitySet="Guiasdespachos" />
+      <End Role="detalleGuia" EntitySet="detalleGuia" />
+    </AssociationSet>
   </EntityContainer>
-  <EntityType Name="articulo">
-    <Key>
-      <PropertyRef Name="id_articulo" />
-    </Key>
-    <Property Name="id_articulo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="articulo_codigo" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
-    <Property Name="articulo_compuesto" Type="Boolean" Nullable="false" />
-    <Property Name="articulo_descripcion" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
-    <Property Name="articulo_unidades" Type="Int32" />
-    <Property Name="articulo_precio" Type="Double" />
-    <Property Name="articulo_archorigen" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
-    <Property Name="articulo_fechaproceso" Type="DateTime" />
-    <Property Name="articulo_operador" Type="Int32" />
-    <Property Name="articulo_estado" Type="Int32" />
-    <Property Name="articulo_observacion" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
-    <Property Name="articulo_bodega_destino" Type="Int32" />
-    <NavigationProperty Name="detalle_lotes" Relationship="persaModel.fk_articulo" FromRole="articulo" ToRole="detalle_lotes" />
-    <NavigationProperty Name="detalle_articulo" Relationship="persaModel.FK_detalle_articulo_articulo" FromRole="articulo" ToRole="detalle_articulo" />
-  </EntityType>
   <EntityType Name="bancos">
     <Key>
       <PropertyRef Name="id_banco" />
@@ -198,7 +141,6 @@
     </Key>
     <Property Name="id_bodegaje" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="tipo_bodegaje" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
-    <NavigationProperty Name="tarifas" Relationship="persaModel.FK_tarifas_bodegaje" FromRole="bodegaje" ToRole="tarifas" />
   </EntityType>
   <EntityType Name="cargos">
     <Key>
@@ -257,12 +199,11 @@
     </Key>
     <Property Name="id_contrato" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="id_mandante" Type="Int32" Nullable="false" />
-    <Property Name="fecha_inicio" Type="DateTime" />
-    <Property Name="fecha_termino" Type="DateTime" />
+    <Property Name="fecha_inicio" Type="DateTime" Precision="0" />
+    <Property Name="fecha_termino" Type="DateTime" Precision="0" />
     <Property Name="estado_contrato" Type="Boolean" />
     <Property Name="observacion" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
     <NavigationProperty Name="mandantes" Relationship="persaModel.FK_contratos_mandantes" FromRole="contratos" ToRole="mandantes" />
-    <NavigationProperty Name="tarifas" Relationship="persaModel.FK_tarifas_contratos" FromRole="contratos" ToRole="tarifas" />
   </EntityType>
   <EntityType Name="Cuadratura">
     <Key>
@@ -270,7 +211,7 @@
     </Key>
     <Property Name="id_cuadra" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="estado_cuadra" Type="Int32" />
-    <Property Name="fecha_cuadra" Type="DateTime" />
+    <Property Name="fecha_cuadra" Type="DateTime" Precision="3" />
     <Property Name="Ejecutivo" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
     <Property Name="id_remate" Type="Int32" />
     <Property Name="obs_cuadra" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
@@ -392,7 +333,7 @@
     </Key>
     <Property Name="id_cuadra" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="estado_cuadra" Type="Int32" />
-    <Property Name="fecha_cuadra" Type="DateTime" />
+    <Property Name="fecha_cuadra" Type="DateTime" Precision="3" />
     <Property Name="Ejecutivo" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
     <Property Name="id_remate" Type="Int32" />
     <Property Name="obs_cuadra" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
@@ -504,24 +445,6 @@
     <Property Name="nro_cuenta" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
     <NavigationProperty Name="bancos" Relationship="persaModel.FK_cuentas_bancos" FromRole="cuentas" ToRole="bancos" />
   </EntityType>
-  <EntityType Name="detalle_articulo">
-    <Key>
-      <PropertyRef Name="id_detalle_articulo" />
-    </Key>
-    <Property Name="id_detalle_articulo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="id_articulo" Type="Int32" />
-    <Property Name="detalle_sku" Type="String" Nullable="false" MaxLength="14" Unicode="false" FixedLength="false" />
-    <Property Name="detalle_descripcion" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
-    <Property Name="detalle_precio" Type="Double" Nullable="false" />
-    <Property Name="detalle_estado" Type="Int32" Nullable="false" />
-    <Property Name="detalle_unidades" Type="Int32" Nullable="false" />
-    <Property Name="detalle_observaciones" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
-    <Property Name="detalle_sobrante" Type="Boolean" Nullable="false" />
-    <Property Name="detalle_homologado" Type="Boolean" Nullable="false" />
-    <Property Name="detalle_original" Type="String" MaxLength="14" Unicode="false" FixedLength="false" />
-    <Property Name="detalle_id_guia" Type="Int32" />
-    <NavigationProperty Name="articulo" Relationship="persaModel.FK_detalle_articulo_articulo" FromRole="detalle_articulo" ToRole="articulo" />
-  </EntityType>
   <EntityType Name="detalle_factura">
     <Key>
       <PropertyRef Name="id_detalle" />
@@ -564,24 +487,7 @@
     <Property Name="sucursal" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
     <NavigationProperty Name="liquidacion" Relationship="persaModel.FK_detalle_liquidacion_liquidacion" FromRole="detalle_liquidacion" ToRole="liquidacion" />
     <NavigationProperty Name="lotes" Relationship="persaModel.FK_detalle_liquidacion_lotes" FromRole="detalle_liquidacion" ToRole="lotes" />
-  </EntityType>
-  <EntityType Name="detalle_lotes">
-    <Key>
-      <PropertyRef Name="id_detlote" />
-    </Key>
-    <Property Name="id_detlote" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="id_lote" Type="Int32" />
-    <Property Name="id_articulo" Type="Int32" />
-    <Property Name="descripcion" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
-    <Property Name="codigo_articulo" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
-    <Property Name="fecha" Type="DateTime" />
-    <Property Name="precio" Type="Double" />
-    <Property Name="unidades_original" Type="Int32" />
-    <Property Name="unidades_modificado" Type="Int32" />
-    <Property Name="id_mandate" Type="Int32" />
-    <Property Name="tipo_mercaderia" Type="Int32" />
-    <NavigationProperty Name="articulo" Relationship="persaModel.fk_articulo" FromRole="detalle_lotes" ToRole="articulo" />
-    <NavigationProperty Name="lotes" Relationship="persaModel.FK_lotes" FromRole="detalle_lotes" ToRole="lotes" />
+    <Property Name="ila" Type="Boolean" />
   </EntityType>
   <EntityType Name="detalleingresocam">
     <Key>
@@ -593,31 +499,17 @@
     <Property Name="detalle_patente" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
     <Property Name="detalle_observacion" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
   </EntityType>
-  <EntityType Name="detalleOC">
-    <Key>
-      <PropertyRef Name="id_detalleoc" />
-    </Key>
-    <Property Name="id_detalleoc" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="id_oc" Type="Int32" />
-    <Property Name="nro_item" Type="Int32" />
-    <Property Name="detalle_item" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
-    <Property Name="unidades" Type="Int32" />
-    <Property Name="valor_unitario" Type="Double" />
-    <Property Name="iva" Type="Double" />
-    <Property Name="total" Type="Double" />
-    <NavigationProperty Name="ordenescompra" Relationship="persaModel.fk_oc" FromRole="detalleOC" ToRole="ordenescompra" />
-  </EntityType>
   <EntityType Name="egresos">
     <Key>
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="fecha" Type="DateTime" />
+    <Property Name="fecha" Type="DateTime" Precision="3" />
     <Property Name="concepto" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
     <Property Name="responsable" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
     <Property Name="id_cuenta" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
     <Property Name="aprobado" Type="Boolean" />
-    <Property Name="fecha_aprobacion" Type="DateTime" />
+    <Property Name="fecha_aprobacion" Type="DateTime" Precision="3" />
     <Property Name="monto" Type="Double" Nullable="false" />
     <Property Name="id_tipo_documento" Type="Int32" Nullable="false" />
     <Property Name="nro_documento" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
@@ -679,7 +571,7 @@
     <Property Name="id_estado" Type="Int32" />
     <Property Name="ingreso_liquido" Type="Double" />
     <Property Name="id_tipofactura" Type="Int32" />
-    <Property Name="fecha" Type="DateTime" />
+    <Property Name="fecha" Type="DateTime" Precision="0" />
     <Property Name="mto_cargos" Type="Int32" />
     <NavigationProperty Name="clientes" Relationship="persaModel.fk_cliente" FromRole="facturas" ToRole="clientes" />
     <NavigationProperty Name="detalle_factura" Relationship="persaModel.fk_factura" FromRole="facturas" ToRole="detalle_factura" />
@@ -704,7 +596,7 @@
       <PropertyRef Name="id_guia" />
     </Key>
     <Property Name="id_guia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="guia_fecha" Type="DateTime" />
+    <Property Name="guia_fecha" Type="DateTime" Precision="3" />
     <Property Name="id_mandante" Type="Int32" />
     <Property Name="id_sucursal" Type="Int32" />
     <Property Name="guia_qinformado" Type="Int32" />
@@ -719,8 +611,8 @@
     <Property Name="guia_psobrantes" Type="Int32" />
     <Property Name="guia_prematados" Type="Int32" />
     <Property Name="guia_pliquidados" Type="Int32" />
-    <Property Name="guia_aprobacion" Type="DateTime" />
-    <Property Name="guia_fechacierre" Type="DateTime" />
+    <Property Name="guia_aprobacion" Type="DateTime" Precision="3" />
+    <Property Name="guia_fechacierre" Type="DateTime" Precision="3" />
     <Property Name="guia_useraprob" Type="Int32" />
     <Property Name="guia_nguias" Type="Int32" />
     <Property Name="id_ingresocam" Type="Int32" />
@@ -730,7 +622,7 @@
       <PropertyRef Name="id_ingreso" />
     </Key>
     <Property Name="id_ingreso" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="ingreso_fecha" Type="DateTime" />
+    <Property Name="ingreso_fecha" Type="DateTime" Precision="3" />
     <Property Name="ingreso_idDetalle" Type="Int32" />
     <Property Name="ingreso_rutchofer" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
   </EntityType>
@@ -741,7 +633,7 @@
     <Property Name="id_liquidacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="nro_liquidacion" Type="Int32" />
     <Property Name="id_mandante" Type="Int32" />
-    <Property Name="fecha" Type="DateTime" />
+    <Property Name="fecha" Type="DateTime" Precision="3" />
     <Property Name="mto_neto" Type="Double" />
     <Property Name="mto_impreacudado" Type="Double" />
     <Property Name="comision" Type="Double" />
@@ -784,12 +676,12 @@
     <Property Name="sucursal" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
     <Property Name="pasillo" Type="Int32" />
     <NavigationProperty Name="detalle_liquidacion" Relationship="persaModel.FK_detalle_liquidacion_lotes" FromRole="lotes" ToRole="detalle_liquidacion" />
-    <NavigationProperty Name="detalle_lotes" Relationship="persaModel.FK_lotes" FromRole="lotes" ToRole="detalle_lotes" />
     <NavigationProperty Name="remates_mercaderia" Relationship="persaModel.FK_lotes_remates_mercaderia" FromRole="lotes" ToRole="remates_mercaderia" />
-    <Property Type="DateTime" Name="fecha_factura" />
-    <Property Type="DateTime" Name="fecha_liquidacion" />
+    <Property Type="DateTime" Name="fecha_factura" Precision="0" />
+    <Property Type="DateTime" Name="fecha_liquidacion" Precision="0" />
     <Property Type="Int32" Name="nrofactura" />
     <Property Type="Int32" Name="nro_liquidacion" />
+    <Property Name="ot" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="mandantes">
     <Key>
@@ -824,7 +716,7 @@
     <Property Name="merca_unidades" Type="Int32" />
     <Property Name="merca_precio" Type="Double" />
     <Property Name="merca_archorigen" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
-    <Property Name="merca_fechaproceso" Type="DateTime" />
+    <Property Name="merca_fechaproceso" Type="DateTime" Precision="3" />
     <Property Name="merca_operador" Type="Int32" />
     <Property Name="merca_estado" Type="Int32" />
     <Property Name="merca_claisficacion" Type="Int32" />
@@ -836,28 +728,6 @@
     </Key>
     <Property Name="id_modulo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="modulo_nombre" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
-  </EntityType>
-  <EntityType Name="ordenescompra">
-    <Key>
-      <PropertyRef Name="id_orden" />
-    </Key>
-    <Property Name="id_orden" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="id_proveedor" Type="Int32" />
-    <Property Name="fecha" Type="DateTime" />
-    <Property Name="id_condicion" Type="Int32" />
-    <Property Name="aprobada" Type="Boolean" />
-    <Property Name="id_usuario_aprueba" Type="Int32" />
-    <Property Name="fecha_aprobacion" Type="DateTime" />
-    <Property Name="enviada" Type="Boolean" />
-    <Property Name="fecha_envio" Type="DateTime" />
-    <Property Name="pagada" Type="Boolean" />
-    <Property Name="Afecta" Type="Boolean" />
-    <Property Name="neto" Type="Double" />
-    <Property Name="iva" Type="Double" />
-    <Property Name="Total" Type="Double" />
-    <Property Name="observaciones" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
-    <NavigationProperty Name="detalleOC" Relationship="persaModel.fk_oc" FromRole="ordenescompra" ToRole="detalleOC" />
-    <NavigationProperty Name="proveedor" Relationship="persaModel.fk_proveedor" FromRole="ordenescompra" ToRole="proveedor" />
   </EntityType>
   <EntityType Name="parametros">
     <Key>
@@ -890,28 +760,6 @@
     <Property Name="Facturado" Type="String" Nullable="false" MaxLength="12" Unicode="false" FixedLength="false" />
     <Property Name="Afecto" Type="String" Nullable="false" MaxLength="7" Unicode="false" FixedLength="false" />
   </EntityType>
-  <EntityType Name="perfiles">
-    <Key>
-      <PropertyRef Name="id_perfil" />
-    </Key>
-    <Property Name="id_perfil" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="per_nombre" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
-    <Property Name="per_estado" Type="Int32" />
-    <NavigationProperty Name="usuario_perfil" Relationship="persaModel.fk_perfil" FromRole="perfiles" ToRole="usuario_perfil" />
-  </EntityType>
-  <EntityType Name="proveedor">
-    <Key>
-      <PropertyRef Name="id_proveedor" />
-    </Key>
-    <Property Name="id_proveedor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="razon_social" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
-    <Property Name="Direccion" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
-    <Property Name="id_comuna" Type="Int32" />
-    <Property Name="Telefono" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
-    <Property Name="email" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
-    <Property Name="contacto" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
-    <NavigationProperty Name="ordenescompra" Relationship="persaModel.fk_proveedor" FromRole="proveedor" ToRole="ordenescompra" />
-  </EntityType>
   <EntityType Name="regiones">
     <Key>
       <PropertyRef Name="id_region" />
@@ -925,7 +773,7 @@
       <PropertyRef Name="id_remate" />
     </Key>
     <Property Name="id_remate" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="fecha_remate" Type="DateTime" Nullable="false" />
+    <Property Name="fecha_remate" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="direccion" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
     <Property Name="tipo_remate" Type="Int32" />
     <Property Name="numero_lotes" Type="Int32" />
@@ -953,7 +801,7 @@
     </Key>
     <Property Name="id_rgarantia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="estado_rgarantia" Type="Int32" />
-    <Property Name="fecha_rgarantia" Type="DateTime" Nullable="false" />
+    <Property Name="fecha_rgarantia" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="Ejecutivo" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
     <Property Name="paridad" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
     <Property Name="nro_lotes" Type="Int32" Nullable="false" />
@@ -1006,29 +854,6 @@
     <Property Name="version" Type="Int32" />
     <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
-  <EntityType Name="tarifas">
-    <Key>
-      <PropertyRef Name="id_tarifa" />
-    </Key>
-    <Property Name="id_tarifa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="id_contrato" Type="Int32" />
-    <Property Name="comision" Type="Int32" />
-    <Property Name="costo_fijo" Type="Int32" />
-    <Property Name="bodegaje" Type="Int32" />
-    <Property Name="id_bodeja" Type="Int32" />
-    <Property Name="publicidad" Type="Int32" />
-    <Property Name="gastos_operacionales" Type="Int32" />
-    <NavigationProperty Name="bodegaje1" Relationship="persaModel.FK_tarifas_bodegaje" FromRole="tarifas" ToRole="bodegaje" />
-    <NavigationProperty Name="contratos" Relationship="persaModel.FK_tarifas_contratos" FromRole="tarifas" ToRole="contratos" />
-  </EntityType>
-  <EntityType Name="tipo_documento">
-    <Key>
-      <PropertyRef Name="id_tipo" />
-    </Key>
-    <Property Name="id_tipo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="decripcion" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
-    <Property Name="estado" Type="Boolean" />
-  </EntityType>
   <EntityType Name="tipo_pago">
     <Key>
       <PropertyRef Name="id_tipopago" />
@@ -1060,18 +885,6 @@
     <Property Name="descripcion" Type="String" MaxLength="75" Unicode="false" FixedLength="false" />
     <NavigationProperty Name="facturas" Relationship="persaModel.fk_tipo_factura" FromRole="tipos_factura" ToRole="facturas" />
   </EntityType>
-  <EntityType Name="usuario_perfil">
-    <Key>
-      <PropertyRef Name="id_uusario_perfil" />
-    </Key>
-    <Property Name="id_uusario_perfil" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="id_usuario" Type="Int32" />
-    <Property Name="id_perfil" Type="Int32" />
-    <Property Name="estado" Type="Boolean" />
-    <Property Name="fecha_estado" Type="DateTime" />
-    <NavigationProperty Name="perfiles" Relationship="persaModel.fk_perfil" FromRole="usuario_perfil" ToRole="perfiles" />
-    <NavigationProperty Name="usuarios" Relationship="persaModel.fk_user" FromRole="usuario_perfil" ToRole="usuarios" />
-  </EntityType>
   <EntityType Name="usuarios">
     <Key>
       <PropertyRef Name="id_usuario" />
@@ -1079,39 +892,14 @@
     <Property Name="id_usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="use_nombre" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
     <Property Name="use_apellido" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
-    <Property Name="use_fechana" Type="DateTime" />
-    <Property Name="use_fechaingreso" Type="DateTime" Nullable="false" />
+    <Property Name="use_fechana" Type="DateTime" Precision="3" />
+    <Property Name="use_fechaingreso" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="use_cargo" Type="Int32" />
     <Property Name="use_estado" Type="Int32" />
     <Property Name="use_tipocontrato" Type="Int32" />
     <Property Name="use_password" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
     <Property Name="use_user" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
-    <NavigationProperty Name="usuario_perfil" Relationship="persaModel.fk_user" FromRole="usuarios" ToRole="usuario_perfil" />
   </EntityType>
-  <Association Name="fk_articulo">
-    <End Role="articulo" Type="persaModel.articulo" Multiplicity="0..1" />
-    <End Role="detalle_lotes" Type="persaModel.detalle_lotes" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="articulo">
-        <PropertyRef Name="id_articulo" />
-      </Principal>
-      <Dependent Role="detalle_lotes">
-        <PropertyRef Name="id_articulo" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_detalle_articulo_articulo">
-    <End Role="articulo" Type="persaModel.articulo" Multiplicity="0..1" />
-    <End Role="detalle_articulo" Type="persaModel.detalle_articulo" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="articulo">
-        <PropertyRef Name="id_articulo" />
-      </Principal>
-      <Dependent Role="detalle_articulo">
-        <PropertyRef Name="id_articulo" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_cuentas_bancos">
     <End Role="bancos" Type="persaModel.bancos" Multiplicity="1" />
     <End Role="cuentas" Type="persaModel.cuentas" Multiplicity="*" />
@@ -1133,18 +921,6 @@
       </Principal>
       <Dependent Role="egresos">
         <PropertyRef Name="id_banco" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_tarifas_bodegaje">
-    <End Role="bodegaje" Type="persaModel.bodegaje" Multiplicity="0..1" />
-    <End Role="tarifas" Type="persaModel.tarifas" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="bodegaje">
-        <PropertyRef Name="id_bodegaje" />
-      </Principal>
-      <Dependent Role="tarifas">
-        <PropertyRef Name="id_bodeja" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -1184,18 +960,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_tarifas_contratos">
-    <End Role="contratos" Type="persaModel.contratos" Multiplicity="0..1" />
-    <End Role="tarifas" Type="persaModel.tarifas" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="contratos">
-        <PropertyRef Name="id_contrato" />
-      </Principal>
-      <Dependent Role="tarifas">
-        <PropertyRef Name="id_contrato" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="fk_factura">
     <End Role="facturas" Type="persaModel.facturas" Multiplicity="0..1" />
     <End Role="detalle_factura" Type="persaModel.detalle_factura" Multiplicity="*" />
@@ -1229,30 +993,6 @@
       </Principal>
       <Dependent Role="detalle_liquidacion">
         <PropertyRef Name="id_lote" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_lotes">
-    <End Role="lotes" Type="persaModel.lotes" Multiplicity="0..1" />
-    <End Role="detalle_lotes" Type="persaModel.detalle_lotes" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="lotes">
-        <PropertyRef Name="id_lote" />
-      </Principal>
-      <Dependent Role="detalle_lotes">
-        <PropertyRef Name="id_lote" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="fk_oc">
-    <End Role="ordenescompra" Type="persaModel.ordenescompra" Multiplicity="0..1" />
-    <End Role="detalleOC" Type="persaModel.detalleOC" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="ordenescompra">
-        <PropertyRef Name="id_orden" />
-      </Principal>
-      <Dependent Role="detalleOC">
-        <PropertyRef Name="id_oc" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -1328,18 +1068,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="fk_proveedor">
-    <End Role="proveedor" Type="persaModel.proveedor" Multiplicity="0..1" />
-    <End Role="ordenescompra" Type="persaModel.ordenescompra" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="proveedor">
-        <PropertyRef Name="id_proveedor" />
-      </Principal>
-      <Dependent Role="ordenescompra">
-        <PropertyRef Name="id_proveedor" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="fk_submodulos">
     <End Role="sub_modulos" Type="persaModel.sub_modulos" Multiplicity="1" />
     <End Role="parametros" Type="persaModel.parametros" Multiplicity="*" />
@@ -1352,18 +1080,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="fk_perfil">
-    <End Role="perfiles" Type="persaModel.perfiles" Multiplicity="0..1" />
-    <End Role="usuario_perfil" Type="persaModel.usuario_perfil" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="perfiles">
-        <PropertyRef Name="id_perfil" />
-      </Principal>
-      <Dependent Role="usuario_perfil">
-        <PropertyRef Name="id_perfil" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="fk_tipo_remate">
     <End Role="tipo_remates" Type="persaModel.tipo_remates" Multiplicity="0..1" />
     <End Role="remates_mercaderia" Type="persaModel.remates_mercaderia" Multiplicity="*" />
@@ -1373,18 +1089,6 @@
       </Principal>
       <Dependent Role="remates_mercaderia">
         <PropertyRef Name="tipo_remate" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="fk_user">
-    <End Role="usuarios" Type="persaModel.usuarios" Multiplicity="0..1" />
-    <End Role="usuario_perfil" Type="persaModel.usuario_perfil" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="usuarios">
-        <PropertyRef Name="id_usuario" />
-      </Principal>
-      <Dependent Role="usuario_perfil">
-        <PropertyRef Name="id_usuario" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -1406,4 +1110,67 @@
     <Property Type="Double" Name="Total" Nullable="true" />
     <Property Type="String" Name="Facturado" Nullable="false" MaxLength="12" />
   </ComplexType>
+  <EntityType Name="detalleGuia">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idGuia" Type="Int32" />
+    <Property Name="descripcion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="cantidad" Type="Int32" />
+    <Property Name="precioUnitario" Type="Double" />
+    <Property Name="precioFinal" Type="Double" />
+    <Property Name="idDespacho" Type="Int32" />
+    <NavigationProperty Name="Guiasdespachos" Relationship="persaModel.FK_Guia" FromRole="detalleGuia" ToRole="Guiasdespachos" />
+  </EntityType>
+  <EntityType Name="folios">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idTipoDocumento" Type="Int32" />
+    <Property Name="folioactivo" Type="Int32" />
+    <Property Name="maximo_autorizado" Type="Int32" />
+    <Property Name="fecha_actualizacion" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Guiasdespachos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idCliente" Type="Int32" Nullable="false" />
+    <Property Name="folio" Type="Int32" Nullable="false" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="patente" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Ruttranspote" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="idComuna" Type="Int32" Nullable="false" />
+    <Property Name="ciudad" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="tasa" Type="Double" />
+    <Property Name="montoTotal" Type="Double" />
+    <Property Name="fechavencimiento" Type="DateTime" Precision="3" />
+    <Property Name="id_mandante" Type="Int32" />
+    <NavigationProperty Name="detalleGuia" Relationship="persaModel.FK_Guia" FromRole="Guiasdespachos" ToRole="detalleGuia" />
+  </EntityType>
+  <EntityType Name="monitorrem">
+    <Key>
+      <PropertyRef Name="id_monitor" />
+    </Key>
+    <Property Name="id_monitor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_remate" Type="Int32" />
+    <Property Name="nroLotes" Type="Int32" />
+    <Property Name="monto" Type="Double" />
+    <Property Name="fecha" Type="DateTime" Precision="3" />
+  </EntityType>
+  <Association Name="FK_Guia">
+    <End Type="persaModel.Guiasdespachos" Role="Guiasdespachos" Multiplicity="0..1" />
+    <End Type="persaModel.detalleGuia" Role="detalleGuia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Guiasdespachos">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="detalleGuia">
+        <PropertyRef Name="idGuia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

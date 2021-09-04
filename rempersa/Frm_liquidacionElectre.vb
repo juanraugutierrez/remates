@@ -21,6 +21,7 @@ Public Class Frm_liquidacionElectre
     Dim publicidad As Long
     Dim comuna As New ocomuna
     Dim lottes As New List(Of lotesliquidacionview)
+    Dim nros As Integer
 
     Dim impues_recaudado As Long
     Dim porcentaje As Integer = 10
@@ -45,12 +46,16 @@ Public Class Frm_liquidacionElectre
     End Sub
 
     Sub carga()
-        Me.Cmb_remates.DataSource = factu.lremates()
-        Me.Cmb_remates.DisplayMember = "id_remate"
-        Me.Cmb_remates.ValueMember = "Remate"
+        Try
+            Me.Cmb_remates.DataSource = factu.lremates()
+            Me.Cmb_remates.DisplayMember = "id_remate"
+            Me.Cmb_remates.ValueMember = "Remate"
+            Me.Lst_clientes.DataSource = factu.listamandantes(remate, Chk_afecto.Checked)
+            Me.Lst_clientes.DisplayMember = "cod_mandante"
+        Catch ex As Exception
 
-        Me.Lst_clientes.DataSource = factu.listamandantes(remate, Chk_afecto.Checked)
-        Me.Lst_clientes.DisplayMember = "cod_mandante"
+        End Try
+
         'Me.Cmb_cliente.ValueMember = "Cliente"
     End Sub
 
@@ -142,8 +147,12 @@ Public Class Frm_liquidacionElectre
 
             Next
 
+            If Chk_detalle.Checked = False Then
+                nros = (nros \ 20) + 1
+            Else
+                Txt_nrliqui.Text = 1
+            End If
 
-            nros = (nros \ 20) + 1
 
             Txt_nrliqui.Text = nros
 
@@ -955,5 +964,57 @@ Public Class Frm_liquidacionElectre
             porcentaje = CDec(Txt_porcentaje.Text)
         End If
 
+    End Sub
+
+    Private Sub Chk_detalle_CheckedChanged(sender As Object, e As EventArgs) Handles Chk_detalle.CheckedChanged
+        If Chk_detalle.Checked = False Then
+
+            Dim lista As New Object
+            lottes = Nothing
+            lottes = New List(Of lotesliquidacionview)
+            cliente = Lst_clientes.SelectedValue
+
+            Dim lotesliq As Object
+
+            If Rdb_remate.Checked Then
+                lotesliq = factu.lotliquidables(remate, Lst_clientes.SelectedValue, Chk_afecto.Checked)
+            Else
+                lotesliq = factu.lotliquidables(Lst_clientes.SelectedValue, Chk_afecto.Checked)
+            End If
+
+            Dim nros As Integer = 0
+
+
+
+
+
+            For Each t In lotesliq
+                Dim ll As New lotesliquidacionview
+
+                ll.afecto = t.afecto
+                ll.facturado = t.facturado
+                ll.idlote = t.id_lote
+                ll.nrolot = t.nro_lote
+                ll.nrosblote = t.sub_lote
+                ll.descripcion = t.descripcion
+                ll.Punitario = t.precio_unitario_final
+                ll.Total = t.precio_final
+                ll.unidades = t.nro_unidades_final
+                ll.fecha = Now
+                ll.mandante = t.mandante
+                ll.sucursal = t.sucursal
+                ll.desite = False
+                ll.ila = t.ila
+                lottes.Add(ll)
+                ll = Nothing
+                nros += 1
+
+
+            Next
+
+            Txt_nrliqui.Text = (nros \ 20) + 1
+        Else
+            Txt_nrliqui.Text = 1
+        End If
     End Sub
 End Class

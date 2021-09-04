@@ -1,24 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="persaModelStoreContainer" CdmEntityContainer="persaEntities11">
-    <EntitySetMapping Name="articulo">
-      <EntityTypeMapping TypeName="persaModel.articulo">
-        <MappingFragment StoreEntitySet="articulo">
-          <ScalarProperty Name="id_articulo" ColumnName="id_articulo" />
-          <ScalarProperty Name="articulo_codigo" ColumnName="articulo_codigo" />
-          <ScalarProperty Name="articulo_compuesto" ColumnName="articulo_compuesto" />
-          <ScalarProperty Name="articulo_descripcion" ColumnName="articulo_descripcion" />
-          <ScalarProperty Name="articulo_unidades" ColumnName="articulo_unidades" />
-          <ScalarProperty Name="articulo_precio" ColumnName="articulo_precio" />
-          <ScalarProperty Name="articulo_archorigen" ColumnName="articulo_archorigen" />
-          <ScalarProperty Name="articulo_fechaproceso" ColumnName="articulo_fechaproceso" />
-          <ScalarProperty Name="articulo_operador" ColumnName="articulo_operador" />
-          <ScalarProperty Name="articulo_estado" ColumnName="articulo_estado" />
-          <ScalarProperty Name="articulo_observacion" ColumnName="articulo_observacion" />
-          <ScalarProperty Name="articulo_bodega_destino" ColumnName="articulo_bodega_destino" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="bancos">
       <EntityTypeMapping TypeName="persaModel.bancos">
         <MappingFragment StoreEntitySet="bancos">
@@ -352,24 +334,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="detalle_articulo">
-      <EntityTypeMapping TypeName="persaModel.detalle_articulo">
-        <MappingFragment StoreEntitySet="detalle_articulo">
-          <ScalarProperty Name="id_detalle_articulo" ColumnName="id_detalle_articulo" />
-          <ScalarProperty Name="id_articulo" ColumnName="id_articulo" />
-          <ScalarProperty Name="detalle_sku" ColumnName="detalle_sku" />
-          <ScalarProperty Name="detalle_descripcion" ColumnName="detalle_descripcion" />
-          <ScalarProperty Name="detalle_precio" ColumnName="detalle_precio" />
-          <ScalarProperty Name="detalle_estado" ColumnName="detalle_estado" />
-          <ScalarProperty Name="detalle_unidades" ColumnName="detalle_unidades" />
-          <ScalarProperty Name="detalle_observaciones" ColumnName="detalle_observaciones" />
-          <ScalarProperty Name="detalle_sobrante" ColumnName="detalle_sobrante" />
-          <ScalarProperty Name="detalle_homologado" ColumnName="detalle_homologado" />
-          <ScalarProperty Name="detalle_original" ColumnName="detalle_original" />
-          <ScalarProperty Name="detalle_id_guia" ColumnName="detalle_id_guia" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="detalle_factura">
       <EntityTypeMapping TypeName="persaModel.detalle_factura">
         <MappingFragment StoreEntitySet="detalle_factura">
@@ -397,6 +361,7 @@
     <EntitySetMapping Name="detalle_liquidacion">
       <EntityTypeMapping TypeName="persaModel.detalle_liquidacion">
         <MappingFragment StoreEntitySet="detalle_liquidacion">
+          <ScalarProperty Name="ila" ColumnName="ila" />
           <ScalarProperty Name="id_detalle" ColumnName="id_detalle" />
           <ScalarProperty Name="id_liquidacion" ColumnName="id_liquidacion" />
           <ScalarProperty Name="id_lote" ColumnName="id_lote" />
@@ -412,23 +377,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="detalle_lotes">
-      <EntityTypeMapping TypeName="persaModel.detalle_lotes">
-        <MappingFragment StoreEntitySet="detalle_lotes">
-          <ScalarProperty Name="id_detlote" ColumnName="id_detlote" />
-          <ScalarProperty Name="id_lote" ColumnName="id_lote" />
-          <ScalarProperty Name="id_articulo" ColumnName="id_articulo" />
-          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
-          <ScalarProperty Name="codigo_articulo" ColumnName="codigo_articulo" />
-          <ScalarProperty Name="fecha" ColumnName="fecha" />
-          <ScalarProperty Name="precio" ColumnName="precio" />
-          <ScalarProperty Name="unidades_original" ColumnName="unidades_original" />
-          <ScalarProperty Name="unidades_modificado" ColumnName="unidades_modificado" />
-          <ScalarProperty Name="id_mandate" ColumnName="id_mandate" />
-          <ScalarProperty Name="tipo_mercaderia" ColumnName="tipo_mercaderia" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="detalleingresocam">
       <EntityTypeMapping TypeName="persaModel.detalleingresocam">
         <MappingFragment StoreEntitySet="detalleingresocam">
@@ -437,20 +385,6 @@
           <ScalarProperty Name="id_tipovehiculo" ColumnName="id_tipovehiculo" />
           <ScalarProperty Name="detalle_patente" ColumnName="detalle_patente" />
           <ScalarProperty Name="detalle_observacion" ColumnName="detalle_observacion" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="detalleOC">
-      <EntityTypeMapping TypeName="persaModel.detalleOC">
-        <MappingFragment StoreEntitySet="detalleOC">
-          <ScalarProperty Name="id_detalleoc" ColumnName="id_detalleoc" />
-          <ScalarProperty Name="id_oc" ColumnName="id_oc" />
-          <ScalarProperty Name="nro_item" ColumnName="nro_item" />
-          <ScalarProperty Name="detalle_item" ColumnName="detalle_item" />
-          <ScalarProperty Name="unidades" ColumnName="unidades" />
-          <ScalarProperty Name="valor_unitario" ColumnName="valor_unitario" />
-          <ScalarProperty Name="iva" ColumnName="iva" />
-          <ScalarProperty Name="total" ColumnName="total" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -606,6 +540,7 @@
     <EntitySetMapping Name="lotes">
       <EntityTypeMapping TypeName="persaModel.lotes">
         <MappingFragment StoreEntitySet="lotes">
+          <ScalarProperty Name="ot" ColumnName="ot" />
           <ScalarProperty Name="nro_liquidacion" ColumnName="nro_liquidacion" />
           <ScalarProperty Name="nrofactura" ColumnName="nrofactura" />
           <ScalarProperty Name="fecha_liquidacion" ColumnName="fecha_liquidacion" />
@@ -683,27 +618,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="ordenescompra">
-      <EntityTypeMapping TypeName="persaModel.ordenescompra">
-        <MappingFragment StoreEntitySet="ordenescompra">
-          <ScalarProperty Name="id_orden" ColumnName="id_orden" />
-          <ScalarProperty Name="id_proveedor" ColumnName="id_proveedor" />
-          <ScalarProperty Name="fecha" ColumnName="fecha" />
-          <ScalarProperty Name="id_condicion" ColumnName="id_condicion" />
-          <ScalarProperty Name="aprobada" ColumnName="aprobada" />
-          <ScalarProperty Name="id_usuario_aprueba" ColumnName="id_usuario_aprueba" />
-          <ScalarProperty Name="fecha_aprobacion" ColumnName="fecha_aprobacion" />
-          <ScalarProperty Name="enviada" ColumnName="enviada" />
-          <ScalarProperty Name="fecha_envio" ColumnName="fecha_envio" />
-          <ScalarProperty Name="pagada" ColumnName="pagada" />
-          <ScalarProperty Name="Afecta" ColumnName="Afecta" />
-          <ScalarProperty Name="neto" ColumnName="neto" />
-          <ScalarProperty Name="iva" ColumnName="iva" />
-          <ScalarProperty Name="Total" ColumnName="Total" />
-          <ScalarProperty Name="observaciones" ColumnName="observaciones" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="parametros">
       <EntityTypeMapping TypeName="persaModel.parametros">
         <MappingFragment StoreEntitySet="parametros">
@@ -726,28 +640,6 @@
           <ScalarProperty Name="cargos" ColumnName="cargos" />
           <ScalarProperty Name="Facturado" ColumnName="Facturado" />
           <ScalarProperty Name="Afecto" ColumnName="Afecto" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="perfiles">
-      <EntityTypeMapping TypeName="persaModel.perfiles">
-        <MappingFragment StoreEntitySet="perfiles">
-          <ScalarProperty Name="id_perfil" ColumnName="id_perfil" />
-          <ScalarProperty Name="per_nombre" ColumnName="per_nombre" />
-          <ScalarProperty Name="per_estado" ColumnName="per_estado" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="proveedor">
-      <EntityTypeMapping TypeName="persaModel.proveedor">
-        <MappingFragment StoreEntitySet="proveedor">
-          <ScalarProperty Name="id_proveedor" ColumnName="id_proveedor" />
-          <ScalarProperty Name="razon_social" ColumnName="razon_social" />
-          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
-          <ScalarProperty Name="id_comuna" ColumnName="id_comuna" />
-          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
-          <ScalarProperty Name="email" ColumnName="email" />
-          <ScalarProperty Name="contacto" ColumnName="contacto" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -845,29 +737,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="tarifas">
-      <EntityTypeMapping TypeName="persaModel.tarifas">
-        <MappingFragment StoreEntitySet="tarifas">
-          <ScalarProperty Name="id_tarifa" ColumnName="id_tarifa" />
-          <ScalarProperty Name="id_contrato" ColumnName="id_contrato" />
-          <ScalarProperty Name="comision" ColumnName="comision" />
-          <ScalarProperty Name="costo_fijo" ColumnName="costo_fijo" />
-          <ScalarProperty Name="bodegaje" ColumnName="bodegaje" />
-          <ScalarProperty Name="id_bodeja" ColumnName="id_bodeja" />
-          <ScalarProperty Name="publicidad" ColumnName="publicidad" />
-          <ScalarProperty Name="gastos_operacionales" ColumnName="gastos_operacionales" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tipo_documento">
-      <EntityTypeMapping TypeName="persaModel.tipo_documento">
-        <MappingFragment StoreEntitySet="tipo_documento">
-          <ScalarProperty Name="id_tipo" ColumnName="id_tipo" />
-          <ScalarProperty Name="decripcion" ColumnName="decripcion" />
-          <ScalarProperty Name="estado" ColumnName="estado" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="tipo_pago">
       <EntityTypeMapping TypeName="persaModel.tipo_pago">
         <MappingFragment StoreEntitySet="tipo_pago">
@@ -897,17 +766,6 @@
         <MappingFragment StoreEntitySet="tipos_factura">
           <ScalarProperty Name="id_tipo" ColumnName="id_tipo" />
           <ScalarProperty Name="descripcion" ColumnName="descripcion" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="usuario_perfil">
-      <EntityTypeMapping TypeName="persaModel.usuario_perfil">
-        <MappingFragment StoreEntitySet="usuario_perfil">
-          <ScalarProperty Name="id_uusario_perfil" ColumnName="id_uusario_perfil" />
-          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
-          <ScalarProperty Name="id_perfil" ColumnName="id_perfil" />
-          <ScalarProperty Name="estado" ColumnName="estado" />
-          <ScalarProperty Name="fecha_estado" ColumnName="fecha_estado" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -949,5 +807,58 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <EntitySetMapping Name="detalleGuia">
+      <EntityTypeMapping TypeName="persaModel.detalleGuia">
+        <MappingFragment StoreEntitySet="detalleGuia">
+          <ScalarProperty Name="idDespacho" ColumnName="idDespacho" />
+          <ScalarProperty Name="precioFinal" ColumnName="precioFinal" />
+          <ScalarProperty Name="precioUnitario" ColumnName="precioUnitario" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="idGuia" ColumnName="idGuia" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="folios">
+      <EntityTypeMapping TypeName="persaModel.folios">
+        <MappingFragment StoreEntitySet="folios">
+          <ScalarProperty Name="fecha_actualizacion" ColumnName="fecha_actualizacion" />
+          <ScalarProperty Name="maximo_autorizado" ColumnName="maximo_autorizado" />
+          <ScalarProperty Name="folioactivo" ColumnName="folioactivo" />
+          <ScalarProperty Name="idTipoDocumento" ColumnName="idTipoDocumento" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Guiasdespachos">
+      <EntityTypeMapping TypeName="persaModel.Guiasdespachos">
+        <MappingFragment StoreEntitySet="Guiasdespachos">
+          <ScalarProperty Name="id_mandante" ColumnName="id_mandante" />
+          <ScalarProperty Name="fechavencimiento" ColumnName="fechavencimiento" />
+          <ScalarProperty Name="montoTotal" ColumnName="montoTotal" />
+          <ScalarProperty Name="tasa" ColumnName="tasa" />
+          <ScalarProperty Name="ciudad" ColumnName="ciudad" />
+          <ScalarProperty Name="idComuna" ColumnName="idComuna" />
+          <ScalarProperty Name="Ruttranspote" ColumnName="Ruttranspote" />
+          <ScalarProperty Name="patente" ColumnName="patente" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="folio" ColumnName="folio" />
+          <ScalarProperty Name="idCliente" ColumnName="idCliente" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="monitorrem">
+      <EntityTypeMapping TypeName="persaModel.monitorrem">
+        <MappingFragment StoreEntitySet="monitorrem">
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="nroLotes" ColumnName="nroLotes" />
+          <ScalarProperty Name="id_remate" ColumnName="id_remate" />
+          <ScalarProperty Name="id_monitor" ColumnName="id_monitor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

@@ -416,7 +416,7 @@ Module detalle_facturamodule
                 End Try
             Next
             item1.Cantidad = unidades
-            item1.Descripcion = "Liquidacion según detalles adjuntos "
+            item1.Descripcion = "Lotes Venta Directa segun detalle adjunto "
             item1.Precio_unitario = 0
             item1.Total = neto
             item1.Mandante = String.Empty
