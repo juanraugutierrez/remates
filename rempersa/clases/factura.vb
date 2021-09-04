@@ -53,11 +53,17 @@
 
     Public Function fremates(codre As String) As String
         Dim fe As DateTime
-        Dim parametros() As String = codre.Split(",")
-        Dim valor() = parametros(0).Split("=")
-        Dim valorr = valor(1)
-        fe = (From c In contex.remates_mercaderia Where c.id_remate = valorr Select c.fecha_remate).First
-        Return fe
+        If IsArray(codre) Then
+            Dim parametros() As String = codre.Split(",")
+            Dim valor() = parametros(0).Split("=")
+            Dim valorr = valor(1)
+            fe = (From c In contex.remates_mercaderia Where c.id_remate = valorr Select c.fecha_remate).First
+            Return fe
+        Else
+            fe = (From c In contex.remates_mercaderia Where c.codigo_remate = codre Select c.fecha_remate).First
+            Return fe
+        End If
+
     End Function
 
     Public Function lotfacturables(codre As Integer, cliente As String, afe As Boolean) As IQueryable
